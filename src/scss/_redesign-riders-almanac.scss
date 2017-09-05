@@ -1,0 +1,50 @@
+/*********************************************************
+    Rider's Almanac Redesign Styles - June 2017
+*********************************************************/
+.ra-redesign {
+
+	.blogwrapper {
+		//float: left;
+		padding: 20px;
+	}
+
+	hr {
+		margin-bottom: 2em;
+	}
+
+	.blogcenter-nonav {
+    	padding-left: 0;
+  	}
+
+  	ul.blognav {
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.blogtitle {
+		margin-top: 10px;
+	}
+
+	.blogtext .blogger img {
+		max-width: 100%;
+	}
+
+	#blog-wrapper {
+		position: relative;
+		top: -74px;
+		margin-top: 0;
+		padding: 20px 40px 0 !important;
+
+		img {
+			max-width: 100%;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+	}
+
+	.blogpager {
+		text-align: center;
+	}
+}

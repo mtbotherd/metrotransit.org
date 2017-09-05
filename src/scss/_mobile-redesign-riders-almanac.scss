@@ -1,0 +1,26 @@
+/*********************************************************
+    Rider's Almanac
+*********************************************************/
+.ra-redesign {
+
+	.blogitem {
+		overflow: none;
+		padding: 10px;
+
+		&:nth-child(even) {
+			background-color: #ececec;
+		}
+
+		.blogtext img {
+			margin: 5px 0 !important;
+		}
+	}
+
+	.blognavleft {
+		display: none;
+	}
+
+	.bsidebottom {
+		display: none;
+	}
+}

@@ -1,0 +1,77 @@
+/*********************************************************
+    Rider's Almanac
+*********************************************************/
+.ra-redesign .blogitem {
+  overflow: none;
+  padding: 10px; }
+  .ra-redesign .blogitem:nth-child(even) {
+    background-color: #ececec; }
+  .ra-redesign .blogitem .blogtext img {
+    margin: 5px 0 !important; }
+
+.ra-redesign .blognavleft {
+  display: none; }
+
+.ra-redesign .bsidebottom {
+  display: none; }
+
+/*********************************************************
+    Mobile Redesign
+*********************************************************/
+.gp-redesign {
+  overflow: initial; }
+  .gp-redesign div.mt-form div.mt-field {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%; }
+    .gp-redesign div.mt-form div.mt-field .input-group {
+      margin-right: 0;
+      margin-bottom: 20px; }
+      .gp-redesign div.mt-form div.mt-field .input-group input[type="text"] {
+        background: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+        float: left;
+        height: 28px !important;
+        width: 239px; }
+      .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon:last-child {
+        background: none;
+        border: 0;
+        float: left;
+        padding: 0;
+        position: relative; }
+        .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon:last-child .input-group-btn {
+          height: 28px !important;
+          width: 51px !important; }
+    .gp-redesign div.mt-form div.mt-field .optionItem select {
+      height: 28px !important;
+      width: 289px; }
+  .gp-redesign .blogitem {
+    overflow: initial; }
+    .gp-redesign .blogitem .blogtags {
+      border-bottom: 2px solid #ececec;
+      display: block;
+      margin-bottom: 20px; }
+      .gp-redesign .blogitem .blogtags > a {
+        background-color: initial;
+        color: #ed1b2e;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.3; }
+    .gp-redesign .blogitem .blogtitle {
+      margin: 10px; }
+    .gp-redesign .blogitem .subtitle {
+      display: block;
+      font-style: italic;
+      font-weight: 700;
+      margin: 10px; }
+    .gp-redesign .blogitem .blogdate {
+      display: none; }
+    .gp-redesign .blogitem .blogtext img {
+      float: left;
+      margin: 0 10px 5px 0; }
+
+/*# sourceMappingURL=../maps/mobile-redesign.css.map */

@@ -1,0 +1,229 @@
+/*********************************************************
+    Rider's Almanac Redesign Styles - June 2017
+*********************************************************/
+.ra-redesign .blogwrapper {
+  padding: 20px; }
+
+.ra-redesign hr {
+  margin-bottom: 2em; }
+
+.ra-redesign .blogcenter-nonav {
+  padding-left: 0; }
+
+.ra-redesign ul.blognav {
+  margin-left: 0;
+  padding: 0; }
+
+.ra-redesign .blogtitle {
+  margin-top: 10px; }
+
+.ra-redesign .blogtext .blogger img {
+  max-width: 100%; }
+
+.ra-redesign #blog-wrapper {
+  position: relative;
+  top: -74px;
+  margin-top: 0;
+  padding: 20px 40px 0 !important; }
+  .ra-redesign #blog-wrapper img {
+    max-width: 100%; }
+  .ra-redesign #blog-wrapper ul {
+    list-style-type: none; }
+
+.ra-redesign .blogpager {
+  text-align: center; }
+
+/***************************************************
+	Great People Redesign Styles - June 2017
+***************************************************/
+.gp-redesign {
+  margin-bottom: 1.5em; }
+  .gp-redesign p:last-child {
+    margin: 1em 0; }
+  .gp-redesign p strong {
+    font-weight: 700; }
+  .gp-redesign div.mt-form div.mt-field {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    /* .searchbox, */ }
+    .gp-redesign div.mt-form div.mt-field .input-group {
+      display: inline-block;
+      float: left;
+      margin-right: 20px;
+      width: 271px; }
+      .gp-redesign div.mt-form div.mt-field .input-group input[type="text"] {
+        float: left;
+        height: 28px;
+        background: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+        width: 220px; }
+      .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon {
+        background: none;
+        border: 0;
+        padding: 0; }
+      .gp-redesign div.mt-form div.mt-field .input-group .input-group-btn {
+        height: 28px;
+        width: 51px; }
+    .gp-redesign div.mt-form div.mt-field .optionItem {
+      display: inline-block;
+      float: left;
+      margin-right: 20px; }
+      .gp-redesign div.mt-form div.mt-field .optionItem select {
+        height: 28px; }
+  .gp-redesign .blogpager {
+    text-align: center; }
+
+.gp-content {
+  display: block;
+  float: left;
+  margin-bottom: 1em;
+  padding: 0; }
+  .gp-content .blogwrapper {
+    padding: 0; }
+  .gp-content .blogitem {
+    margin-bottom: 5%; }
+  .gp-content .blogtags {
+    border-bottom: 1px solid #ececec;
+    clear: both;
+    display: block;
+    margin-top: 1em; }
+    .gp-content .blogtags a {
+      font-size: 20px;
+      line-height: 1.3; }
+  .gp-content .tagslabel {
+    border-bottom: none; }
+  .gp-content .blogtitle {
+    margin-top: 5px;
+    padding-top: 5px; }
+  .gp-content .subtitle {
+    display: block;
+    margin-bottom: 20px;
+    font-style: italic; }
+  .gp-content .blogdate {
+    display: none; }
+  .gp-content .blogtext {
+    min-height: 146px;
+    position: relative;
+    padding-left: 180px; }
+    .gp-content .blogtext a.morelink {
+      clear: both;
+      display: block;
+      text-align: right; }
+    .gp-content .blogtext p {
+      display: inline-block;
+      float: left;
+      margin: 0 0 1em;
+      width: 780px; }
+      .gp-content .blogtext p:first-child {
+        position: absolute;
+        left: 0;
+        width: 100px; }
+      .gp-content .blogtext p img {
+        display: inline-block;
+        float: left; }
+      .gp-content .blogtext p.read-more {
+        display: block;
+        float: right;
+        text-align: right;
+        margin-right: 50px; }
+
+/***************************************************
+	MTPD Manual - July 2017
+***************************************************/
+.mtpd-manual img.hero {
+  margin-bottom: 20px; }
+
+.mtpd-manual .right-col {
+  float: right;
+  width: 325px;
+  padding-left: 30px; }
+  .mtpd-manual .right-col ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .mtpd-manual .right-col ul li {
+      background-image: none;
+      display: block;
+      color: #000;
+      font-size: 13px;
+      list-style-image: none;
+      cursor: pointer;
+      background-color: #ffffff;
+      margin: 0;
+      padding-left: 1.5em; }
+      .mtpd-manual .right-col ul li a {
+        color: #000; }
+      .mtpd-manual .right-col ul li a:hover,
+      .mtpd-manual .right-col ul li a:active,
+      .mtpd-manual .right-col ul li a.active {
+        color: #0053a0;
+        text-decoration: underline; }
+      .mtpd-manual .right-col ul li ul {
+        margin-top: 0; }
+    .mtpd-manual .right-col ul li.dropdown ul li a {
+      color: #0053a0; }
+    .mtpd-manual .right-col ul .plus-icon {
+      background-image: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
+      background-repeat: no-repeat;
+      background-position: 0px 4px; }
+    .mtpd-manual .right-col ul .minus-icon {
+      background-image: url("images/MinusSmall.gif");
+      background-repeat: no-repeat;
+      background-position: 0px 4px; }
+
+.mtpd-manual .left-col {
+  float: left;
+  width: 625px; }
+  .mtpd-manual .left-col .chapter {
+    display: none; }
+  .mtpd-manual .left-col ul {
+    list-style-type: initial;
+    margin-bottom: 1.5em; }
+  .mtpd-manual .left-col ol.alpha {
+    list-style: lower-alpha;
+    padding-left: 1em; }
+    .mtpd-manual .left-col ol.alpha li {
+      padding-left: 1em; }
+  .mtpd-manual .left-col ol.decimal {
+    list-style: decimal; }
+  .mtpd-manual .left-col img {
+    max-width: 100%; }
+  .mtpd-manual .left-col .table {
+    border: 1px solid #ccc;
+    margin-bottom: 20px; }
+    .mtpd-manual .left-col .table thead tr {
+      background-color: #ececec;
+      border: 2px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      .mtpd-manual .left-col .table thead tr th {
+        border: 1px solid #ccc;
+        padding: 5px 10px; }
+    .mtpd-manual .left-col .table tbody tr {
+      border-right: 2px solid #ccc;
+      border-left: 2px solid #ccc; }
+      .mtpd-manual .left-col .table tbody tr td {
+        border: 1px solid #ccc;
+        padding: 5px 10px; }
+      .mtpd-manual .left-col .table tbody tr:last-child {
+        border-bottom: 2px solid #ccc; }
+  .mtpd-manual .left-col .table.special tbody tr td {
+    text-align: center; }
+    .mtpd-manual .left-col .table.special tbody tr td:first-child {
+      background-color: #ececec;
+      font-weight: 700;
+      text-align: left; }
+
+/***************************************************
+	TAP Changes - August 2017
+***************************************************/
+.tap p.Indent1:last-child {
+  margin-left: 40px; }
+
+.tap ul {
+  margin: 1em 0 1em 1.6em; }
+
+/*# sourceMappingURL=../maps/redesign.css.map */

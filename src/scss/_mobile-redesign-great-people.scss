@@ -1,0 +1,91 @@
+/*********************************************************
+    Mobile Redesign
+*********************************************************/
+// Great People
+
+.gp-redesign {
+	overflow: initial;
+
+	div.mt-form {
+		div.mt-field {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+
+			.input-group {
+				margin-right: 0;
+				margin-bottom: 20px;
+
+				input[type="text"] {
+					background: none;
+					border-radius: 0;
+					-webkit-border-radius: 0;
+					-moz-border-radius: 0;
+					border-top-left-radius: 0.3em;
+					border-bottom-left-radius: 0.3em;
+					float: left;
+					height: 28px !important;
+					width: 239px;
+				}
+
+				.input-group-addon:last-child {
+					background: none;
+					border: 0;
+					float: left;
+					padding: 0;
+					position: relative;
+
+					.input-group-btn {
+						height: 28px !important;
+						width: 51px !important;
+					}
+				}
+			}
+
+			.optionItem {
+				select {
+					height: 28px !important;
+					width: 289px;
+				}
+			}
+		}
+	}
+
+	.blogitem {
+		overflow: initial;
+
+		.blogtags {
+			border-bottom: 2px solid #ececec;
+			display: block;
+			margin-bottom: 20px;
+
+			> a {
+				background-color: initial;
+				color: #ed1b2e;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 1.3;
+			}
+		}
+
+		.blogtitle {
+			margin: 10px;
+		}
+
+		.subtitle {
+			display: block;
+			font-style: italic;
+			font-weight: 700;
+			margin: 10px;
+		}
+
+		.blogdate {
+			display: none;
+		}
+
+		.blogtext img {
+			float: left;
+			margin: 0 10px 5px 0;
+		}
+	}
+}
