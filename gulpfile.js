@@ -26,21 +26,24 @@ gulp.task('browserSync', function() {
 
 // Copy vendor JS to src
 gulp.task('vendorJS', function() {
-    return gulp.src('node_modules/jquery/dist/jquery.js')
-        // return gulp.src([
-        // 	'node_modules/jquery/dist/jquery.js',
-        // 	'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
-        // 	])
+    //return gulp.src('node_modules/jquery/dist/jquery.js')
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/js/transition.js',
+            'node_modules/bootstrap/js/collapse.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+        ])
         .pipe(gulp.dest('src/js/vendor'))
 });
 
 // Compile sass to css
 gulp.task('sass', function() {
-    return gulp.src('src/scss/**/*.scss')
-        // return gulp.src([
-        // 	'node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss',
-        // 	'src/scss/**/*.scss'
-        // ])
+    //return gulp.src('src/scss/**/*.scss')
+    return gulp.src([
+            'node_modules/font-awesome/scss/font-awesome.scss',
+            'node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss',
+            'src/scss/**/*.scss'
+        ])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
