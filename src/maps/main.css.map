@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../scss/main.css","sourcesContent":[]}
+{"version":3,"sources":["_responsive.scss"],"names":[],"mappings":"AAAA;EACI,aAAY;EACZ,iBAAgB;EAChB,gBAAe,EAClB","file":"../scss/main.css","sourcesContent":[".container {\n    width: 980px;\n    padding-right: 0;\n    padding-left: 0;\n}\n"]}

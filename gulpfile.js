@@ -28,10 +28,8 @@ gulp.task('browserSync', function() {
 gulp.task('vendorJS', function() {
     //return gulp.src('node_modules/jquery/dist/jquery.js')
     return gulp.src([
-            'node_modules/jquery/dist/jquery.js',
             'node_modules/bootstrap/js/transition.js',
-            'node_modules/bootstrap/js/collapse.js',
-            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+            'node_modules/bootstrap/js/collapse.js'
         ])
         .pipe(gulp.dest('src/js/vendor'))
 });
