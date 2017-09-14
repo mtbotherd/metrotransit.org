@@ -24,14 +24,14 @@ gulp.task('browserSync', function() {
     })
 });
 
-// Copy vendor JS to src
-gulp.task('vendorJS', function() {
+// Copy JS to src
+gulp.task('javascript', function() {
     //return gulp.src('node_modules/jquery/dist/jquery.js')
     return gulp.src([
             'node_modules/bootstrap/js/transition.js',
             'node_modules/bootstrap/js/collapse.js'
         ])
-        .pipe(gulp.dest('src/js/vendor'))
+        .pipe(gulp.dest('src/js'))
 });
 
 // Compile sass to css
@@ -109,7 +109,7 @@ gulp.task('clean:dist', function() {
 // Build Sequence
 // --------------
 gulp.task('default', function(callback) {
-    runSequence(['vendorJS', 'sass', 'browserSync'], 'watch',
+    runSequence(['javascript', 'sass', 'browserSync'], 'watch',
         callback
     )
 });
