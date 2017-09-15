@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html class="font-size-regular">
-<head id="ctl00_Head1"><meta charset="utf-8" />
+
+<head id="ctl00_Head1">
+	<meta charset="utf-8" />
 	<title>
 		Great People - Metro Transit
 	</title>
 	<!-- Robots -->
-	<meta name="author" content="Metro Transit" /><meta name="title" content="Metro Transit" /><meta name="description" content="Metro Transit" /><meta name="keywords" content="Metro Transit" /><meta name="robots" content="noindex, nofollow" />
+	<meta name="author" content="Metro Transit" />
+	<meta name="title" content="Metro Transit" />
+	<meta name="description" content="Metro Transit" />
+	<meta name="keywords" content="Metro Transit" />
+	<meta name="robots" content="noindex, nofollow" />
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
 	<meta name="msapplication-TileImage" content="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-144x144-precomposed.png" />
 	<meta name="msapplication-TileColor" content="#222222" />
@@ -24,8 +30,7 @@
 	<script type="text/javascript">
 		if (localStorage['font-size'] == 'large') {
 			document.getElementsByTagName('html')[0].className += ' font-size-large';
-		}
-		else if (localStorage['font-size'] == 'extra') {
+		} else if (localStorage['font-size'] == 'extra') {
 			document.getElementsByTagName('html')[0].className += ' font-size-extra';
 		}
 	</script>
@@ -36,13 +41,13 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-72x72-precomposed.png" />
 	<link rel="apple-touch-icon-precomposed" href="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-57x57-precomposed.png" />
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css" />
-	<link rel='stylesheet'  type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitMobile&s=1&v=2.4.1.1&sv=20d236bf-ee8a-44c5-bd0b-4acceafaec98' />
-	<!-- build:css css/mobile-redesign.min.css -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mobile-redesign.css"/>
-    <!-- endbuild -->
+	<link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitMobile&s=1&v=2.4.1.1&sv=20d236bf-ee8a-44c5-bd0b-4acceafaec98' />
+	<!-- build:css css/mobile-redesign.css -->
+	<link rel="stylesheet" type="text/css" href="css/mobile-redesign.css" />
+	<!-- endbuild -->
 	<link rel='canonical' href='https://www.metrotransit.org/greatpeople' />
 </head>
+
 <body id="ctl00_Body">
 	<script src="https://www.metrotransit.org/ClientScript/jquery.mobile.min.js"></script>
 	<script src="https://www.metrotransit.org/ClientScript/jquery.mobile.ui.js"></script>
@@ -51,21 +56,31 @@
 	<script src="https://www.metrotransit.org/ClientScript/TransitMobileScript.js"></script>
 	<script src="https://www.metrotransit.org/ClientScript/TransitValidation.js"></script>
 
-	<script type="text/javascript"> 
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<script type="text/javascript">
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-63539533-1', 'auto');
-		ga('set', 'anonymizeIp', true); ga('send', 'pageview'); 
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
 	</script>
 	<form method="post" action="/" id="aspnetForm">
 		<div class="aspNetHidden">
 			<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 			<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
 			<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="2" />
-			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIBD2QWCgICD2QWAmYPZBYEAgMPD2QWBB4Hb25mb2N1cwU7amF2YXNjcmlwdDp3YXRlcm1hcmtFbnRlcih0aGlzLCAnc2VhcmNoIG1ldHJvdHJhbnNpdC5vcmcnKTseBm9uYmx1cgU7amF2YXNjcmlwdDp3YXRlcm1hcmtMZWF2ZSh0aGlzLCAnc2VhcmNoIG1ldHJvdHJhbnNpdC5vcmcnKTtkAgUPDxYCHghJbWFnZVVybGVkZAIIDw8WBB4IQ3NzQ2xhc3MFEGxlZnRzaWRlIGNtc3pvbmUeBF8hU0ICAmRkAgkPDxYEHwQFOWFydC1sYXlvdXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8FAgJkFgICAQ9kFgJmD2QWAgICD2QWAgID" />
-			<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="D2QWAgIDD2QWAgIBD2QWBgIBDw8WAh4HVmlzaWJsZWhkFgICAQ9kFgJmD2QWAgIFD2QWAmYPFgIeCkNhbGxiYWNrSUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nZAINDw8WAh8GaGQWAgIBD2QWAmYPZBYCAgUPZBYCZg8WAh8HBS9jdGwwMCRtYWluQ29udGVudCRjdGwwMCRSYXRpbmdCb3R0b20kVXNlclJhdGluZ2QCDw8PFgIfBmdkZAIKDw8WBB8EBRFyaWdodHNpZGUgY21zem9uZR8FAgJkZAIMD2QWAgILD2QWAmYPEGRkFgFmZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUcY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaAUTY3RsMDAkbHZBY2NvdW50Vmlldw8PZAIBZDKJ3bhjY2Pm8796+3zK0zYqy1vG" />
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmD2QWAgIDD2QWAgIBD2QWCgICD2QWAmYPZBYEAgMPD2QWBB4Hb25mb2N1cwU7amF2YXNjcmlwdDp3YXRlcm1hcmtFbnRlcih0aGlzLCAnc2VhcmNoIG1ldHJvdHJhbnNpdC5vcmcnKTseBm9uYmx1cgU7amF2YXNjcmlwdDp3YXRlcm1hcmtMZWF2ZSh0aGlzLCAnc2VhcmNoIG1ldHJvdHJhbnNpdC5vcmcnKTtkAgUPDxYCHghJbWFnZVVybGVkZAIIDw8WBB4IQ3NzQ2xhc3MFEGxlZnRzaWRlIGNtc3pvbmUeBF8hU0ICAmRkAgkPDxYEHwQFOWFydC1sYXlvdXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8FAgJkFgICAQ9kFgJmD2QWAgICD2QWAgID"
+			/>
+			<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="D2QWAgIDD2QWAgIBD2QWBgIBDw8WAh4HVmlzaWJsZWhkFgICAQ9kFgJmD2QWAgIFD2QWAmYPFgIeCkNhbGxiYWNrSUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nZAINDw8WAh8GaGQWAgIBD2QWAmYPZBYCAgUPZBYCZg8WAh8HBS9jdGwwMCRtYWluQ29udGVudCRjdGwwMCRSYXRpbmdCb3R0b20kVXNlclJhdGluZ2QCDw8PFgIfBmdkZAIKDw8WBB8EBRFyaWdodHNpZGUgY21zem9uZR8FAgJkZAIMD2QWAgILD2QWAmYPEGRkFgFmZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUcY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaAUTY3RsMDAkbHZBY2NvdW50Vmlldw8PZAIBZDKJ3bhjY2Pm8796+3zK0zYqy1vG"
+			/>
 		</div>
 
 		<script type="text/javascript">
@@ -74,6 +89,7 @@
 			if (!theForm) {
 				theForm = document.aspnetForm;
 			}
+
 			function __doPostBack(eventTarget, eventArgument) {
 				if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
 					theForm.__EVENTTARGET.value = eventTarget;
@@ -112,7 +128,8 @@
 					<section class="col-xs-10 input">
 						<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch&#39;)">
 							<p class="ada-hidden"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearch">Search the metrotransit.org website</label></p>
-							<input name="ctl00$SearchInput1$txtSearch" id="ctl00_SearchInput1_txtSearch" class="searchbox" placeholder="search metrotransit.org" type="search" onfocus="javascript:watermarkEnter(this, &#39;search metrotransit.org&#39;);" onblur="javascript:watermarkLeave(this, &#39;search metrotransit.org&#39;);" />
+							<input name="ctl00$SearchInput1$txtSearch" id="ctl00_SearchInput1_txtSearch" class="searchbox" placeholder="search metrotransit.org" type="search" onfocus="javascript:watermarkEnter(this, &#39;search metrotransit.org&#39;);" onblur="javascript:watermarkLeave(this, &#39;search metrotransit.org&#39;);"
+							/>
 							<input type="image" name="ctl00$SearchInput1$btnSearch" id="ctl00_SearchInput1_btnSearch" class="searchbutton" alt="Search Button" />
 						</div>
 					</section>
@@ -143,7 +160,7 @@
 				</ul>
 			</section>
 			<section class="space"></section>
-			<section>        
+			<section>
 				<ul>
 					<li>
 						<a class="nextrip" title="NexTrip" href="/NexTrip"><i class="fa fa-location-arrow"></i><span class="nextrip">Nex</span>Trip</a>
@@ -349,8 +366,8 @@
 					<section class="row head">
 						<section>
 							<a class="logo" href="/default.aspx" title="Metro Transit - Serving the Minneapolis Saint Paul Area">
-								<img srcset="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/Icons/SVG/MetroTransitLogo.svg" 
-								src="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/Icons/PNG/MetroTransitLogo.png" 
+								<img srcset="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/Icons/SVG/MetroTransitLogo.svg"
+								src="https://www.metrotransit.org/Data/sites/1/skins/MetroTransitMobile/images/Icons/PNG/MetroTransitLogo.png"
 								alt="Metro Transit - Serving the Minneapolis Saint Paul Area">
 							</a>
 						</section>
@@ -374,30 +391,30 @@
 								<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
 									<div id="ctl00_mainContent_ctl00_divContent" class="">
 										<h2>Saluting decades of service to our customers</h2>
-                                        <p>The names, accomplishments and reputations of those who have gone before inspire Metro Transit to do its best work.</p>
-                                        <p>We honor these members of the Metro Transit family who recently retired with more than 30 years of service.</p>
-                                        <p>Thank you for the dedication and your role in keeping the Twin Cities region moving.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+										<p>The names, accomplishments and reputations of those who have gone before inspire Metro Transit to do its best work.</p>
+										<p>We honor these members of the Metro Transit family who recently retired with more than 30 years of service.</p>
+										<p>Thank you for the dedication and your role in keeping the Twin Cities region moving.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div id="ctl00_mainContent_ctl01_pnlOuterWrap" class="gp-redesign">
 						<div id="ctl00_mainContent_ctl01_pnlInnerWrap" class="panelwrapper htmlmodule">
-							
+
 							<div id="ctl00_mainContent_ctl01_pnlOuterBody" class="">
 								<div id="ctl00_mainContent_ctl01_pnlInnerBody" class="modulecontent">
 									<div id='ctl00_mainContent_ctl00_divContent' class=''>
-                                        <div class="mt-form">
-                                            <div class="mt-field">
-                                            	<div class="input-group">
-                                                	<input placeholder="Search by name..." name="gpName" type="text" id="gp_name" class="form-control gp-name" value="">
-                                                	<span class="input-group-addon">
+										<div class="mt-form">
+											<div class="mt-field">
+												<div class="input-group">
+													<input placeholder="Search by name..." name="gpName" type="text" id="gp_name" class="form-control gp-name" value="">
+													<span class="input-group-addon">
                                                 		<input type="image" class="input-group-btn" src="Data/sites/1/skins/MetroTransitII/images/GoButton.png" alt="Go Button"/>
 													</span>
-                                                </div>
-                                                <div class="optionItem">
-                                                    <select name="" id="">
+												</div>
+												<div class="optionItem">
+													<select name="" id="">
                                                         <option value="Select year">Select year</option>
                                                         <option value="Blog/ViewCategory.aspx?cat=63&amp;pageid=998&amp;mid=1425">2017</option>
                                                         <option value="Blog/ViewCategory.aspx?cat=62&amp;pageid=998&amp;mid=1425">2016</option>
@@ -408,10 +425,10 @@
                                                         <option value="Blog/ViewCategory.aspx?cat=57&amp;pageid=998&amp;mid=1425">2011</option>
                                                         <option value="Blog/ViewCategory.aspx?cat=64&amp;pageid=998&amp;mid=1425">2010</option>
                                                     </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -423,54 +440,62 @@
 									<div id="ctl00_mainContent_ctl02_blogWrapper1" class="blogwrapper">
 										<div id="ctl00_mainContent_ctl02_postList_divblog" class="blogcenter-nonav">
 											<div id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_bi1" class="blogitem">
-								                <span class="blogtags tagslabel"></span><span class="blogtags"> 
+												<span class="blogtags tagslabel"></span><span class="blogtags">
 							                        <a id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_rptTopCategories_ctl01_Hyperlink6" data-category="2017" href="https://dev.metrotransittest.org/Blog/ViewCategory.aspx?cat=63&amp;pageid=998&amp;mid=1425">2017</a>
 								                </span>
-								                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 													<div class="panel panel-default">
-														<div class="panel-heading" role="tab" id="headingOne">								                
-											                <h3 class="blogtitle paneltitle">
+														<div class="panel-heading" role="tab" id="headingOne">
+															<h3 class="blogtitle paneltitle">
 											                    <!-- <a id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_lnkTitle" class="blogitemtitle" href="https://dev.metrotransittest.org/renee-stafford-603">Renee Stafford, #603</a> -->
 											                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Renee Stafford, #603</a>
 											                </h3>
-											                <span class="subtitle">Operator</span>
-											            </div>
-											            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											            	<div class="panel-body">								                
-												                <div class="blogdate">
-												                    <span class="blogauthor"></span> |
-												                    <span id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_spnTopDate" class="bdate">Thursday, June 01, 2017 10:36:00 AM</span>
-												                </div>
-												                <div id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_pnlPost">
-												                    <div class="blogtext">
-												                        <p><img alt="" src="/Data/Sites/1/media/greatpeople/stafford_web.png" style="width: 100px; height: 146px;"></p>
+															<span class="subtitle">Operator</span>
+														</div>
+														<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+															<div class="panel-body">
+																<div class="blogdate">
+																	<span class="blogauthor"></span> |
+																	<span id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_spnTopDate" class="bdate">Thursday, June 01, 2017 10:36:00 AM</span>
+																</div>
+																<div id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl00_pnlPost">
+																	<div class="blogtext">
+																		<p><img alt="" src="/Data/Sites/1/media/greatpeople/stafford_web.png" style="width: 100px; height: 146px;"></p>
 
-																		<p>Traveling between the University of Minnesota and her Mounds View home on Route 25, Renee Stafford started to think she might like working as a bus operator. At 19-years-old, she submitted an application but was told she was too young. But the thought persisted and a month of her 21st birthday, after reaching the minimum age requirement, she tried again. It was the beginning of a career that would span more than four decades, hundreds of thousands of miles and countless passengers and end with Stafford retiring as Metro Transit’s longest-tenured female operator.</p>
+																		<p>Traveling between the University of Minnesota and her Mounds View home on Route 25, Renee Stafford started to think she might like working as a bus operator. At 19-years-old, she submitted an application but was told she was too young.
+																			But the thought persisted and a month of her 21st birthday, after reaching the minimum age requirement, she tried again. It was the beginning of a career that would span more than four decades, hundreds of thousands of miles and countless
+																			passengers and end with Stafford retiring as Metro Transit’s longest-tenured female operator.</p>
 
-																		<p>While Stafford didn’t initially expect to spend her life as a bus operator, she quickly grew to enjoy the work and stayed on after earning her degree in education. It was a surprising decision that raised eyebrows among family, friends and Stafford herself. One of just a few female operators, Stafford was also introverted and largely unfamiliar with the urban environment she found herself working in. She remembers being “terrified” the first time she drove the bus alone in heavy traffic during rush hour – a Route 17A that ran from downtown Minneapolis to Uptown.</p>
+																		<p>While Stafford didn’t initially expect to spend her life as a bus operator, she quickly grew to enjoy the work and stayed on after earning her degree in education. It was a surprising decision that raised eyebrows among family, friends
+																			and Stafford herself. One of just a few female operators, Stafford was also introverted and largely unfamiliar with the urban environment she found herself working in. She remembers being “terrified” the first time she drove the bus
+																			alone in heavy traffic during rush hour – a Route 17A that ran from downtown Minneapolis to Uptown.</p>
 
-																		<p>The fear didn’t linger long, though. With each customer she met and each mile she drove, Stafford’s confidence grew. At her retirement, she was remembered as a bright and cheerful presence both on the bus and with her peers at Nicollet Garage. Stafford spent the last seven years of her career on Route 9, developing friendships with many longtime customers. But all those who boarded Stafford’s bus were greeted warmly. “I talk to everybody now, even if they don’t look particularly happy,” she said. “I don’t want to say it’s a game, but I definitely take it as a challenge to get people to smile.” Customers could also be assured of a safe ride: she retired with 37 years of safe driving, which she credited to a commitment to Safety Keyes and a habit of expecting people to do the “dumbest, most dangerous thing they could do.”</p>
+																		<p>The fear didn’t linger long, though. With each customer she met and each mile she drove, Stafford’s confidence grew. At her retirement, she was remembered as a bright and cheerful presence both on the bus and with her peers at Nicollet
+																			Garage. Stafford spent the last seven years of her career on Route 9, developing friendships with many longtime customers. But all those who boarded Stafford’s bus were greeted warmly. “I talk to everybody now, even if they don’t look
+																			particularly happy,” she said. “I don’t want to say it’s a game, but I definitely take it as a challenge to get people to smile.” Customers could also be assured of a safe ride: she retired with 37 years of safe driving, which she credited
+																			to a commitment to Safety Keyes and a habit of expecting people to do the “dumbest, most dangerous thing they could do.”</p>
 
-																		<p>Stafford retired in June 2017, exactly 41 years after she began. At her retirement, Stafford said it was the relationships she developed that she ultimately cherished and will miss the most about working at Metro Transit. “I have friends that I pick up every day, and I’m going to miss that,” she said. In retirement, Stafford planned to spend more time traveling, golfing and enjoying life.</p>
+																		<p>Stafford retired in June 2017, exactly 41 years after she began. At her retirement, Stafford said it was the relationships she developed that she ultimately cherished and will miss the most about working at Metro Transit. “I have friends
+																			that I pick up every day, and I’m going to miss that,” she said. In retirement, Stafford planned to spend more time traveling, golfing and enjoying life.</p>
 
 																		<p>See a video of Stafford taking her final trip on&nbsp;<a href="http://www.kare11.com/news/bus-driver-retires-after-41-years/444598705">KARE-11</a>​.</p>
 																	</div>
-												                    <div class="bsocial"></div>
-												                </div>
-												            </div>
-												        </div>
-												    </div>
+																	<div class="bsocial"></div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-								            </div>
-								            <!-- <div id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_bi1" class="blogitem">
+											</div>
+											<!-- <div id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_bi1" class="blogitem">
 								                <span class="blogtags tagslabel"></span><span class="blogtags">
 								                	<a id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_rptTopCategories_ctl01_Hyperlink6" data-category="2017" href="https://dev.metrotransittest.org/Blog/ViewCategory.aspx?cat=63&amp;pageid=998&amp;mid=1425">2017</a>
-								                </span>								                
+								                </span>
 								                <h3 class="blogtitle">
 								                    <a id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_lnkTitle" class="blogitemtitle" href="https://dev.metrotransittest.org/greater-people/terry-hinchcliffe-5157">Terry Hinchcliffe, #5157</a>&nbsp;
 								                    <a id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_editLink" title="Edit" class="ModuleEditLink" href="https://dev.metrotransittest.org/Blog/EditPost.aspx?pageid=998&amp;ItemID=332&amp;mid=1425">Edit</a>
 								                </h3>
-								                <span class="subtitle">Facilities Technician</span>								                
+								                <span class="subtitle">Facilities Technician</span>
 								                <div class="blogdate">
 								                    <span class="blogauthor"></span> |
 								                    <span id="ctl00_mainContent_ctl02_postList_rptBlogs_ctl01_spnTopDate" class="bdate">Monday, May 01, 2017 3:09:00 PM</span>
@@ -480,28 +505,29 @@
 								                        <p>
 								                        	<img alt="Terry Hinchcliffe" src="/Data/Sites/1/media/greatpeople/hinchcliffe_web_web.png" style="width: 100px; height: 146px;">
 								                        </p>
-								            
+
 								            														<p>Terry Hinchcliffe was producing ammunition at the Twin Cities Arsenal when a friend encouraged him to apply for a job at the Metropolitan Transit Commission. In 1977, he started working as a cleaner at the old Northside Garage, beginning what would become a 39-year career in transit.</p>
-								            
+
 								            														<p>After gaining a few years of experience in Bus Maintenance, Hinchcliffe moved to the Overhaul Base where he began working in the brake and body shops. As he settled in, he found his most satisfying work came when he had the opportunity to put his creativity to use. Over time, he developed a reputation as a talented and inventive fabricator, fulfilling visions that were often born out of crude drawings and vague notions. “Many times it was so basic you had to ask, ‘What did you even draw?’ or it wouldn’t even be drawn but just discussed,” he said. Hinchcliffe filled in the gaps, though, earning trust and gaining more freedom to create as his career progressed. Among his many inventions were custom lift devices that made it easier for technicians to remove bumpers and radiators. He also helped create two Twinkle Buses, specially-decorated buses that were a fixture of the Holidazzle Parade for many years. The first version was wrapped in metal panels, netting and around 20,000 holiday lights, each individually zip tied. “I was always given a lot of freedom to build anything I thought we needed, which was challenging but also rewarding and a lot of fun,” Hinchcliffe said shortly before his retirement.</p>
-								            
+
 								            														<p>Hinchcliffe spent most of his career in Bus Maintenance. But looking for more chances to get outside, he spent his final three years as a Facilities Technician. The job involved snow removal, painting and installing shelters, among other duties. It also provided Hinchcliffe a chance to apply his fabrication skills in new ways. Pulling together equipment, he created a fabrication shop devoted entirely to facilities. He also continued to invent, designing a hydraulic jack that could lift heavy waiting shelters in and out of trailers to make installation easier.</p>
-								            
+
 								            														<p>After 39 years of service, Hinchcliffe retired in May 2017. In retirement, he planned to spend more time with his family, including several children and grandchildren, and pursuing his hobbies – dirt biking, hunting, fishing, camping and playing the guitar.</p>
 								            													</div>
 								            													<div class="bsocial"></div>
 								            												</div>
 								            											</div> -->
 										</div>
-									<div class='fblikebutton'><iframe src="//www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.metrotransit.org%2fgreatpeople&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;height=80&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden;width:450px; height:80px;"></iframe>
+										<div class='fblikebutton'><iframe src="//www.facebook.com/plugins/like.php?href=https%3a%2f%2fwww.metrotransit.org%2fgreatpeople&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;height=80&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0"
+											    allowTransparency="true" style="border:none; overflow:hidden;width:450px; height:80px;"></iframe>
+										</div>
 									</div>
+									<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'></div>
 								</div>
-								<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'></div>
+								<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'></div>
 							</div>
-							<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'></div>
 						</div>
 					</div>
-				</div>
 			</section>
 			<section class="push"></section>
 		</section>
@@ -518,37 +544,63 @@
 		</footer>
 
 		<script type="text/javascript">
-			Sys.Application.add_load(function() { 
-				var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href;
+			Sys.Application.add_load(function() {
+				var form = Sys.WebForms.PageRequestManager.getInstance()._form;
+				form._initialAction = form.action = window.location.href;
 			});
 		</script>
 		<script type="text/javascript">
 			//<![CDATA[
-			WebForm_InitCallback();//]]>
+			WebForm_InitCallback(); //]]>
 		</script>
 		<script type='text/javascript'>
-			new Sys.WebForms.Menu({ element: 'ctl00_SiteMenu_ctl00', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });
+			new Sys.WebForms.Menu({
+				element: 'ctl00_SiteMenu_ctl00',
+				disappearAfter: 500,
+				orientation: 'horizontal',
+				tabIndex: 0,
+				disabled: false
+			});
 		</script>
 	</form>
 
 	<script>
-		(function (a, b, c) { if (c in b && b[c]) { var d, e = a.location, f = /^(a|html)$/i; a.addEventListener("click", function (a) { d = a.target; while (!f.test(d.nodeName)) d = d.parentNode; "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href) }, !1) } })(document, window.navigator, "standalone")
+		(function(a, b, c) {
+			if (c in b && b[c]) {
+				var d, e = a.location,
+					f = /^(a|html)$/i;
+				a.addEventListener("click", function(a) {
+					d = a.target;
+					while (!f.test(d.nodeName)) d = d.parentNode;
+					"href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href)
+				}, !1)
+			}
+		})(document, window.navigator, "standalone")
 	</script>
 
-	<script type="text/javascript"> 
+	<script type="text/javascript">
 		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
 		})();
 	</script>
-	<script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'ar,cs,de,da,id,en,es,fa,fr,hi,hmn,hr,hu,is,it,ja,nl,ru,so,sv,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-63539533-1' }, 'google_translate_element'); var css = '<style type="text/css">span.text { font-size: 1rem !important; display: inline-block; padding: 2px 0; } </style>'; $('.goog-te-menu-frame').contents().find('head').append(css); } </script>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage: 'en',
+				includedLanguages: 'ar,cs,de,da,id,en,es,fa,fr,hi,hmn,hr,hu,is,it,ja,nl,ru,so,sv,vi,zh-CN',
+				layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+				gaTrack: true,
+				gaId: 'UA-63539533-1'
+			}, 'google_translate_element');
+			var css = '<style type="text/css">span.text { font-size: 1rem !important; display: inline-block; padding: 2px 0; } </style>';
+			$('.goog-te-menu-frame').contents().find('head').append(css);
+		}
+	</script>
 	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-	<!-- build:js js/mobile.min.js -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/mobile.js"></script>
-    <!-- endbuild -->
 </body>
+
 </html>

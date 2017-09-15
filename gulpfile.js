@@ -37,11 +37,7 @@ gulp.task('javascript', function() {
 // Compile sass to css
 gulp.task('sass', function() {
     //return gulp.src('src/scss/**/*.scss')
-    return gulp.src([
-            //'node_modules/font-awesome/scss/font-awesome.scss',
-            //'node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss',
-            'src/scss/**/*.scss'
-        ])
+    return gulp.src('src/scss/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
