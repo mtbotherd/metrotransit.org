@@ -1,0 +1,282 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="/App_MasterPages/layout.Master.cs" Inherits="mojoPortal.Web.layout" %>
+
+<!DOCTYPE html>
+
+<html class="font-size-regular">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <title>Metro Transit</title>
+
+    <!-- Robots -->
+    <meta name="author" content="Metro Transit">
+    <meta name="title" content="Metro Transit">
+    <meta name="description" content="Metro Transit">
+    <meta name="keywords" content="Metro Transit">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Metro Transit">
+    <meta name="mobile-web-app-title" content="Metro Transit">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1.5">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="google-translate-customization" content="5d06956502fcabf3-7528914d5649002a-g21346c89ed73b2bb-14" />
+    <!-- TEST -->
+    <script type="text/javascript">
+        if (localStorage['font-size'] == 'large') {
+            document.getElementsByTagName('html')[0].className += ' font-size-large';
+        }
+        else if (localStorage['font-size'] == 'extra') {
+            document.getElementsByTagName('html')[0].className += ' font-size-extra';
+        }
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/Data/sites/1/skins/MetroTransitMobile/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/Data/sites/1/skins/MetroTransitMobile/images/apple-touch-icon-57x57-precomposed.png">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" IncludeGreyBoxCss="false" EnableNonClickablePageLinks="true" />
+    <portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludeJQuery="false" IncludejQueryAccordion="false" IncludeClueTip="false" IncludeColorBox="false" IncludeModernizr="false" IncludejQueryUICore="false" RenderCombinedInHead="false"  CombineScriptsWithScriptManager="true" />
+</head>
+<body id="Body" runat="server">
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/TransitMobile") %>
+    <portal:AnalyticsAsyncTopScript ID="analyticsTop" runat="server" />
+    <form id="frmMain" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableCdnFallback="false" />
+        <nav role="navigation">
+            <section class="nav-head">
+                <section class="row search">
+                    <section class="col-xs-2 icon"><i class="fa fa-search fa-2x"></i></section>
+                    <section class="col-xs-10 input">
+                        <mtc:SearchInput ID="SearchInput1" runat="server" />
+                    </section>
+                </section>
+            </section>
+            <section class="space"></section>
+            <section class="account">
+                <asp:LoginView ID="lvAccountView" runat="server">
+                    <AnonymousTemplate>
+                        <ul>
+                            <li><a title="Home" href="/"><i class="fa fa-home"></i>Home</a></li>
+                            <li>
+                                <a href="#" title="Account"><i class="fa fa-chevron-right"></i>Account</a>
+                                <ul>
+                                    <li><a title="Sign In" href="<%= string.Format(ConfigurationManager.AppSettings["MetroTransitSignInUri"], HttpUtility.UrlEncode(Request.Url.ToString().Replace("http:","https:"))) %>">Sign In</a></li>
+                                    <li><a title="Create Account" href="<%= string.Format(ConfigurationManager.AppSettings["MetroTransitCreateAccountUri"], HttpUtility.UrlEncode(Request.Url.ToString().Replace("http:","https:"))) %>">Create Account</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Settings"><i class="fa fa-chevron-right"></i>Settings</a>
+                                <ul>
+                                    <li>
+                                        <div class="col-xs-6">Font Size</div>
+                                        <div class="col-xs-3 font-size regular">Regular</div>
+                                        <div class="col-xs-3 font-size large">Large</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <ul>
+                            <li><a title="Home" href="/"><i class="fa fa-home"></i>Home</a></li>
+                            <li>
+                                <a href="#" title="Account"><i class="fa fa-chevron-right"></i>Account</a>
+                                <ul>
+                                    <li><a title="Current User" href="#"><%= HttpUtility.HtmlEncode(SiteUtils.GetCurrentSiteUser().Name) %></a></li>
+                                    <li><a title="Edit Account" href="<%= string.Format(ConfigurationManager.AppSettings["MetroTransitEditAccountUri"], HttpUtility.UrlEncode(Request.Url.ToString().Replace("http:","https:"))) %>">Edit Account</a></li>
+                                    <li><a title="Sign Out" href="<%= string.Format(ConfigurationManager.AppSettings["MetroTransitSignOutUri"], HttpUtility.UrlEncode(Request.Url.ToString().Replace("http:","https:"))) %>">Sign Out</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Settings"><i class="fa fa-chevron-right"></i>Settings</a>
+                                <ul>
+                                    <li>
+                                        <div class="col-xs-6">Font Size</div>
+                                        <div class="col-xs-3 font-size regular">Regular</div>
+                                        <div class="col-xs-3 font-size large">Large</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </section>
+            <section class="space"></section>
+            <section>
+                <ul>
+                    <li>
+                        <a class="nextrip" title="NexTrip" href="/NexTrip"><i class="fa fa-location-arrow"></i><span class="nextrip">Nex</span>Trip</a>
+                        <a class="nextriptext" title="NexTrip" href="/M/NexTripText.aspx">(Text)</a>
+                        <a class="gps" title="NexTrip GPS" href="/M/NexTripGPS.aspx">
+                            <img alt="NexTrip GPS" class="pull-right" src="/Data/Sites/1/skins/MetroTransitMobile/images/findme.png" /></a>
+                    </li>
+                    <li>
+                        <a class="text" title="Plan a Trip" href="/M/PlanTrip.aspx"><i class="fa fa-random"></i>Plan a Trip</a>
+                        <a class="gps" title="Plan a Trip GPS" href="/M/PlanTrip.aspx?GPS=Y">
+                            <img alt="Plan a Trip GPS" class="pull-right" src="/Data/Sites/1/skins/MetroTransitMobile/images/findme.png" /></a>
+                    </li>
+                    <li><a title="Routes and Schedules" href="/MobileRoute"><i class="fa fa-road"></i>Routes & Schedules</a></li>
+                    <li>
+                        <a class="text" title="Stops &amp; Stations" href="/Planner/ServicesFinder.aspx"><i class="fa fa-exchange"></i>Stops &amp; Stations</a>
+                        <a class="gps" title="Stops &amp; Stations GPS" href="/Planner/ServicesFinder.aspx?GPS=Y">
+                            <img alt="Stops &amp; Stations GPS" class="pull-right" src="/Data/Sites/1/skins/MetroTransitMobile/images/findme.png" /></a>
+                    </li>
+                    <li><a title="Store" href="<%= ConfigurationManager.AppSettings["MetroTransitShoppingCartUri"] %>"><i class="fa fa-shopping-cart"></i>Store</a></li>
+                    <li><a title="Subscribe to Rider Alerts" href="https://public.govdelivery.com/accounts/MNMETRO/subscriber/new" target="_blank"><i class="fa fa-exclamation-triangle"></i>Subscribe to Rider Alerts</a></li>
+                    <li>
+                        <a class="text" title="Interactive Map" href="/m/map.aspx"><i class="fa fa-map-marker"></i>Interactive Map</a>
+                        <a class="gps" title="Interactive Map GPS" href="/m/map.aspx?GPS=Y">
+                            <img alt="Interactive Map GPS" class="pull-right" src="/Data/Sites/1/skins/MetroTransitMobile/images/findme.png" /></a>
+                    </li>
+                    <li><a title="Metro Transit News" href="/news-room"><i class="fa fa-list-alt"></i>Metro Transit News</a></li>
+                    </ul>
+            </section>
+            <section class="space"></section>
+            <portal:SiteMenu ID="SiteMenu" runat="server" UseSuperfish="false" UseTreeView="false" UseSpanInLinks="false" Use3SpansInLinks="false"
+                HideMenuOnSiteMap="false" UseArtisteer="false" UseDataRole="false" UseFlexMenu="false" Direction="Horizontal" TopLevelOnly="false"
+                SuppressImages="true" EnableTheming="false" />
+            <section class="space"></section>
+            <section class="footer">
+                <ul>
+                    <li>
+                        <a href="#" title="About Metro Transit"><i class="fa fa-chevron-right"></i>About Metro Transit</a>
+                        <ul>
+                            <li><a title="Mission &amp; Funding" href="/about-metro-transit">Mission &amp; Funding</a></li>
+                            <li><a title="Transit Police" href="/transit-police">Transit Police</a></li>
+                            <li><a title="Facilities &amp; People" href="/facilities-people">Facilities &amp; People</a></li>
+                            <li><a title="Use of Transit Property" href="/use-of-transit-property">Use of Transit Property</a></li>
+                            <li><a title="Jobs / Working with Us" href="/jobs">Jobs / Working with Us</a></li>
+                            <li><a title="Great People" href="/greatpeople">Great People</a></li>
+                            <li><a title="Everyday Equity" href="/everydayequity">Everyday Equity</a></li>
+                            <li><a title="Advertise with Metro Transit" href="/advertise-with-metro-transit">Advertise with Metro Transit</a></li>
+                            <li><a title="Accessibility/Accommodations" href="/accessibility">Accessibility/Accommodations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="News / Projects"><i class="fa fa-chevron-right"></i>News / Projects</a>
+                        <ul>
+                            <li><a title="News &amp; Promotions" href="/news-room">News &amp; Promotions</a></li>
+                            <li><a title="Rider's Almanac" href="/riders-almanac-blog">Rider's Almanac</a></li>
+                            <li><a title="Press Releases" href="/press">Press Releases</a></li>
+                            <li><a title="Transit Improvements" href="/transit-improvements">Transit Improvements</a></li>
+                            <li><a title="Transit Oriented Development" href="/transit-oriented-development">Transit Oriented Development</a></li>
+                            <li><a title="Go Greener" href="/gogreener">Go Greener</a></li>
+                            <li><a title="Transit Technologies" href="/transit-technologies">Transit Technologies</a></li>
+        					<li><a title="Connect Newsletter" href="/connect">Connect Newsletter</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Customer Tools"><i class="fa fa-chevron-right"></i>Customer Tools</a>
+                        <ul>
+                            <li><a title="Guaranteed Ride Home" href="/guaranteed-ride-home">Guaranteed Ride Home</a></li>
+                            <li><a title="System map (pdf)" href="/system-map">System map (pdf)</a></li>
+                            <li><a title="Trip Tracker" href="/triptracker">Trip Tracker</a></li>
+                            <li><a title="Code of Conduct" href="/code-of-conduct">Code of Conduct</a></li>
+                            <li><a title="Safety &amp; Security" href="/safety-security">Safety &amp; Security</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="More Resources"><i class="fa fa-chevron-right"></i>More Resources</a>
+                        <ul>
+                            <li><a title="How to Ride presentations" href="/outreach">Schedule a How to Ride presentation</a></li>
+                            <li><a title="App Info" href="/apps">For App Developers</a></li>
+                            <li><a title="Title VI: Commitment to Fairness" href="/titlevi">Title VI: Commitment to Fairness</a></li>
+                            <li><a title="Transit Pass Programs" href="/transit-pass-programs">Transit Pass Programs</a></li>
+                            <li><a title="Fares for Jobseekers" href="/jobseekers">Fares for Jobseekers</a></li>
+                            <li><a title="Fares for Homeless Individuals" href="/eligiblecharitableorg">Fares for Homeless Individuals</a></li>
+                            <li><a title="Retail Outlets" href="/outlets">Retail Outlets</a></li>
+                            <li><a title="Special Event Organizers" href="/special-events">Special Event Organizers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="space">
+                <a class="social twitter" href="//www.twitter.com/MetroTransitMN" target="_blank" title="Twitter"></a>
+                <a class="social facebook" href="//www.facebook.com/MetroTransitMN" target="_blank" title="Facebook"></a>
+                <a class="social youtube" href="//www.youtube.com/MetroTransitMN" target="_blank" title="YouTube"></a>
+                <a class="social instagram" href="//instagram.com/metrotransitmn" target="_blank" title="Instagram"></a>
+                <a class="social linkedin" href="//www.linkedin.com/company/metro-transit" target="_blank" title="LinkedIn"></a>
+                <a class="social flickr" href="//www.flickr.com/photos/metrotransitmn/" target="_blank" title="Flickr"></a>
+            </section>
+        </nav>
+        <section class="wrapper">
+            <div class="scrollup" role="button" aria-label="Scroll to Top"><a><i class="fa fa-chevron-up"></i></a></div>
+            <header class="navbar">
+                <section id="topnav">
+                    <asp:HyperLink ID="lnkMobile" runat="server" NavigateUrl="/Mobile/" Text="Using a screen reader? Try this version of metrotransit.org" CssClass="skiplink" />
+                </section>
+                <section class="navbar-header">
+                    <section class="row head">
+                        <section>
+                            <a class="logo" href="/default.aspx" title="Metro Transit - Serving the Minneapolis Saint Paul Area">
+                                <img srcset="/Data/sites/1/skins/MetroTransitMobile/images/Icons/SVG/MetroTransitLogo.svg"
+                                     src="/Data/sites/1/skins/MetroTransitMobile/images/Icons/PNG/MetroTransitLogo.png"
+                                     alt="Metro Transit - Serving the Minneapolis Saint Paul Area">
+                            </a>
+                        </section>
+                        <section class="buttons">
+                            <div role="button" aria-label="Shopping Cart" class="cart button navbar-toggle"><i class="fa fa-shopping-cart"></i></div>
+                            <div role="button" aria-label="Menu" class="menu button navbar-toggle"><i class="fa fa-bars"></i></div>
+                        </section>
+                    </section>
+                    <section class="row">
+                        <section class="col-xs-12 banner"></section>
+                    </section>
+                </section>
+
+            </header>
+            <section class="wrapcenter">
+                <portal:Breadcrumbs id="Breadcrumbs1" runat="server" Visible="False"></portal:Breadcrumbs>
+                <portal:LayoutPanel ID="divLeft" runat="server" CssClass="leftside" Visible="False" SkinID="pnlPlain">
+                    <asp:ContentPlaceHolder ID="leftContent" runat="server"></asp:ContentPlaceHolder>
+                </portal:LayoutPanel>
+                <portal:LayoutPanel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
+                </portal:LayoutPanel>
+                <portal:LayoutPanel ID="divRight" runat="server" Visible="False" CssClass="rightside" SkinID="pnlPlain">
+                    <asp:ContentPlaceHolder ID="rightContent" runat="server"></asp:ContentPlaceHolder>
+                </portal:LayoutPanel>
+            </section>
+            <section class="push"></section>
+        </section>
+        <footer>
+            <div id="google_translate_element" style="text-align:right;clear:both;margin-bottom:10px;"></div>
+            <section class="contact">
+                <a title="Contact Us" href="/contact-us">CONTACT US</a>
+                <a title="Phone Number +1 612 373 3333" class="border" href="tel:+16123733333">612-373-3333</a>
+            </section>
+            <section class="message">
+                <span class="copyright">&#169; Metro Transit is a service of the <a href="https://www.metrocouncil.org/" title="Metropolitan Council">Metropolitan Council</a></span>
+            </section>
+        </footer>
+        <mtc:NoticeControl ID="NoticeControl" runat="server" />
+        <portal:AutoHidePanel ID="ah1" runat="server" Visible="false">
+            <portal:AdminMenuLink ID="lnkAdminMenu" runat="server" />
+            <portal:FileManagerLink ID="lnkFileManager" runat="server" />
+            <portal:NewPageLink ID="lnkNewPage" runat="server" />
+            <portal:PageEditFeaturesLink ID="lnkPageContent" runat="server" />
+            <portal:PageEditSettingsLink ID="lnkPageSettings" runat="server" />
+            <asp:ContentPlaceHolder ID="pageEditContent" runat="server"></asp:ContentPlaceHolder>
+        </portal:AutoHidePanel>
+    </form>
+    <script>(function (a, b, c) { if (c in b && b[c]) { var d, e = a.location, f = /^(a|html)$/i; a.addEventListener("click", function (a) { d = a.target; while (!f.test(d.nodeName)) d = d.parentNode; "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href) }, !1) } })(document, window.navigator, "standalone")</script>
+    <portal:AnalyticsAsyncBottomScript ID="analyticsBottom" runat="server" />
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'ar,cs,de,da,id,en,es,fa,fr,hi,hmn,hr,hu,is,it,ja,nl,ru,so,sv,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-63539533-1' }, 'google_translate_element'); var css = '<style type="text/css">span.text { font-size: 1rem !important; display: inline-block; padding: 2px 0; } </style>'; $('.goog-te-menu-frame').contents().find('head').append(css); } </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
