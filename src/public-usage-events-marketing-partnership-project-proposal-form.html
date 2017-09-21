@@ -2,13 +2,8 @@
 <html>
 
 <head id="ctl00_Head1">
-    <title></title>
+    <title>Metro Transit Usage and Partnership Proposals</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="A new blog by Metro Transit about all things transit in our region and a look behind-the-scenes at Metro Transit’s daily operations. Do you have an idea for a topic or a good question to share? Email Riders Almanac at RidersAlmanac@MetroTransit.org."
-    />
-    <meta property="og:description" content="A new blog by Metro Transit about all things transit in our region and a look behind-the-scenes at Metro Transit’s daily operations. Do you have an idea for a topic or a good question to share? Email Riders Almanac at RidersAlmanac@MetroTransit.org."
-    />
-    <meta name="keywords" content="metro transit blog " />
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
@@ -239,119 +234,126 @@ continue to improve the accessibility of our website.</a>
 
                                                     <h2>Metro Transit Usage and Partnership Proposals:</h2>
                                                     <h3>Events/Marketing Partnerships</h3>
+                                                    <p>Please submit this application to Metro Transit for review. Allow at least one week for a response. Please provide a detailed event summary of the event. This should include background and purpose of
+                                                        the event, date/s, hours, location, anticipated attendance and any other pertinent details that you feel would enhance your partnership proposal.</p>
+                                                    <p class="required-notice">= Required Field</p>
 
                                                     <div class="form-group">
-                                                        <label for="yourName" class="sr-only">Your Name</label>
-                                                        <input type="text" id="yourName" class="form-control" placeholder="Your name" />
+                                                        <label for="your_name" class="required">Your name</label>
+                                                        <input type="text" id="your_name" class="form-control" placeholder="Name" required />
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="emailAddress" class="sr-only">Email Address</label>
-                                                        <input type="email" id="emailAddress" class="form-control" placeholder="Email address" />
+                                                        <label for="email_address" class="required">Email address</label>
+                                                        <input type="email" id="email_address" class="form-control" placeholder="Your email" required />
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="summary" class="sr-only">Summary</label>
-                                                        <textarea id="summary" class="form-control" rows="3" placeholder="Summary"></textarea>
+                                                        <label for="summary" class="required">Summary</label>
+                                                        <textarea id="summary" class="form-control" rows="3" placeholder="Summary" required></textarea>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="background" class="sr-only">Background</label>
-                                                        <textarea id="background" class="form-control" rows="5" placeholder="Background"></textarea>
+                                                        <label for="background" class="required">Background</label>
+                                                        <textarea id="background" class="form-control" rows="5" placeholder="Background" required></textarea>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="purpose" class="sr-only">Purpose</label>
-                                                        <textarea id="purpose" class="form-control" rows="3" placeholder="Purpose"></textarea>
+                                                        <label for="purpose" class="required">Purpose</label>
+                                                        <textarea id="purpose" class="form-control" rows="3" placeholder="Purpose" required></textarea>
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label for="startDate" class="control-label sr-only">Start Date</label>
-                                                        <div id="startDate" class="input-group date">
-                                                            <input type="text" class="form-control" placeholder="Start date" />
-                                                            <span class="input-group-addon">
-                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                                </span>
+                                                    <div class="form-inline row">
+                                                        <div class="col-md-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="start_date" class="required">Start date</label>
+                                                                <div class="date-picker input-group">
+                                                                    <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" required />
+                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="end_date">End date</label>
+                                                                <div class="date-picker input-group">
+                                                                    <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" />
+                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-inline row">
+                                                        <div class="col-md-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="start_time" class="required">Start time</label>
+                                                                <div class="time-picker input-group">
+                                                                    <input type="text" id="start_time" class="form-control" data-format="HH:mm PP" placeholder="HH:MM" required />
+                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="end_time" class="required">End time</label>
+                                                                <div class="time-picker input-group">
+                                                                    <input type="text" id="end_time" class="form-control" data-format="HH:mm PP" placeholder="HH:MM" required />
+                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="endDate" class="control-label sr-only">End Date</label>
-                                                        <div id="endDate" class="input-group date">
-                                                            <input type="text" class="form-control" placeholder="End date" />
-                                                            <span class="input-group-addon">
-                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                                </span>
-                                                        </div>
+                                                        <label for="location" class="required">Location</label>
+                                                        <textarea id="location" class="form-control" row="1" placeholder="Location" required></textarea>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="startTime" class="control-label sr-only">Start Time</label>
-                                                        <div id="startTime" class="input-group date">
-                                                            <input type="text" class="form-control" placeholder="Start time" />
-                                                            <span class="input-group-addon">
-                                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                                </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label for="endTime" class="control-label sr-only">End Time</label>
-                                                        <div id="endTime" class="input-group time">
-                                                            <input type="text" class="form-control" placeholder="End time" />
-                                                            <span class="input-group-addon">
-                                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                                                </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label for="location" class="sr-only">Location</label>
-                                                        <textarea id="location" class="form-control" row="1" placeholder="Location"></textarea>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label for="acticipatedAttendace" class="sr-only">Anticipated Attendance</label>
-                                                        <input type="number" id="anticipatedAttendance" class="form-control" placeholder="Anticipated attendance (choose a number)" />
+                                                        <label for="acticipated_attendace" class="required">Anticipated attendance</label>
+                                                        <input type="number" id="anticipated_attendance" class="form-control" placeholder="Number" required />
                                                     </div>
 
                                                     <div class="form-group">
                                                         <h4>Rides</h4>
-                                                        <p>
-                                                            The estimated ridership from an event needs to be a minimum of 400-500 rides. The process for estimating rides is 10% of attendance, if there is not a prior partnership/event history.<br/>
+                                                        <p>The estimated ridership from an event needs to be a minimum of 400-500 rides. The process for estimating rides is 10% of attendance, if there is not a prior partnership/event history.<br/>
                                                             <strong><em>Example</strong>: estimated attendance for an event is 5,000 x 10% = 500 people x 2 rides = 1,000 rides.</em>
                                                         </p>
-                                                        <label for="rides">Calculate your estimated rides using this formula: <strong><em>Estimated attendance x 10% =</em></strong></label>
-                                                        <input type="text" id="rides" class="form-control" placeholder="Your answer" />
+                                                        <label for="rides">Calculate your estimated rides using this formula: <strong><em>Estimated attendance x 10% =</em></strong> <span class="required">&nbsp;&nbsp;&nbsp;</span></label>
+                                                        <input type="number" id="rides" class="form-control" placeholder="Number of rides" required />
                                                     </div>
 
                                                     <div class="form-group">
                                                         <h4>Value</h4>
-                                                        <p>
-                                                            The media/promotional value from a partnership should be equal to the value of the estimated free rides. Value of 1 free rise = $2.00.<br/>
+                                                        <p>The media/promotional value from a partnership should be equal to the value of the estimated free rides. Value of 1 free rise = $2.00.<br/>
                                                             <strong><em>Example</strong>: estimated rides of 1,000 X $2.00 - $2,000 in promotional value from partner.</em>
                                                         </p>
-                                                        <label for="value">Calculate  your estimated rides x $2 = (value from partner)</label>
-                                                        <input type="text" id="value" class="form-control" placeholder="Your answer" />
+                                                        <label for="value">Calculate  your estimated rides x $2 = (value from partner) <span class="required">&nbsp;&nbsp;&nbsp;</span></label>
+                                                        <input type="text" id="value" class="form-control" placeholder="Value" required />
                                                     </div>
 
                                                     <div class="form-group">
                                                         <h4>Transit Service</h4>
-                                                        <p>
-                                                            The location of the event must have adequate transit service that will allow for easy access for customers before and after the event.
-                                                        </p>
-                                                        <label for="transitService">Describe the transit service available to the location.</label>
-                                                        <input type="text" id="transitService" class="form-control" placeholder="Your answer" />
+                                                        <p>The location of the event must have adequate transit service that will allow for easy access for customers before and after the event.</p>
+                                                        <label for="transit_service">Describe the transit service available to the location. <span class="required">&nbsp;&nbsp;&nbsp;</span></label>
+                                                        <textarea id="transit_service" class="form-control" rows="2" placeholder="Description" required></textarea>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <h4>New Riders</h4>
-                                                        <p>
-                                                            The primary purpose for this partnership with Metro Transit is to encourage trial ridership for new and potential riders. This could be an event survey or some other process for counting rides.
-                                                        </p>
-                                                        <label for="newRiders">Outline or suggest ways to track ridership with attendees.</label>
-                                                        <textarea id="newRiders" class="form-control" rows="3" placeholder="Your answer"></textarea>
+                                                        <p>The primary purpose for this partnership with Metro Transit is to encourage trial ridership for new and potential riders. This could be an event survey or some other process for counting rides.</p>
+                                                        <label for="new_riders">Outline or suggest ways to track ridership with attendees. <span class="required">&nbsp;&nbsp;&nbsp;</span></label>
+                                                        <textarea id="new_riders" class="form-control" rows="3" placeholder="Your answer" required></textarea>
                                                     </div>
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" id="copy_me" value="" /> Please copy me on this email
+                                                        </label>
+                                                    </div>
+
+                                                    <input type="submit" id="events_marketing" class="mt-button" value="Submit" />
 
                                                     <!-- END OF FONT END CONTENT -->
 

@@ -63,8 +63,8 @@ gulp.task('watch', function() {
 gulp.task('useref', function() {
     return gulp.src('src/*.html') // Grabs CSS and JS from HTML document
         .pipe(useref())
-        .pipe(gulpIf('*.js', uglify())) // Minifies only if it's a js file
-        .pipe(gulpIf('*.css', cssnano())) // Minifies only if it's a css file
+        //.pipe(gulpIf('*.js', uglify())) // Minifies only if it's a js file
+        //.pipe(gulpIf('*.css', cssnano())) // Minifies only if it's a css file
         .pipe(gulp.dest('dist'))
 });
 

@@ -2,22 +2,20 @@
 <html>
 
 <head id="ctl00_Head1">
-    <title></title>
+    <title>Metro Transit Usage and Partnership Proposals</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="A new blog by Metro Transit about all things transit in our region and a look behind-the-scenes at Metro Transit’s daily operations. Do you have an idea for a topic or a good question to share? Email Riders Almanac at RidersAlmanac@MetroTransit.org."
-    />
-    <meta property="og:description" content="A new blog by Metro Transit about all things transit in our region and a look behind-the-scenes at Metro Transit’s daily operations. Do you have an idea for a topic or a good question to share? Email Riders Almanac at RidersAlmanac@MetroTransit.org."
-    />
-    <meta name="keywords" content="metro transit blog " />
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=a514111b-0ef8-44a1-aa56-ce725d36c8f4' />
-    <!-- bluid:css css/redesign.min.css -->
-    <link rel="stylesheet" type="text/css" href="css/redesign.css" />
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
     <script src="https://www.metrotransit.org/ClientScript/jquery191/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.metrotransit.org/ClientScript/jqueryui1102/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- build:js js/fed.js -->
+    <script type="text/javascript" src="js/fed.js"></script>
+    <!-- endbuild -->
     <!-- Set Title Bar Color -->
     <meta name="theme-color" content="#0053A0" />
     <meta name="msapplication-navbutton-color" content="#0053A0" />
@@ -231,6 +229,214 @@ continue to improve the accessibility of our website.</a>
                                         <div class='art-content-layout-row'>
                                             <div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
                                                 <div id='ctl00_mainContent_ctl00_divContent' class=''>
+
+                                                    <!-- START OF FRONT END CONTENT -->
+
+                                                    <h2>Metro Transit Usage and Partnership Proposals:</h2>
+                                                    <h3>Public Art</h3>
+                                                    <p>Please use this application to propose a non-permanent public art or community-based project on or near Metro Transit property.</p>
+                                                    <p class="required-notice"> = Required</p>
+
+                                                    <div class="form-group">
+                                                        <label for="email_address" class="required">Email address</label>
+                                                        <input type="email" id="email_address" class="form-control" placeholder="Your email" required />
+                                                    </div>
+
+                                                    <h4>Basic Information</h4>
+                                                    <div class="form-group">
+                                                        <label for="community_contact_person" class="required">Community contact person</label>
+                                                        <input type="text" id="community_contact_person" class="form-control" placeholder="Contact name" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="organization" class="required">Organization/Business</label>
+                                                        <input type="text" id="organization" class="form-control" placeholder="Name" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="street_address" class="required">Street address</label>
+                                                        <input type="text" id="street_address" class="form-control" placeholder="Address" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="city" class="required">City</label>
+                                                        <input type="text" id="city" class="form-control" placeholder="City" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="state" class="required">State</label>
+                                                        <input type="text" id="state" class="form-control" max-length="2" value="MN" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="zipcode" class="required">Zip code</label>
+                                                        <input type="text" id="zipcode" class="form-control" max-length="5" required />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="phone" class="required">Phone</label>
+                                                        <input type="text" id="phone" class="form-control" placeholder="Phone number" requried />
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="describe_group">Group Submitting Public Art Project Proposal (describe your group and list project partners  you may have)<span class="required">&nbsp;&nbsp;&nbsp;</span></label>
+                                                        <textarea id="describe_group" class="form-control" rows="5" placeholder="Description" required></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <p class="required">Type of site</p>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-12">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Light Rail Area
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Bus Shelter/Stop
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Bus BRT Shelter
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Northstar Commuter Rail Area
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Bus
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-12">
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Train
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Metro Transit Support Facility
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Park &amp; Ride
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Transit Center
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" value="" /> Don't see what you are looking for? Please contact us.
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        Project location (i.e. 50th Street Blue Line Station, 80th Street &amp; Maple Road bus stop - please include a map link of the site or send in a separate email with map attached to <a href="mailto:mark.granlund@metrotransit.org"
+                                                            title="Email Mark Granlund">mark.granlund@metrotransit.org</a>)<span class="required">&nbsp;&nbsp;&nbsp;</span>
+                                                    </div>
+
+                                                    <h4>Nature of Project</h4>
+                                                    <p>Please include media, size, number of people, style of art, community involvement in the creation, how your project relates to the site and/or neighborhood, etc.</p>
+
+                                                    <div class="form-group">
+                                                        <label for="project_detail" class="required">Eplain your project in detail</label>
+                                                        <textarea id="project_detail" class="form-control" rows="5" placeholder="Details" required></textarea>
+                                                    </div>
+
+                                                    <h4>Timeilne</h4>
+                                                    <div class="form-inline row">
+                                                        <div class="col-md-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="start_date" class="required">Start date</label>
+                                                                <div class="date-picker input-group">
+                                                                    <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" required />
+                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label for="end_date">End date</label>
+                                                                <div class="date-picker input-group">
+                                                                    <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" />
+                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h4>Maintenance Needs</h4>
+                                                    <p><strong>Note:</strong> maintenance needs above and beyond standard Metro Transit maintenance will need to be taken care of by the artist/group.</p>
+                                                    <div class="form-group">
+                                                        <label for="maintenance_needs">What are the maintenance needs during the life of this project?</label>
+                                                        <textarea id="maintenance_needs" class="form-control" rows="3" placeholder="Maintenance needs"></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="maintenance_costs">What are the maintenance costs and how will they be covered?</label>
+                                                        <textarea id="maintenance_costs" class="form-control" rows="3" placeholder="Maintenance costs"></textarea>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="local_organization_help">List of any local organizations who have committed to help create and maintain this public art piece/project, and how they are going to help (be specific). Include name, address and phone, if possible.</label>
+                                                        <textarea id="local_organization_help" class="form-control" rows="5" placeholder="Your answer"></textarea>
+                                                    </div>
+
+                                                    <h4>Technical Support</h4>
+                                                    <p><strong>Note:</strong> Project proposer, depending on the project, may need to enter a written agreement with Metro Transit that details the project and responsibility and/or may need to take an online
+                                                        safety course for working near a light-rail line.</p>
+                                                    <div class="form-group">
+                                                        <label for="technical_support">What kind of materials, technical advice, or supplies do you anticipate needing from Metro Transit for the project to be a success? This may include ridership numbers for a particular stop, customer outreach, etc.</label>
+                                                        <textarea id="technical_support" class="form-control" rows="5" placeholder="Your answer"></textarea>
+                                                    </div>
+
+                                                    <h4>Community Support and Information Gathering</h4>
+                                                    <p>All houses and businesses with a view of the project location must be informed of this project and encouraged to express their concerns or support of the project. Groups should work with their local
+                                                        community district or council to create awareness of the project.</p>
+                                                    <div class="form-group">
+                                                        <label for="community_support">Please describe your efforts to build support within the community.</label>
+                                                        <textarea id="community_support" class="form-control" rows="5" placeholder="Your answer"></textarea>
+                                                    </div>
+
+                                                    <h4>Insurance</h4>
+                                                    <p>Metro Transit ordinances require that any person(s) installing or working on public projects involving heavy or dangerous materials or working in potentially dangerous situations (on scaffolding or ladders
+                                                        taller than 6 feet, in roadways, etc.) must have liability insurance worth $1,000,000 for the period of activity on Metro Transit property. Metro Transit must be written into the policy as co-insured.
+                                                        Proof of insurance is required before projects can begin.</p>
+
+                                                    <h4>Attachments</h4>
+                                                    <p>The review panel needs to know what your art work will look like and how it will fit on the property. Please send an aerial map, plus photos, drawings, and/or designs of proposed temporary art work to
+                                                        <a href="mailto:mark.granlund@metrotransit.org" title="Email Mark Granlund">mark.granlund@metrotransit.org</a>.</p>
+
+                                                    <h4>Thank You!</h4>
+                                                    <p>Thank you for taking the time to submit a proposal. Your proposal will be reviewed by Metro Transit staff and either approved, approved with conditions or denied. Results will be communicated within
+                                                        two to three weeks of submittal. Please submit questions to:</p>
+                                                    <p>Mark Granlund<br /> Public Art Administrtor<br />
+                                                        <a href="mailto:mark.granlund@metrotransit.org" title="Email Mark Granlund">mark.granlund@metrotransit.org</a><br /> 612-349-7499
+                                                    </p>
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" valie="" /> Please copy me on this email
+                                                        </label>
+                                                    </div>
+
+                                                    <input type="submit" id="eventsMarketing" class="mt-button" value="Submit" />
+
+                                                    <!-- END OF FRONT END CONTENT -->
+
                                                 </div>
                                                 <input type="hidden" name="ctl00" id="ctl00_mainContent_ctl00_hdnIsDirty" />
                                             </div>
