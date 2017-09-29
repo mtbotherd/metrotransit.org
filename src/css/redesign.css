@@ -17,6 +17,15 @@
 .ra-redesign .blogtitle {
   margin-top: 10px; }
 
+.ra-redesign #ctl00_mainContent_BlogView1_navBottom_pnlCategories {
+  margin-top: -95px; }
+
+.ra-redesign #ctl00_mainContent_BlogView1_pnlDetails .blogtext {
+  float: right;
+  width: 78%;
+  margin: 0 0 0 0;
+  padding: 5px 0px 0px 5px; }
+
 .ra-redesign .blogtext .blogger img {
   max-width: 100%; }
 
@@ -32,6 +41,12 @@
 
 .ra-redesign .blogpager {
   text-align: center; }
+
+#ctl00_mainContent_BlogView1_pnlInnerWrap .art-postheader,
+#ctl00_mainContent_BlogView1_pnlInnerWrap .blogtags,
+#ctl00_mainContent_BlogView1_pnlInnerWrap .blogdate {
+  float: right;
+  width: 78%; }
 
 /***************************************************
 	Great People Redesign Styles - June 2017

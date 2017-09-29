@@ -25,6 +25,17 @@
 		margin-top: 10px;
 	}
 
+	#ctl00_mainContent_BlogView1_navBottom_pnlCategories {
+	    margin-top: -95px;
+	}
+
+	#ctl00_mainContent_BlogView1_pnlDetails .blogtext {
+		float: right;
+	    width: 78%;
+	    margin: 0 0 0 0;
+	    padding: 5px 0px 0px 5px;
+	}
+
 	.blogtext .blogger img {
 		max-width: 100%;
 	}
@@ -46,5 +57,15 @@
 
 	.blogpager {
 		text-align: center;
+	}
+}
+
+#ctl00_mainContent_BlogView1_pnlInnerWrap {
+
+	.art-postheader,
+	.blogtags,
+	.blogdate {
+		float: right;
+		width: 78%;
 	}
 }

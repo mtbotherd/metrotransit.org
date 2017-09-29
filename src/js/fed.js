@@ -42,10 +42,13 @@ $(document).ready(function() {
 
     // Wrap all remaining <p> tags in <div id="blog-wrapper"> to control positioning in css.
     $('.ra-redesign .blogtext, .ra-redesign .blogtext > .blogger').each(function() {
-        $(this).siblings().wrapAll('<div id="blog-wrapper"></div>');
+        //$(this).siblings().wrapAll('<div id="blog-wrapper"></div>');
     });
 
     // Move social icons out of div.blog-wrapper.
     $('.bsocial').unwrap();
     /* End Rider's Almanac Redesign */
+
+    // Article details
+    //$('#ctl00_mainContent_BlogView1_pnlInnerBody #ctl00_mainContent_BlogView1_bsocial').remove();
 });
