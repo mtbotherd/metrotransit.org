@@ -8,10 +8,10 @@
     <link rel='shortcut icon' href='https://www.metrotransit.org/Data/Sites/1/skins/MetroTransitII/favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='https://www.metrotransit.org/csshandler.ashx?skin=MetroTransitII&amp;s=1&amp;v=2.4.1.1&amp;sv=4065d650-0f2b-4944-8aca-251b7c5e8336' />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.css" />
     <!-- build:css css/main.css -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.css" />
     <script src="https://www.metrotransit.org/ClientScript/jquery191/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.metrotransit.org/ClientScript/jqueryui1102/jquery-ui.min.js" type="text/javascript"></script>
     <!-- build:js js/fed.js -->
@@ -233,7 +233,7 @@ continue to improve the accessibility of our website.</a>
 
                                                     <!-- START OF FRONT END CONTENT -->
 
-                                                    <div class="public-usage">
+                                                    <div class="mt-form form-redesign">
                                                         <h2>Metro Transit Usage and Partnership Proposals:</h2>
                                                         <h3>Public Art</h3>
                                                         <p>Please use this application to propose a non-permanent public art or community-based project on or near Metro Transit property.</p>
@@ -285,68 +285,67 @@ continue to improve the accessibility of our website.</a>
                                                             <textarea id="describe_group" class="form-control" rows="5" placeholder="Description" required></textarea>
                                                         </div>
 
-                                                        <div class="form-group">
-                                                            <p class="required">Type of site</p>
-                                                            <!-- <div class="row">
-                                                                <div class="col-md-4 col-xs-12"> -->
-                                                                    <div class="checkbox">
-                                                                        <input type="checkbox" value="" />
-                                                                        <label>Light Rail Area</label>
-                                                                    </div>
-                                                                    <!-- <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Bus Shelter/Stop
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Bus BRT Shelter
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Northstar Commuter Rail Area
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Bus
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-8 col-xs-12">
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Train
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Metro Transit Support Facility
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Park &amp; Ride
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Transit Center
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="checkbox">
-                                                                        <label>
-                                                                            <input type="checkbox" value="" /> Don't see what you are looking for? Please contact us.
-                                                                        </label>
-                                                                    </div> -->
-                                                                </div>
-                                                            </div>
+                                                        <div class="checkbox-group">
+                                                            <label class="required">Type of site</label><br />
+                                                            <table id="site_type" class="checkbox-list">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Light Rail Area</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Bus Shelter/Stop</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Bus BRT Shelter</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Northstar Commuter Rail Area</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Bus</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Train</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Metro Transit Support Facility</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Park &amp; Ride</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Transit Center</label>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="checkbox" value="" />
+                                                                            <label>Don't see what you are looking for? Please contact us.</label>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
 
                                                         <div class="form-group">
-                                                            Project location (i.e. 50th Street Blue Line Station, 80th Street &amp; Maple Road bus stop - please include a map link of the site or send in a separate email with map attached to <a href="mailto:mark.granlund@metrotransit.org"
-                                                                title="Email Mark Granlund">mark.granlund@metrotransit.org</a>)<span class="required">&nbsp;&nbsp;&nbsp;</span>
+                                                            <p>Project location (i.e. 50th Street Blue Line Station, 80th Street &amp; Maple Road bus stop - please include a map link of the site or send in a separate email with map attached to <a href="mailto:mark.granlund@metrotransit.org"
+                                                                title="Email Mark Granlund">mark.granlund@metrotransit.org</a>)<span class="required">&nbsp;&nbsp;&nbsp;</span></p>
                                                         </div>
 
                                                         <h4>Nature of Project</h4>
@@ -358,21 +357,21 @@ continue to improve the accessibility of our website.</a>
                                                         </div>
 
                                                         <h4>Timeilne</h4>
-                                                        <div class="form-inline row">
-                                                            <div class="col-md-4 col-xs-12">
+                                                        <div class="row form-inline">
+                                                            <div class="col-md-3 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <label for="start_date" class="required">Start date</label>
+                                                                    <label for="start_date" class="required">Start date</label><br/>
                                                                     <div class="date-picker input-group">
-                                                                        <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" required />
+                                                                        <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
                                                                         <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-8 col-xs-12">
+                                                            <div class="col-md-9 col-xs-12">
                                                                 <div class="form-group">
-                                                                    <label for="end_date">End date</label>
+                                                                    <label for="end_date">End date</label><br/>
                                                                     <div class="date-picker input-group">
-                                                                        <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="MM/DD/YYYY" />
+                                                                        <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" />
                                                                         <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                                                                     </div>
                                                                 </div>

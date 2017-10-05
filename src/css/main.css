@@ -1,43 +1,64 @@
-.public-usage .required-notice {
+.form-redesign p:last-child {
+  margin: 1em 0; }
+
+.form-redesign .required-notice {
   padding-left: 1em;
   background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 0 50%; }
 
-.public-usage .form-group label {
-  color: #000;
-  font-style: italic;
-  display: table-cell;
-  margin: 0.3em 0;
-  width: auto !important;
+.form-redesign table td {
   padding-right: 1em; }
 
-.public-usage .form-group .required {
-  background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 100% 50%; }
-
-.public-usage .form-group p.required {
+.form-redesign label {
   color: #000;
   font-style: italic;
   display: inline-block;
   margin: 0.3em 0;
-  width: auto !important;
-  padding-right: 1em; }
+  width: auto !important; }
 
-.public-usage .form-group span.required {
-  padding-left: 0.5em; }
+.form-redesign .required {
+  padding-right: 1em;
+  background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 100% 50%; }
 
-@media (max-width: 991px) {
-  .public-usage .form-group .row .col-xs-12:nth-child(2) .checkbox:first-child {
-    margin-top: -5px; } }
+.form-redesign .form-group {
+  display: block;
+  clear: both;
+  margin-bottom: 1em; }
+  .form-redesign .form-group .form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    height: 24px;
+    padding: 0 6px;
+    width: 100%; }
+  .form-redesign .form-group textarea.form-control {
+    height: 112px; }
 
-.public-usage .form-group .date-picker,
-.public-usage .form-group .time-picker {
-  width: auto; }
+.form-redesign .form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle; }
+  .form-redesign .form-inline .form-group .input-group {
+    white-space: nowrap;
+    position: relative;
+    display: table;
+    border-collapse: separate; }
+    .form-redesign .form-inline .form-group .input-group input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      display: inline-block; }
+    .form-redesign .form-inline .form-group .input-group .input-group-addon {
+      background-color: #ccc;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      padding: 0 6px; }
+  .form-redesign .form-inline .form-group .checkbox-list td {
+    padding-right: 1em; }
 
-.public-usage .checkbox-group label,
-.public-usage .radio-group label {
-  font-style: italic; }
+.form-redesign .checkbox-group,
+.form-redesign .radio-group {
+  margin-bottom: 1em; }
 
-@media (min-width: 768px) {
-  .public-usage .form-inline .form-group {
-    margin-bottom: 15px; } }
+.form-redesign .mt-button {
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=../maps/main.css.map */

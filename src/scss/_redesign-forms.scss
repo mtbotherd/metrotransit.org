@@ -1,54 +1,89 @@
-.public-usage {
+.form-redesign {
+
+    p:last-child {
+        margin: 1em 0;
+    }
+
     .required-notice {
         padding-left: 1em;
         background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 0 50%;
     }
 
+    table td {
+        padding-right: 1em;
+    }
+
+    label {
+        color: #000;
+        font-style: italic;
+        display: inline-block;
+        margin: 0.3em 0;
+        width: auto !important;
+    }
+
+    .required {
+        padding-right: 1em;
+        background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 100% 50%;
+    }
+
     .form-group {
-        label {
-            color: #000;
-            font-style: italic;
-            display: table-cell;
-            margin: 0.3em 0;
-            width: auto !important;
-            padding-right: 1em;
+        display: block;
+        clear: both;
+        margin-bottom: 1em;
+
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+            height: 24px;
+            padding: 0 6px;
+            width: 100%;
         }
 
-        .required {
-            background: #fff url("data:image/gif;base64,R0lGODlhBwAHAIQUAIwAALALAKwSCawpJ/cuAP4yAP81APQ5CvQ6C/8+Cv8/Cv5RGP9RGfRhMfRiMf9jJ/50NP+GR/+HSPSKXP///////////////////////////////////////////////yH5BAEKAB8ALAAAAAAHAAcAAAUf4CcCojhMkiOIE/QsyAdED6MYZLMkBSEKBwMhUJKVQgA7") no-repeat 100% 50%;
+        textarea.form-control {
+            height: 112px;
         }
+    }
 
-        p.required {
-            color: #000;
-            font-style: italic;
+    .form-inline {
+
+        .form-group {
             display: inline-block;
-            margin: 0.3em 0;
-            width: auto !important;
-            padding-right: 1em;
-        }
+            margin-bottom: 0;
+            vertical-align: middle;
 
-        span.required {
-            padding-left: 0.5em;
-        }
-        @media (max-width: 991px) {
-            .row .col-xs-12:nth-child(2) .checkbox:first-child {
-                margin-top: -5px;
+            .input-group {
+                white-space: nowrap;
+                position: relative;
+                display: table;
+                border-collapse: separate;
+
+                input {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    display: inline-block;
+                }
+
+                .input-group-addon {
+                    background-color: #ccc;
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+                    padding: 0 6px;
+                }
+            }
+
+            .checkbox-list td {
+                padding-right: 1em;
             }
         }
-
-        .date-picker,
-        .time-picker {
-            width: auto;
-        }
     }
 
-    .checkbox-group label,
-    .radio-group label {
-        font-style: italic;
+    .checkbox-group,
+    .radio-group {
+        margin-bottom: 1em;
     }
-    @media (min-width: 768px) {
-        .form-inline .form-group {
-            margin-bottom: 15px;
-        }
+
+    .mt-button {
+        margin-bottom: 1em;
     }
 }
