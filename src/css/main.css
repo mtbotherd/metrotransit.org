@@ -35,7 +35,7 @@
 
 .form-redesign .form-inline .form-group {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   vertical-align: middle; }
   .form-redesign .form-inline .form-group .input-group {
     white-space: nowrap;
