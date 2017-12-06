@@ -1,5 +1,5 @@
 ########## Image-only pop-up alert ##########
-//Place the below code in the WYSIWYG (source view).  Alert format shoudl be Popup Alert.
+//Place the below code in the WYSIWYG (source view).  Alert format should be Popup Alert.
 
 <style type="text/css">#popup-alert-notice {padding: 0;}
     #popup-alert-notice p {margin: 0;}
