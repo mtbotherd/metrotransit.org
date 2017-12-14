@@ -241,4 +241,22 @@
 .tap ul {
   margin: 1em 0 1em 1.6em; }
 
+.recruitment ul {
+  list-style-type: none;
+  margin-left: 0.6em;
+  padding-left: 1em;
+  text-indent: -1em; }
+  .recruitment ul li:before {
+    content: "\003E \0020"; }
+
+.recruitment .yellow-bg {
+  background-color: #fbe15b;
+  border-radius: 0.4rem;
+  padding: 1rem; }
+
+.recruitment .blue-bg {
+  background-color: #cfdeed;
+  border-radius: 0.4rem;
+  padding: 1rem; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */

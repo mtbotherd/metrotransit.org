@@ -1,0 +1,27 @@
+$bg-yellow: #fbe15b;
+$bg-blue: #cfdeed;
+
+.recruitment {
+    ul {
+        list-style-type: none;
+        margin-left: 0.6em;
+        padding-left: 1em;
+        text-indent: -1em;
+
+        li:before {
+            content: "\003E \0020";
+        }
+    }
+
+    .yellow-bg {
+        background-color: $bg-yellow;
+        border-radius: 0.4rem;
+        padding: 1rem;
+    }
+
+    .blue-bg {
+        background-color: $bg-blue;
+        border-radius: 0.4rem;
+        padding: 1rem;
+    }
+}
