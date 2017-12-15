@@ -262,4 +262,28 @@
   border-radius: 0.4rem;
   padding: 1rem; }
 
+.superbowl-related .tile {
+  background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 22.95rem;
+  height: 13.33rem;
+  margin: 0 auto 2rem;
+  text-align: center; }
+  .superbowl-related .tile .overlay {
+    background: rgba(0, 83, 160, 0.69); }
+    .superbowl-related .tile .overlay:hover {
+      background: none; }
+    .superbowl-related .tile .overlay a {
+      color: #fff;
+      display: block;
+      font-size: 2.5em;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+      padding: 2.28rem 1.5rem;
+      text-transform: uppercase; }
+      .superbowl-related .tile .overlay a:hover {
+        text-decoration: none; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */
