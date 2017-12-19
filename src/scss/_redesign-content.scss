@@ -1,0 +1,12 @@
+.redesign-content {
+    ul {
+        list-style-type: none;
+        margin-left: 0.6em;
+        padding-left: 1em;
+        text-indent: -1em;
+
+        li:before {
+            content: "\003E \0020";
+        }
+    }
+}
