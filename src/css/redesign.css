@@ -252,6 +252,11 @@
 /***************************************************
 	Recruitment - December 2017
 ***************************************************/
+.recruitment .leadin {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 1em 0; }
+
 .recruitment .yellow-bg {
   background-color: #fbe15b;
   border-radius: 0.4rem;
@@ -262,6 +267,9 @@
   border-radius: 0.4rem;
   padding: 1rem; }
 
+/***************************************************
+	Super Bowl Related - December 2017
+***************************************************/
 .superbowl-related .tile {
   background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button.png");
   background-repeat: no-repeat;

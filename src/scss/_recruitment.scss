@@ -16,6 +16,12 @@ $bg-blue: #cfdeed;
     //     }
     // }
 
+    .leadin {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin: 1em 0;
+    }
+
     .yellow-bg {
         background-color: $bg-yellow;
         border-radius: 0.4rem;
