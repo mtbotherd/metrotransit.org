@@ -276,18 +276,17 @@
   float: left;
   background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button_blue.png");
   background-repeat: no-repeat;
-  width: 22.95rem;
-  height: 12.38rem;
-  text-align: center; }
-  .fancy-button a {
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.1rem;
-    padding: 2.5rem 1.5rem;
-    text-transform: uppercase; }
-    .fancy-button a:hover {
-      text-decoration: none; }
+  width: 300px;
+  height: 158px;
+  text-align: center;
+  color: #fff !important;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  padding: 2rem 1.5rem;
+  text-transform: uppercase; }
+  .fancy-button:hover {
+    text-decoration: none; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
