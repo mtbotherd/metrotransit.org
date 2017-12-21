@@ -271,27 +271,23 @@
 /***************************************************
 	Super Bowl Related - December 2017
 ***************************************************/
-.superbowl-related .tile {
-  background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button.png");
+.fancy-button {
+  position: relative;
+  float: left;
+  background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button_blue.png");
   background-repeat: no-repeat;
-  background-size: cover;
   width: 22.95rem;
   height: 12.38rem;
   text-align: center; }
-  .superbowl-related .tile .overlay {
-    background: rgba(0, 83, 160, 0.69); }
-    .superbowl-related .tile .overlay:hover {
-      background: none; }
-    .superbowl-related .tile .overlay a {
-      color: #fff;
-      display: block;
-      font-size: 2.5em;
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0.1rem;
-      padding: 2.5rem 1.5rem;
-      text-transform: uppercase; }
-      .superbowl-related .tile .overlay a:hover {
-        text-decoration: none; }
+  .fancy-button a {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding: 2.5rem 1.5rem;
+    text-transform: uppercase; }
+    .fancy-button a:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
