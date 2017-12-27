@@ -23,3 +23,24 @@
         text-decoration: none;
     }
 }
+
+.redesign-content {
+    .panel-heading {
+        a {
+            display: block;
+            //padding: 1rem 1.5rem;
+            //margin-left: 4.3rem;
+            text-decoration: none;
+        }
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            float: right;
+            content: "\f077";
+        }
+
+        .accordion-toggle.collapsed:after {
+            content: "\f078";
+        }
+    }
+}
