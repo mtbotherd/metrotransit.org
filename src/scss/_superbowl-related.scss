@@ -26,9 +26,10 @@
 
 .redesign-content {
     .panel-heading {
+        padding: 0;
         a {
             display: block;
-            //padding: 1rem 1.5rem;
+            padding: 1rem 1.5rem;
             //margin-left: 4.3rem;
             text-decoration: none;
         }

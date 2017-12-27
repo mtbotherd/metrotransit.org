@@ -292,16 +292,17 @@
   .fancy-button:hover {
     text-decoration: none; }
 
-.redesign-content .panel-heading a {
-  display: block;
-  text-decoration: none; }
-
-.redesign-content .panel-heading .accordion-toggle:after {
-  font-family: 'FontAwesome';
-  float: right;
-  content: "\f077"; }
-
-.redesign-content .panel-heading .accordion-toggle.collapsed:after {
-  content: "\f078"; }
+.redesign-content .panel-heading {
+  padding: 0; }
+  .redesign-content .panel-heading a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none; }
+  .redesign-content .panel-heading .accordion-toggle:after {
+    font-family: 'FontAwesome';
+    float: right;
+    content: "\f077"; }
+  .redesign-content .panel-heading .accordion-toggle.collapsed:after {
+    content: "\f078"; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
