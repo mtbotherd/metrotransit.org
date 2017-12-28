@@ -68,6 +68,15 @@ gulp.task('useref', function() {
         .pipe(gulp.dest('dist'))
 });
 
+// Copy vendor JS to Dist
+gulp.task('vendorJS', function() {
+    return gulp.src([
+        'src/js/collapse.js',
+        'src/js/transition.js'
+    ])
+        .pipe(gulp.dest('dist/js'))
+});
+
 // Optimize Media Images
 gulp.task('mediaimages', function() {
     return gulp.src('src/Data/sites/1/media/**/*.+(png|jpg|gif|svg)')
@@ -113,7 +122,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean:dist',
-        'sass', ['useref', 'mediaimages', 'skinsimages', 'fonts'],
+        'sass', ['useref', 'vendorJS', 'mediaimages', 'skinsimages', 'fonts'],
         callback
     )
 });

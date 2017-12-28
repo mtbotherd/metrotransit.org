@@ -44,4 +44,12 @@
             content: "\f078";
         }
     }
+
+    .panel .panel {
+        border-radius: 0;
+        margin-bottom: 1.5rem;
+        .panel-heading {
+            padding: 1rem;
+        }
+    }
 }

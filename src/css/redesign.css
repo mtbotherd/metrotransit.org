@@ -305,4 +305,10 @@
   .redesign-content .panel-heading .accordion-toggle.collapsed:after {
     content: "\f078"; }
 
+.redesign-content .panel .panel {
+  border-radius: 0;
+  margin-bottom: 1.5rem; }
+  .redesign-content .panel .panel .panel-heading {
+    padding: 1rem; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */
