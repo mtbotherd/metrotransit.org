@@ -78,17 +78,17 @@
       display: inline-block;
       float: left;
       margin-right: 20px;
-      width: 271px; }
-      .gp-redesign div.mt-form div.mt-field .input-group input[type="text"] {
+      width: 272px; }
+      .gp-redesign div.mt-form div.mt-field .input-group input[type="search"] {
         float: left;
-        height: 28px;
+        height: 26px;
         background: none;
         border-radius: 0;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-top-left-radius: 0.3em;
         border-bottom-left-radius: 0.3em;
-        width: 220px; }
+        width: 206px; }
       .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon {
         background: none;
         border: 0;
