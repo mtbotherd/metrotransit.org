@@ -51,4 +51,13 @@ $(document).ready(function() {
 
     // Article details
     //$('#ctl00_mainContent_BlogView1_pnlInnerBody #ctl00_mainContent_BlogView1_bsocial').remove();
+
+    // Inject panel body content into corresponding panel
+    // $('')
+    // $('#detour1').appendTo('#panel1');
+    // $('#detour2').appendTo('#panel2');
+    // $('#detour3').appendTo('#panel3');
+    // $('#detour4').appendTo('#panel4');
+    // $('#detour5').appendTo('#panel5');
+
 });
