@@ -45,6 +45,15 @@
         }
     }
 
+    .panel-body-1,
+    .panel-body-2,
+    .panel-body-3,
+    .panel-body-4,
+    .panel-body-5 {
+        position: relative;
+        top: -10px;
+    }
+
     .panel .panel {
         border-radius: 0;
         margin-bottom: 1.5rem;

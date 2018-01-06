@@ -305,6 +305,14 @@
   .redesign-content .panel-heading .accordion-toggle.collapsed:after {
     content: "\f078"; }
 
+.redesign-content .panel-body-1,
+.redesign-content .panel-body-2,
+.redesign-content .panel-body-3,
+.redesign-content .panel-body-4,
+.redesign-content .panel-body-5 {
+  position: relative;
+  top: -10px; }
+
 .redesign-content .panel .panel {
   border-radius: 0;
   margin-bottom: 1.5rem; }
