@@ -58,5 +58,7 @@ $(document).ready(function() {
     $('.panel-body-3').appendTo('#detour3 .panel-body');
     $('.panel-body-4').appendTo('#detour4 .panel-body');
     $('.panel-body-5').appendTo('#detour5 .panel-body');
+    $('.panel-body-6').appendTo('#detour6 .panel-body');
+    $('.panel-body-7').appendTo('#detour7 .panel-body');
 
 });
