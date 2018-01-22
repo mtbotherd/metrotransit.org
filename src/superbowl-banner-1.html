@@ -53,7 +53,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 text-transform: uppercase;
-                padding: 1em;
+                padding: 0;
+                padding-bottom: 1rem;
             }
 
             #margin-alert-notice .fa {
@@ -62,17 +63,17 @@
 
             #margin-alert-notice h1 {
                 color: #ffd200;
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 1.3;
+                position: relative;
+                top: 10px;
             }
 
             #margin-alert-notice .col {
                 border-radius: 3px;
-                margin: 0 auto 15px auto;
                 opacity: 0.9;
-                width: 290px;
-                height: 90.66px;
                 z-index: 100;
+                margin: 0 5px;
             }
 
             #margin-alert-notice .col:focus,
@@ -82,11 +83,15 @@
 
             #margin-alert-notice .reg-rider {
                 background-color: #0053a0;
+                position: relative;
+                top: 5px;
 
             }
 
             #margin-alert-notice .sb-rider {
                 background-color: #008244;
+                position: relative;
+                top: 10px;
             }
 
             #margin-alert-notice a {
@@ -96,7 +101,7 @@
                 display: block;
                 letter-spacing: 2px;
                 margin: 0;
-                padding: 15px 0px;
+                padding: 1.5rem 0;
             }
 
             #margin-alert-notice .col a:hover,
@@ -116,19 +121,48 @@
                 margin-bottom: .5rem;
             }
 
-            @media screen and (min-width: 992px) {
+            @media screen and (min-width: 768px) {
                 #margin-alert-notice {
-                    /* background-size: cover;
-                    background-position-y: 65%; */
-                    background-size: contain;
-                    background-repeat: repeat;
+                    background-position-y: 62%;
+                    padding: 1rem;
+                }
+                #margin-alert-notice .col {
+                    width: 290px;
+                    height: 90.66px;
                 }
 
+                #margin-alert-notice .reg-rider,
+                #margin-alert-notice .sb-rider {
+                    top: 0;
+                }
+
+                #margin-alert-notice h1 {
+                    font-size: 30px;
+                    margin-bottom: .5rem;
+                    top: 0;
+                }
+
+                .position-1 {
+                    float: right;
+                }
+
+                .position-2 {
+                    float: left;
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                #margin-alert-notice {
+                    background-position-y: 58%;
+                }
                 #margin-alert-notice .col {
+                    width: 290px;
+                    height: 90.66px;
                     margin-top: 15px;
                 }
 
                 #margin-alert-notice h1 {
+                    top: 10px;
                     font-size: 30px;
                     margin: .5em 0;
                 }
@@ -141,22 +175,54 @@
                     float: left;
                 }
             }
+
+            @media screen and (min-width: 1024px) {
+                #margin-alert-notice {
+                    background-position-y: 56%;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                #margin-alert-notice {
+                    background-position-y: 59%;
+                }
+            }
+
+            @media screen and (min-width: 1440px) {
+                #margin-alert-notice {
+                    background-position-y: 59%;
+                }
+            }
         </style>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-4">
-                <div class="col reg-rider text-center position-1">
-                    <a href="/super-bowl-riders" title="Regular riders, learn about Super Bowl week detours."><span class="leadin">I'm a regular rider.</span> Help me learn about<br>super bowl detours!</a>
+
+        <div class="visible-sm visible-md visible-lg">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-2 col-lg-offset-4">
+                    <div class="col reg-rider text-center position-1">
+                        <a href="/super-bowl-riders" title="Regular riders, learn about Super Bowl week detours."><span class="leadin">I'm a regular rider.</span> Help me learn about<br>super bowl detours!</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="col sb-rider text-center position-2">
+                        <a href="/superbowl" target="_blank" title="Super Bowl event transit options"><span class="leadin">I'm attending super<br> bowl events.</span> Help me find my way around!</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4 col-lg-2">
-                <div class="col sb-rider text-center position-2">
-                    <a href="/superbowl" target="_blank" title="Super Bowl event transit options"><span class="leadin">I'm attending super<br> bowl events.</span> Help me find my way around!</a>
-                </div>
-            </div>
+            <h1 class="text-center">We've got your playbook for super bowl!</h1>
         </div>
 
-        <h1 class="text-center">We've got your playbook for super bowl!</h1>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="col reg-rider text-center">
+                <a href="/super-bowl-riders" title="Regular riders, learn about Super Bowl week detours."><span class="leadin">I'm a regular rider.</span> Help me learn about<br>super bowl detours!</a>
+            </div>
+            <div class="col sb-rider text-center">
+                <a href="/superbowl" target="_blank" title="Super Bowl event transit options"><span class="leadin">I'm attending super<br> bowl events.</span> Help me find my way around!</a>
+            </div>
+
+            <h1 class="text-center">We've got your playbook for super bowl!</h1>
+        </div>
 
 </body>
 
