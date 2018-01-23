@@ -326,7 +326,7 @@
     padding: 1rem; }
 
 .redesign-content table.detours {
-  width: 770px; }
+  width: 100%; }
   .redesign-content table.detours th {
     border-top: 1px solid #c0c0c0;
     padding: 10px 0;
