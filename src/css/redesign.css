@@ -319,4 +319,25 @@
   .redesign-content .panel .panel .panel-heading {
     padding: 1rem; }
 
+.redesign-content table.detours th {
+  border-top: 1px solid #c0c0c0;
+  padding: 10px 0;
+  text-align: center; }
+
+.redesign-content table.detours td {
+  background-color: #d4e3fc;
+  border: 1px solid #c0c0c0;
+  font-size: 24px;
+  padding: 40px 20px;
+  text-align: center; }
+  .redesign-content table.detours td a {
+    color: #000; }
+    .redesign-content table.detours td a:hover {
+      text-decoration: none; }
+
+.redesign-content table.detours .disabled {
+  background-color: #f7f6f6;
+  color: #929292;
+  padding: 40px 20px; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */
