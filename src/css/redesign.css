@@ -293,7 +293,7 @@
     text-decoration: none; }
 
 .redesign-content .panel-heading {
-  padding: 0; }
+  border-radius: 0; }
   .redesign-content .panel-heading a {
     display: block;
     padding: 1rem 1.5rem;
@@ -304,6 +304,12 @@
     content: "\f077"; }
   .redesign-content .panel-heading .accordion-toggle.collapsed:after {
     content: "\f078"; }
+
+.redesign-content #accordion .panel-heading {
+  padding: 0; }
+
+.redesign-content .panel-danger .panel-heading {
+  padding: 10px 15px !important; }
 
 .redesign-content .panel-body-1,
 .redesign-content .panel-body-2,
@@ -319,25 +325,27 @@
   .redesign-content .panel .panel .panel-heading {
     padding: 1rem; }
 
-.redesign-content table.detours th {
-  border-top: 1px solid #c0c0c0;
-  padding: 10px 0;
-  text-align: center; }
-
-.redesign-content table.detours td {
-  background-color: #d4e3fc;
-  border: 1px solid #c0c0c0;
-  font-size: 24px;
-  padding: 40px 20px;
-  text-align: center; }
-  .redesign-content table.detours td a {
-    color: #000; }
-    .redesign-content table.detours td a:hover {
-      text-decoration: none; }
-
-.redesign-content table.detours .disabled {
-  background-color: #f7f6f6;
-  color: #929292;
-  padding: 40px 20px; }
+.redesign-content table.detours {
+  width: 770px; }
+  .redesign-content table.detours th {
+    border-top: 1px solid #c0c0c0;
+    padding: 10px 0;
+    text-align: center;
+    width: 110px; }
+  .redesign-content table.detours td {
+    background-color: #d4e3fc;
+    border: 1px solid #c0c0c0;
+    font-size: 24px;
+    text-align: center;
+    width: 110px;
+    height: 110px; }
+    .redesign-content table.detours td a {
+      color: #000;
+      padding: 40px; }
+      .redesign-content table.detours td a:hover {
+        text-decoration: none; }
+  .redesign-content table.detours .disabled {
+    background-color: #f7f6f6;
+    color: #929292; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
