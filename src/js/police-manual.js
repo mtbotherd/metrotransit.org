@@ -1,9 +1,9 @@
 $(document).ready(function() {
     /* MT Police Manual */
     // Expand/collapse nav.
-    $('li.dropdown').addClass('plus-icon');
-    $('li.dropdown').children().hide();
-    $('li.dropdown').each(function() {
+    $('.mtpd-manual-menu li.dropdown').addClass('plus-icon');
+    $('.mtpd-manual-menu li.dropdown').children().hide();
+    $('.mtpd-manual-menu li.dropdown').each(function() {
         $(this).click(function(event) {
             if (this == event.target) {
                 if ($(this).is('.plus-icon')) {
@@ -19,7 +19,7 @@ $(document).ready(function() {
         });
     });
 
-    // Show content based on nav link clicked.
+    Show content based on nav link clicked.
     $('.mtpd-manual-menu a').click(function(e) {
         e.preventDefault();
         $('.chapter').hide();

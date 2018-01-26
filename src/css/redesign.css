@@ -184,9 +184,9 @@
       padding-left: 1.5em; }
       .mtpd-manual .right-col ul li a {
         color: #000; }
-      .mtpd-manual .right-col ul li a:hover,
+      .mtpd-manual .right-col ul li a.active,
       .mtpd-manual .right-col ul li a:active,
-      .mtpd-manual .right-col ul li a.active {
+      .mtpd-manual .right-col ul li a:hover {
         color: #0053a0;
         text-decoration: underline; }
       .mtpd-manual .right-col ul li ul {
@@ -196,11 +196,11 @@
     .mtpd-manual .right-col ul .plus-icon {
       background-image: url("data:image/gif;base64,R0lGODlhCwALALMAAKfB4vn7/RJWssjY7Tlyv3if08bW7JOy3NLf8DJtvAxSsP///wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAALAAsAAAQ6cC1TiCDFyAXSQQFyJMCUDJs0JNSxKdtRIe+GWMGi7PsSXDQJTHIruISxzCm1WGk6n9CoJKFYMJpFBAA7");
       background-repeat: no-repeat;
-      background-position: 0px 4px; }
+      background-position: 0 4px; }
     .mtpd-manual .right-col ul .minus-icon {
-      background-image: url("images/MinusSmall.gif");
+      background-image: url("/Images/Icons/MinusSmall.gif");
       background-repeat: no-repeat;
-      background-position: 0px 4px; }
+      background-position: 0 4px; }
 
 .mtpd-manual .left-col {
   float: left;
