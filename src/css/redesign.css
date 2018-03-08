@@ -10,257 +10,28 @@
   .redesign-content ul li:before {
     content: "\003E \0020"; }
 
-/*********************************************************
-    Rider's Almanac Redesign Styles - June 2017
-*********************************************************/
-.ra-redesign .blogwrapper {
-  padding: 20px; }
-
-.ra-redesign hr {
-  margin-bottom: 2em; }
-
-.ra-redesign .blogcenter-nonav {
-  padding-left: 0; }
-
-.ra-redesign ul.blognav {
-  margin-left: 0;
-  padding: 0; }
-
-.ra-redesign .blogtitle {
-  margin-top: 10px; }
-
-.ra-redesign #ctl00_mainContent_BlogView1_navBottom_pnlCategories {
-  margin-top: -95px; }
-
-.ra-redesign #ctl00_mainContent_BlogView1_pnlDetails .blogtext {
-  float: right;
-  width: 78%;
-  margin: 0 0 0 0;
-  padding: 5px 0px 0px 5px; }
-
-.ra-redesign .blogtext .blogger img {
-  max-width: 100%; }
-
-.ra-redesign #blog-wrapper {
-  position: relative;
-  top: -74px;
-  margin-top: 0;
-  padding: 20px 40px 0 !important; }
-  .ra-redesign #blog-wrapper img {
-    max-width: 100%; }
-  .ra-redesign #blog-wrapper ul {
-    list-style-type: none; }
-
-.ra-redesign .blogpager {
-  text-align: center; }
-
-#ctl00_mainContent_BlogView1_pnlInnerWrap .art-postheader,
-#ctl00_mainContent_BlogView1_pnlInnerWrap .blogtags,
-#ctl00_mainContent_BlogView1_pnlInnerWrap .blogdate {
-  float: right;
-  width: 78%; }
-
-/***************************************************
-	Great People Redesign Styles - June 2017
-***************************************************/
-.gp-redesign {
-  margin-bottom: 1.5em; }
-  .gp-redesign p:last-child {
-    margin: 1em 0; }
-  .gp-redesign p strong {
-    font-weight: 700; }
-  .gp-redesign div.mt-form div.mt-field {
-    float: left;
-    margin-bottom: 20px;
-    width: 100%;
-    /* .searchbox, */ }
-    .gp-redesign div.mt-form div.mt-field .input-group {
-      display: inline-block;
-      float: left;
-      margin-right: 20px;
-      width: 272px; }
-      .gp-redesign div.mt-form div.mt-field .input-group input[type="search"] {
-        float: left;
-        height: 26px;
-        background: none;
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-top-left-radius: 0.3em;
-        border-bottom-left-radius: 0.3em;
-        width: 206px; }
-      .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon {
-        background: none;
-        border: 0;
-        padding: 0; }
-      .gp-redesign div.mt-form div.mt-field .input-group .input-group-btn {
-        height: 28px;
-        width: 51px; }
-    .gp-redesign div.mt-form div.mt-field .optionItem {
-      display: inline-block;
-      float: left;
-      margin-right: 20px; }
-      .gp-redesign div.mt-form div.mt-field .optionItem select {
-        height: 28px; }
-  .gp-redesign .blogpager {
-    text-align: center; }
-
-.gp-content {
-  display: block;
-  float: left;
-  margin-bottom: 1em;
-  padding: 0; }
-  .gp-content .blogwrapper {
-    padding: 0; }
-  .gp-content .blogitem {
-    margin-bottom: 5%; }
-  .gp-content .blogtags {
-    border-bottom: 1px solid #ececec;
-    clear: both;
-    display: block;
-    margin-top: 1em; }
-    .gp-content .blogtags a {
-      font-size: 20px;
-      line-height: 1.3; }
-  .gp-content .tagslabel {
-    border-bottom: none; }
-  .gp-content .blogtitle {
-    margin-top: 5px;
-    padding-top: 5px; }
-  .gp-content .subtitle {
-    display: block;
-    margin-bottom: 20px;
-    font-style: italic; }
-  .gp-content .blogdate {
-    display: none; }
-  .gp-content .blogtext {
-    min-height: 146px;
-    position: relative;
-    padding-left: 180px; }
-    .gp-content .blogtext a.morelink {
-      clear: both;
-      display: block;
-      text-align: right; }
-    .gp-content .blogtext p {
-      display: inline-block;
-      float: left;
-      margin: 0 0 1em;
-      width: 780px; }
-      .gp-content .blogtext p:first-child {
-        position: absolute;
-        left: 0;
-        width: 100px; }
-      .gp-content .blogtext p img {
-        display: inline-block;
-        float: left; }
-      .gp-content .blogtext p.read-more {
-        display: block;
-        float: right;
-        text-align: right;
-        margin-right: 50px; }
-
-/***************************************************
-	TAP Changes - August 2017
-***************************************************/
-.tap p.Indent1:last-child {
-  margin-left: 40px; }
-
-.tap ul {
-  margin: 1em 0 1em 1.6em; }
-
-/***************************************************
-	Recruitment - December 2017
-***************************************************/
-.recruitment .leadin {
-  font-size: 1.3em;
-  font-weight: 700;
-  margin: 1em 0; }
-
-.recruitment .yellow-bg {
-  background-color: #fbe15b;
-  border-radius: 0.4rem;
-  padding: 1rem; }
-
-.recruitment .blue-bg {
-  background-color: #cfdeed;
-  border-radius: 0.4rem;
-  padding: 1rem; }
-
-/***************************************************
-	Super Bowl Related - December 2017
-***************************************************/
-.fancy-button {
-  position: relative;
-  float: left;
-  background-image: url("/Data/sites/1/media/superbowl/sb_fancy_button_blue.png");
+.tile {
   background-repeat: no-repeat;
-  width: 300px;
-  height: 158px;
-  text-align: center;
-  color: #fff !important;
-  font-size: 2.5em;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.1rem;
-  padding: 2rem 1.5rem;
-  text-transform: uppercase; }
-  .fancy-button:hover {
-    text-decoration: none; }
+  background-size: cover;
+  width: 116px;
+  height: 116px;
+  margin: 0 auto 15px;
+  text-align: center; }
+  .tile .tile-overlay {
+    background: rgba(0, 83, 160, 0.69); }
+    .tile .tile-overlay:hover {
+      background: none; }
+    .tile .tile-overlay a {
+      color: #fff;
+      display: block;
+      font-weight: 700;
+      padding: 33px 0;
+      text-decoration: none; }
+      .tile .tile-overlay a:hover {
+        opacity: 0; }
 
-.redesign-content .panel-heading {
-  border-radius: 0; }
-  .redesign-content .panel-heading a {
-    display: block;
-    padding: 1rem 1.5rem;
-    text-decoration: none; }
-  .redesign-content .panel-heading .accordion-toggle:after {
-    font-family: 'FontAwesome';
-    float: right;
-    content: "\f077"; }
-  .redesign-content .panel-heading .accordion-toggle.collapsed:after {
-    content: "\f078"; }
-
-.redesign-content #accordion .panel-heading {
-  padding: 0; }
-
-.redesign-content .panel-danger .panel-heading {
-  padding: 10px 15px !important; }
-
-.redesign-content .panel-body-1,
-.redesign-content .panel-body-2,
-.redesign-content .panel-body-3,
-.redesign-content .panel-body-4,
-.redesign-content .panel-body-5 {
-  position: relative;
-  top: -10px; }
-
-.redesign-content .panel .panel {
-  border-radius: 0;
-  margin-bottom: 1.5rem; }
-  .redesign-content .panel .panel .panel-heading {
-    padding: 1rem; }
-
-.redesign-content table.detours {
-  width: 100%; }
-  .redesign-content table.detours th {
-    border-top: 1px solid #c0c0c0;
-    padding: 10px 0;
-    text-align: center;
-    width: 110px; }
-  .redesign-content table.detours td {
-    background-color: #d4e3fc;
-    border: 1px solid #c0c0c0;
-    font-size: 24px;
-    text-align: center;
-    width: 110px;
-    height: 110px; }
-    .redesign-content table.detours td a {
-      color: #000;
-      padding: 40px; }
-      .redesign-content table.detours td a:hover {
-        text-decoration: none; }
-  .redesign-content table.detours .disabled {
-    background-color: #f7f6f6;
-    color: #929292; }
+.block-1 {
+  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_warehouse_district_hero.jpg");
+  background-position: 80% 0; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */

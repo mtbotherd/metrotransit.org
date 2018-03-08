@@ -1,0 +1,33 @@
+.tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 15px;
+    text-align: center;
+
+    .tile-overlay {
+        background: rgba(0, 83, 160, .69);
+
+        &:hover {
+            background: none; // Will work on desktop only.
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            font-weight: 700;
+            padding: 33px 0;
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.block-1 {
+    background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_warehouse_district_hero.jpg");
+    background-position: 80% 0;
+}
