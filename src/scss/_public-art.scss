@@ -6,7 +6,7 @@
     margin: 0 auto 15px;
     text-align: center;
 
-    .tile-overlay {
+    .tile-overlay-blue {
         background: rgba(0, 83, 160, .69);
 
         &:hover {
@@ -17,12 +17,16 @@
             color: #fff;
             display: block;
             font-weight: 700;
-            padding: 33px 0;
+            padding: 41px 10px;
             text-decoration: none;
 
             &:hover {
                 opacity: 0;
             }
+        }
+
+        .text-plus {
+            padding: 33px 10px;
         }
     }
 }
@@ -30,4 +34,23 @@
 .block-1 {
     background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_warehouse_district_hero.jpg");
     background-position: 80% 0;
+}
+
+.block-2 {
+    background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-nicollet-mall-2-medcrop.jpg");
+    background-position: 20% 0;
+}
+
+.block-3 {
+    background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-government-plaza-2-sm.jpg");
+}
+
+.block-5 {
+    background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-cedar-riverside-2-sm.jpg");
+    background-position: 55% 0;
+}
+
+.block-6 {
+    background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-franklin-avenue-3-sm.jpg");
+    background-position: 0 50%;
 }
