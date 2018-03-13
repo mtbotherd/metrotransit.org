@@ -121,21 +121,23 @@
 
 .redesign-content .greenline .block-1 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-union-depot-1-sm.png");
-  background-position: 80% 0; }
+  background-position: 0 73%; }
 
 .redesign-content .greenline .block-2 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-central-station-art-2-sm.jpg");
-  background-position: 20% 0; }
+  background-position: 0 95%; }
 
 .redesign-content .greenline .block-3 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-10th-street-station-art-4-sm.jpg"); }
+  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-10th-street-station-art-4-sm.jpg");
+  background-position: 0 0; }
 
 .redesign-content .greenline .block-4 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-robert-street-station-3-sm.jpg"); }
+  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-robert-street-station-3-sm.jpg");
+  background-position: 0 93%; }
 
 .redesign-content .greenline .block-5 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-capitol-rice-street-station-2-sm.jpg");
-  background-position: 55% 0; }
+  background-position: 0 80%; }
 
 .redesign-content .greenline .block-6 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-western-avenue-station-2-sm.jpg");
@@ -151,10 +153,11 @@
 
 .redesign-content .greenline .block-9 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-lexington-parkway-station-3-sm.jpg");
-  background-position: 85% 0; }
+  background-position: 0 60%; }
 
 .redesign-content .greenline .block-10 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-hamline-avenue-station-2-sm.jpg"); }
+  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-hamline-avenue-station-2-sm.jpg");
+  background-position: 100% 0; }
 
 .redesign-content .greenline .block-11 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-snelling-avenue-station-1-sm.jpg");
@@ -174,18 +177,18 @@
 
 .redesign-content .greenline .block-15 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-prospect-park-station-3-sm.jpg");
-  background-position: 0 60%; }
+  background-position: 100% 0; }
 
 .redesign-content .greenline .block-16 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-stadium-village-station-2-sm.jpg");
-  background-position: 0 50%; }
+  background-position: 0 65%; }
 
 .redesign-content .greenline .block-17 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-east-bank-station-4-sm.jpg");
-  background-position: 0 10%; }
+  background-position: 30% 0; }
 
 .redesign-content .greenline .block-18 {
   background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-west-bank-station-1-sm.jpg");
-  background-position: 0 30%; }
+  background-position: 0 20%; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
