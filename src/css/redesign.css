@@ -10,6 +10,9 @@
   .redesign-content ul li:before {
     content: "\003E \0020"; }
 
+/****************************************
+    Public Art Styles
+****************************************/
 .redesign-content .public-art-grid .row {
   margin-right: 0;
   margin-left: 0; }
