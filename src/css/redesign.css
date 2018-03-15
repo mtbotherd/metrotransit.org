@@ -10,6 +10,182 @@
   .redesign-content ul li:before {
     content: "\003E \0020"; }
 
+/*********************************************************
+    Rider's Almanac Redesign Styles - June 2017
+*********************************************************/
+.ra-redesign .blogwrapper {
+  padding: 20px; }
+
+.ra-redesign hr {
+  margin-bottom: 2em; }
+
+.ra-redesign .blogcenter-nonav {
+  padding-left: 0; }
+
+.ra-redesign ul.blognav {
+  margin-left: 0;
+  padding: 0; }
+
+.ra-redesign .blogtitle {
+  margin-top: 10px; }
+
+.ra-redesign #ctl00_mainContent_BlogView1_navBottom_pnlCategories {
+  margin-top: -95px; }
+
+.ra-redesign #ctl00_mainContent_BlogView1_pnlDetails .blogtext {
+  float: right;
+  width: 78%;
+  margin: 0 0 0 0;
+  padding: 5px 0px 0px 5px; }
+
+.ra-redesign .blogtext .blogger img {
+  max-width: 100%; }
+
+.ra-redesign #blog-wrapper {
+  position: relative;
+  top: -74px;
+  margin-top: 0;
+  padding: 20px 40px 0 !important; }
+  .ra-redesign #blog-wrapper img {
+    max-width: 100%; }
+  .ra-redesign #blog-wrapper ul {
+    list-style-type: none; }
+
+.ra-redesign .blogpager {
+  text-align: center; }
+
+#ctl00_mainContent_BlogView1_pnlInnerWrap .art-postheader,
+#ctl00_mainContent_BlogView1_pnlInnerWrap .blogtags,
+#ctl00_mainContent_BlogView1_pnlInnerWrap .blogdate {
+  float: right;
+  width: 78%; }
+
+/***************************************************
+	Great People Redesign Styles - June 2017
+***************************************************/
+.gp-redesign {
+  margin-bottom: 1.5em; }
+  .gp-redesign p:last-child {
+    margin: 1em 0; }
+  .gp-redesign p strong {
+    font-weight: 700; }
+  .gp-redesign div.mt-form div.mt-field {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    /* .searchbox, */ }
+    .gp-redesign div.mt-form div.mt-field .input-group {
+      display: inline-block;
+      float: left;
+      margin-right: 20px;
+      width: 272px; }
+      .gp-redesign div.mt-form div.mt-field .input-group input[type="search"] {
+        float: left;
+        height: 26px;
+        background: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-top-left-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+        width: 206px; }
+      .gp-redesign div.mt-form div.mt-field .input-group .input-group-addon {
+        background: none;
+        border: 0;
+        padding: 0; }
+      .gp-redesign div.mt-form div.mt-field .input-group .input-group-btn {
+        height: 28px;
+        width: 51px; }
+    .gp-redesign div.mt-form div.mt-field .optionItem {
+      display: inline-block;
+      float: left;
+      margin-right: 20px; }
+      .gp-redesign div.mt-form div.mt-field .optionItem select {
+        height: 28px; }
+  .gp-redesign .blogpager {
+    text-align: center; }
+
+.gp-content {
+  display: block;
+  float: left;
+  margin-bottom: 1em;
+  padding: 0; }
+  .gp-content .blogwrapper {
+    padding: 0; }
+  .gp-content .blogitem {
+    margin-bottom: 5%; }
+  .gp-content .blogtags {
+    border-bottom: 1px solid #ececec;
+    clear: both;
+    display: block;
+    margin-top: 1em; }
+    .gp-content .blogtags a {
+      font-size: 20px;
+      line-height: 1.3; }
+  .gp-content .tagslabel {
+    border-bottom: none; }
+  .gp-content .blogtitle {
+    margin-top: 5px;
+    padding-top: 5px; }
+  .gp-content .subtitle {
+    display: block;
+    margin-bottom: 20px;
+    font-style: italic; }
+  .gp-content .blogdate {
+    display: none; }
+  .gp-content .blogtext {
+    min-height: 146px;
+    position: relative;
+    padding-left: 180px; }
+    .gp-content .blogtext a.morelink {
+      clear: both;
+      display: block;
+      text-align: right; }
+    .gp-content .blogtext p {
+      display: inline-block;
+      float: left;
+      margin: 0 0 1em;
+      width: 780px; }
+      .gp-content .blogtext p:first-child {
+        position: absolute;
+        left: 0;
+        width: 100px; }
+      .gp-content .blogtext p img {
+        display: inline-block;
+        float: left; }
+      .gp-content .blogtext p.read-more {
+        display: block;
+        float: right;
+        text-align: right;
+        margin-right: 50px; }
+
+/***************************************************
+	TAP Changes - August 2017
+***************************************************/
+.tap p.Indent1:last-child {
+  margin-left: 40px; }
+
+.tap ul {
+  margin: 1em 0 1em 1.6em; }
+
+/***************************************************
+	Recruitment - December 2017
+***************************************************/
+.recruitment .leadin {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 1em 0; }
+
+.recruitment .yellow-bg {
+  background-color: #fbe15b;
+  border-radius: 0.4rem;
+  padding: 1rem; }
+
+.recruitment .blue-bg {
+  background-color: #cfdeed;
+  border-radius: 0.4rem;
+  padding: 1rem; }
+
 /****************************************
     Public Art Styles
 ****************************************/
@@ -54,144 +230,155 @@
     padding: 65.5px 10px; }
 
 .redesign-content .blueline .block-1 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_warehouse_district_hero.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_warehouse_district_hero.jpg");
   background-position: 80% 0; }
 
 .redesign-content .blueline .block-2 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-nicollet-mall-2-medcrop.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-nicollet-mall-2-medcrop.jpg");
   background-position: 20% 0; }
 
 .redesign-content .blueline .block-3 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-government-plaza-2-sm.jpg"); }
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-government-plaza-2-sm.jpg"); }
 
 .redesign-content .blueline .block-4 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_usbank_seven_seascrop02.jpg"); }
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue_line_public_art_usbank_seven_seascrop02.jpg"); }
 
 .redesign-content .blueline .block-5 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-cedar-riverside-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-cedar-riverside-2-sm.jpg");
   background-position: 55% 0; }
 
 .redesign-content .blueline .block-6 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-franklin-avenue-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-franklin-avenue-3-sm.jpg");
   background-position: 0 50%; }
 
 .redesign-content .blueline .block-7 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-lake-street-wonder-1-w-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-lake-street-wonder-1-w-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .blueline .block-8 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-38th-street-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-38th-street-3-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .blueline .block-9 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-46th-street-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-46th-street-2-sm.jpg");
   background-position: 85% 0; }
 
 .redesign-content .blueline .block-10 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-minnehaha-park-2-sm.jpg"); }
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-minnehaha-park-2-sm.jpg"); }
 
 .redesign-content .blueline .block-11 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/img.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/img.jpg");
   background-position: 20% 0; }
 
 .redesign-content .blueline .block-12 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-fort-snelling-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-fort-snelling-1-sm.jpg");
   background-position: 50% 0; }
 
 .redesign-content .blueline .block-13 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-terminal-1-lindberg-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-terminal-1-lindberg-1-sm.jpg");
   background-position: 0 65%; }
 
 .redesign-content .blueline .block-14 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-terminal-2-humphrey-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-terminal-2-humphrey-2-sm.jpg");
   background-position: 0 50%; }
 
 .redesign-content .blueline .block-15 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-american-blvd-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-american-blvd-1-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .blueline .block-16 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-bloomington-central-4-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-bloomington-central-4-sm.jpg");
   background-position: 0 50%; }
 
 .redesign-content .blueline .block-17 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-28th-avenue-4-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-28th-avenue-4-sm.jpg");
   background-position: 0 10%; }
 
 .redesign-content .blueline .block-18 {
-  background-image: url("../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-moa-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/blue-line-art-moa-1-sm.jpg");
   background-position: 0 30%; }
 
 .redesign-content .greenline .block-1 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-union-depot-1-sm.png");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-union-depot-1-sm.png");
   background-position: 0 73%; }
 
 .redesign-content .greenline .block-2 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-central-station-art-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-central-station-art-2-sm.jpg");
   background-position: 0 95%; }
 
 .redesign-content .greenline .block-3 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-10th-street-station-art-4-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-10th-street-station-art-4-sm.jpg");
   background-position: 0 0; }
 
 .redesign-content .greenline .block-4 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-robert-street-station-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-robert-street-station-3-sm.jpg");
   background-position: 0 93%; }
 
 .redesign-content .greenline .block-5 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-capitol-rice-street-station-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-capitol-rice-street-station-2-sm.jpg");
   background-position: 0 80%; }
 
 .redesign-content .greenline .block-6 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-western-avenue-station-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-western-avenue-station-2-sm.jpg");
   background-position: 0 50%; }
 
 .redesign-content .greenline .block-7 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-dale-street-station-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-dale-street-station-3-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .greenline .block-8 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-victoria-street-station-4-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-victoria-street-station-4-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .greenline .block-9 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-lexington-parkway-station-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-lexington-parkway-station-3-sm.jpg");
   background-position: 0 60%; }
 
 .redesign-content .greenline .block-10 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-hamline-avenue-station-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-hamline-avenue-station-2-sm.jpg");
   background-position: 100% 0; }
 
 .redesign-content .greenline .block-11 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-snelling-avenue-station-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-snelling-avenue-station-1-sm.jpg");
   background-position: 20% 0; }
 
 .redesign-content .greenline .block-12 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-fairview-avenue-station-5-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-fairview-avenue-station-5-sm.jpg");
   background-position: 50% 0; }
 
 .redesign-content .greenline .block-13 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-raymond-station-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-raymond-station-1-sm.jpg");
   background-position: 0 65%; }
 
 .redesign-content .greenline .block-14 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-westgate-station-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-westgate-station-2-sm.jpg");
   background-position: 0 50%; }
 
 .redesign-content .greenline .block-15 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-prospect-park-station-3-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-prospect-park-station-3-sm.jpg");
   background-position: 100% 0; }
 
 .redesign-content .greenline .block-16 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-stadium-village-station-2-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-stadium-village-station-2-sm.jpg");
   background-position: 0 65%; }
 
 .redesign-content .greenline .block-17 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-east-bank-station-4-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-east-bank-station-4-sm.jpg");
   background-position: 30% 0; }
 
 .redesign-content .greenline .block-18 {
-  background-image: url("../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-west-bank-station-1-sm.jpg");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/green-line-art-west-bank-station-1-sm.jpg");
   background-position: 0 20%; }
+
+/***************************************************
+	Miscellaneous Overrides
+***************************************************/
+.respect-the-ride .row,
+.gold-line-partners .row {
+  margin-bottom: 30px; }
+
+.state-fair .row {
+  margin-right: 0;
+  margin-left: 0; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
