@@ -53,7 +53,7 @@ $(document).ready(function() {
     //$('#ctl00_mainContent_BlogView1_pnlInnerBody #ctl00_mainContent_BlogView1_bsocial').remove();
 
     // Ridematch expand/collapse panels
-    $('.panel-collapse').each(function() {
+    $('.ridematch .panel-collapse').each(function() {
         $(this).click(function(event) {
             if (this == event.target) {
                 if ($(this).is('.plus-icon')) {
@@ -65,5 +65,12 @@ $(document).ready(function() {
                 }
             }
         });
+    });
+
+    // Public Art - Image Map popover
+    $('[data-toggle="popover"]').popover({
+        html: true,
+        trigger: 'hover',
+        template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
     });
 });

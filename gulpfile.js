@@ -29,7 +29,8 @@ gulp.task('javascript', function() {
     //return gulp.src('node_modules/jquery/dist/jquery.js')
     return gulp.src([
             'node_modules/bootstrap/js/transition.js',
-            'node_modules/bootstrap/js/collapse.js'
+            'node_modules/bootstrap/js/collapse.js',
+            'node_modules/bootstrap/js/popover.js'
         ])
         .pipe(gulp.dest('src/js'))
 });
@@ -71,9 +72,9 @@ gulp.task('useref', function() {
 // Copy vendor JS to Dist
 gulp.task('vendorJS', function() {
     return gulp.src([
-        'src/js/collapse.js',
-        'src/js/transition.js'
-    ])
+            'src/js/collapse.js',
+            'src/js/transition.js'
+        ])
         .pipe(gulp.dest('dist/js'))
 });
 
