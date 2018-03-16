@@ -28,6 +28,7 @@ gulp.task('browserSync', function() {
 gulp.task('javascript', function() {
     //return gulp.src('node_modules/jquery/dist/jquery.js')
     return gulp.src([
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/bootstrap/js/transition.js',
             'node_modules/bootstrap/js/collapse.js',
             'node_modules/bootstrap/js/popover.js'
