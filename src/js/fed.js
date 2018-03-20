@@ -67,33 +67,10 @@ $(document).ready(function() {
         });
     });
 
-    // Public Art - Image Map popover
-    // var options = {
-    //     html: true,
-    //     placement: function(context, source) {
-    //         var position = $(source).position();
-    //
-    //         if (position.left > 375) {
-    //             return "left";
-    //         }
-    //
-    //         if (position.left < 375) {
-    //             return "right";
-    //         }
-    //
-    //         if (position.top < 90) {
-    //             return "bottom";
-    //         }
-    //
-    //         return "top";
-    //     },
-    //     trigger: 'hover'
-    // };
-    // $('.redesign-content [data-toggle="popover"]').popover(options);
+    //Public Art - Image Map popover
     $('.redesign-content [data-toggle="popover"]').popover({
         html: true,
-        trigger: 'hover'
-        //container: 'area',
-        //placement: 'bottom'
+        trigger: 'hover',
+        placement: 'bottom'
     });
 });
