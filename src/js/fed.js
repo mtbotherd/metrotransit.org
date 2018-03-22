@@ -71,6 +71,6 @@ $(document).ready(function() {
     $('.redesign-content [data-toggle="popover"]').popover({
         html: true,
         trigger: 'hover',
-        placement: 'bottom'
+        placement: 'left'
     });
 });

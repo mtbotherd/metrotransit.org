@@ -337,6 +337,124 @@
 .redesign-content .greenline .block-18 {
   background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_west-bank-station.jpg"); }
 
+.redesign-content .image-map {
+  background-image: url("../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
+  width: 750px;
+  height: 181px;
+  repeat: no-repeat;
+  position: relative; }
+  .redesign-content .image-map .rectangle {
+    position: absolute;
+    width: 15px;
+    height: 100px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: transparent; }
+  .redesign-content .image-map .warehouse {
+    left: 70px; }
+  .redesign-content .image-map .nicollet {
+    left: 102px; }
+  .redesign-content .image-map .government {
+    left: 133px; }
+  .redesign-content .image-map .usbank {
+    left: 164px; }
+  .redesign-content .image-map .cedar {
+    top: 103px;
+    left: 138px; }
+  .redesign-content .image-map .franklin {
+    top: 103px;
+    left: 169px; }
+  .redesign-content .image-map .lakestreet {
+    top: 103px;
+    left: 200px; }
+  .redesign-content .image-map .s38 {
+    top: 103px;
+    left: 231px; }
+  .redesign-content .image-map .s46 {
+    top: 103px;
+    left: 262px; }
+  .redesign-content .image-map .minnehaha {
+    top: 103px;
+    left: 293px; }
+  .redesign-content .image-map .vamed {
+    top: 103px;
+    left: 324px; }
+  .redesign-content .image-map .ftsnelling {
+    top: 103px;
+    left: 355px; }
+  .redesign-content .image-map .term1 {
+    top: 103px;
+    left: 386px; }
+  .redesign-content .image-map .term2 {
+    top: 103px;
+    left: 418px; }
+  .redesign-content .image-map .americanblvd {
+    top: 103px;
+    left: 448px; }
+  .redesign-content .image-map .bloomington {
+    top: 103px;
+    left: 480px; }
+  .redesign-content .image-map .s28 {
+    top: 103px;
+    left: 511px; }
+  .redesign-content .image-map .moa {
+    top: 103px;
+    left: 542px; }
+  .redesign-content .image-map .wbank {
+    top: -13px;
+    left: 201px; }
+  .redesign-content .image-map .ebank {
+    top: -13px;
+    left: 232px; }
+  .redesign-content .image-map .stadiumvlg {
+    top: -13px;
+    left: 263px; }
+  .redesign-content .image-map .prospect {
+    top: -13px;
+    left: 294px; }
+  .redesign-content .image-map .westgate {
+    top: -13px;
+    left: 325px; }
+  .redesign-content .image-map .raymond {
+    top: -13px;
+    left: 356px; }
+  .redesign-content .image-map .fairview {
+    top: -13px;
+    left: 387px; }
+  .redesign-content .image-map .snelling {
+    top: -13px;
+    left: 418px; }
+  .redesign-content .image-map .hamline {
+    top: -13px;
+    left: 449px; }
+  .redesign-content .image-map .lexington {
+    top: -13px;
+    left: 480px; }
+  .redesign-content .image-map .victoria {
+    top: -13px;
+    left: 511px; }
+  .redesign-content .image-map .dale {
+    top: -13px;
+    left: 542px; }
+  .redesign-content .image-map .western {
+    top: -13px;
+    left: 573px; }
+  .redesign-content .image-map .capitolrice {
+    top: -13px;
+    left: 604px; }
+  .redesign-content .image-map .robert {
+    top: -13px;
+    left: 635px; }
+  .redesign-content .image-map .s10 {
+    top: -13px;
+    left: 666px; }
+  .redesign-content .image-map .central {
+    top: -13px;
+    left: 697px; }
+  .redesign-content .image-map .uniondepot {
+    top: -13px;
+    left: 728px; }
+
 /***************************************************
 	Miscellaneous Overrides
 ***************************************************/

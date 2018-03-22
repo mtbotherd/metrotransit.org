@@ -1,0 +1,191 @@
+.image-map {
+    background-image: url("../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
+    width: 750px;
+    height: 181px;
+    repeat: no-repeat;
+    position: relative;
+
+    .rectangle {
+        position: absolute;
+        width: 15px;
+        height: 100px;
+        transform: rotate(45deg);
+        color: transparent;
+    }
+
+    .warehouse {
+        left: 70px;
+    }
+
+    .nicollet {
+        left: 102px;
+    }
+
+    .government {
+        left: 133px;
+    }
+
+    .usbank {
+        left: 164px;
+    }
+
+    .cedar {
+        top: 103px;
+        left: 138px;
+    }
+
+    .franklin {
+        top: 103px;
+        left: 169px;
+    }
+
+    .lakestreet {
+        top: 103px;
+        left: 200px;
+    }
+
+    .s38 {
+        top: 103px;
+        left: 231px;
+    }
+
+    .s46 {
+        top: 103px;
+        left: 262px;
+    }
+
+    .minnehaha {
+        top: 103px;
+        left: 293px;
+    }
+
+    .vamed {
+        top: 103px;
+        left: 324px;
+    }
+
+    .ftsnelling {
+        top: 103px;
+        left: 355px;
+    }
+
+    .term1 {
+        top: 103px;
+        left: 386px;
+    }
+
+    .term2 {
+        top: 103px;
+        left: 418px;
+    }
+
+    .americanblvd {
+        top: 103px;
+        left: 448px;
+    }
+
+    .bloomington {
+        top: 103px;
+        left: 480px;
+    }
+
+    .s28 {
+        top: 103px;
+        left: 511px;
+    }
+
+    .moa {
+        top: 103px;
+        left: 542px;
+    }
+
+    .wbank {
+        top: -13px;
+        left: 201px;
+    }
+
+    .ebank {
+        top: -13px;
+        left: 232px;
+    }
+
+    .stadiumvlg {
+        top: -13px;
+        left: 263px;
+    }
+
+    .prospect {
+        top: -13px;
+        left: 294px;
+    }
+
+    .westgate {
+        top: -13px;
+        left: 325px;
+    }
+
+    .raymond {
+        top: -13px;
+        left: 356px;
+    }
+
+    .fairview {
+        top: -13px;
+        left: 387px;
+    }
+
+    .snelling {
+        top: -13px;
+        left: 418px;
+    }
+
+    .hamline {
+        top: -13px;
+        left: 449px;
+    }
+
+    .lexington {
+        top: -13px;
+        left: 480px;
+    }
+
+    .victoria {
+        top: -13px;
+        left: 511px;
+    }
+
+    .dale {
+        top: -13px;
+        left: 542px;
+    }
+
+    .western {
+        top: -13px;
+        left: 573px;
+    }
+
+    .capitolrice {
+        top: -13px;
+        left: 604px;
+    }
+
+    .robert {
+        top: -13px;
+        left: 635px;
+    }
+
+    .s10 {
+        top: -13px;
+        left: 666px;
+    }
+
+    .central {
+        top: -13px;
+        left: 697px;
+    }
+
+    .uniondepot {
+        top: -13px;
+        left: 728px;
+    }
+}
