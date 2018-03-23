@@ -189,6 +189,9 @@
 /****************************************
     Public Art Styles
 ****************************************/
+.redesign-content .popover {
+  width: 175px; }
+
 .redesign-content .public-art-grid .row {
   margin-right: 0;
   margin-left: 0; }
@@ -338,122 +341,138 @@
   background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_west-bank-station.jpg"); }
 
 .redesign-content .image-map {
-  background-image: url("../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
+  background-image: url("../../../../../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
   width: 750px;
-  height: 181px;
+  height: 166px;
   repeat: no-repeat;
   position: relative; }
   .redesign-content .image-map .rectangle {
     position: absolute;
-    width: 15px;
-    height: 100px;
+    width: 20px;
+    height: 90px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     color: transparent; }
+  .redesign-content .image-map .dot {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .redesign-content .image-map .greenline .dot {
+    top: 75px;
+    left: 4px; }
+  .redesign-content .image-map .blueline .dot {
+    top: -5px;
+    left: -8px; }
   .redesign-content .image-map .warehouse {
-    left: 70px; }
+    top: -6px;
+    left: 64px; }
   .redesign-content .image-map .nicollet {
-    left: 102px; }
+    top: -6px;
+    left: 95px; }
   .redesign-content .image-map .government {
-    left: 133px; }
+    top: -6px;
+    left: 126px; }
   .redesign-content .image-map .usbank {
-    left: 164px; }
-  .redesign-content .image-map .cedar {
-    top: 103px;
-    left: 138px; }
-  .redesign-content .image-map .franklin {
-    top: 103px;
-    left: 169px; }
-  .redesign-content .image-map .lakestreet {
-    top: 103px;
-    left: 200px; }
-  .redesign-content .image-map .s38 {
-    top: 103px;
-    left: 231px; }
-  .redesign-content .image-map .s46 {
-    top: 103px;
-    left: 262px; }
-  .redesign-content .image-map .minnehaha {
-    top: 103px;
-    left: 293px; }
-  .redesign-content .image-map .vamed {
-    top: 103px;
-    left: 324px; }
-  .redesign-content .image-map .ftsnelling {
-    top: 103px;
-    left: 355px; }
-  .redesign-content .image-map .term1 {
-    top: 103px;
-    left: 386px; }
-  .redesign-content .image-map .term2 {
-    top: 103px;
-    left: 418px; }
-  .redesign-content .image-map .americanblvd {
-    top: 103px;
-    left: 448px; }
-  .redesign-content .image-map .bloomington {
-    top: 103px;
-    left: 480px; }
-  .redesign-content .image-map .s28 {
-    top: 103px;
-    left: 511px; }
-  .redesign-content .image-map .moa {
-    top: 103px;
-    left: 542px; }
+    top: -6px;
+    left: 157px; }
   .redesign-content .image-map .wbank {
-    top: -13px;
-    left: 201px; }
+    top: -17px;
+    left: 193px; }
   .redesign-content .image-map .ebank {
-    top: -13px;
-    left: 232px; }
+    top: -17px;
+    left: 224px; }
   .redesign-content .image-map .stadiumvlg {
-    top: -13px;
-    left: 263px; }
+    top: -17px;
+    left: 255px; }
   .redesign-content .image-map .prospect {
-    top: -13px;
-    left: 294px; }
+    top: -17px;
+    left: 286px; }
   .redesign-content .image-map .westgate {
-    top: -13px;
-    left: 325px; }
+    top: -17px;
+    left: 317px; }
   .redesign-content .image-map .raymond {
-    top: -13px;
-    left: 356px; }
+    top: -17px;
+    left: 348px; }
   .redesign-content .image-map .fairview {
-    top: -13px;
-    left: 387px; }
+    top: -17px;
+    left: 379px; }
   .redesign-content .image-map .snelling {
-    top: -13px;
-    left: 418px; }
+    top: -17px;
+    left: 410px; }
   .redesign-content .image-map .hamline {
-    top: -13px;
-    left: 449px; }
+    top: -17px;
+    left: 441px; }
   .redesign-content .image-map .lexington {
-    top: -13px;
-    left: 480px; }
+    top: -17px;
+    left: 472px; }
   .redesign-content .image-map .victoria {
-    top: -13px;
-    left: 511px; }
+    top: -17px;
+    left: 503px; }
   .redesign-content .image-map .dale {
-    top: -13px;
-    left: 542px; }
+    top: -17px;
+    left: 534px; }
   .redesign-content .image-map .western {
-    top: -13px;
-    left: 573px; }
+    top: -17px;
+    left: 565px; }
   .redesign-content .image-map .capitolrice {
-    top: -13px;
-    left: 604px; }
+    top: -17px;
+    left: 596px; }
   .redesign-content .image-map .robert {
-    top: -13px;
-    left: 635px; }
+    top: -17px;
+    left: 627px; }
   .redesign-content .image-map .s10 {
-    top: -13px;
-    left: 666px; }
+    top: -17px;
+    left: 658px; }
   .redesign-content .image-map .central {
-    top: -13px;
-    left: 697px; }
+    top: -17px;
+    left: 689px; }
   .redesign-content .image-map .uniondepot {
-    top: -13px;
-    left: 728px; }
+    top: -17px;
+    left: 720px; }
+  .redesign-content .image-map .cedar {
+    top: 87px;
+    left: 143px; }
+  .redesign-content .image-map .franklin {
+    top: 87px;
+    left: 174px; }
+  .redesign-content .image-map .lakestreet {
+    top: 87px;
+    left: 205px; }
+  .redesign-content .image-map .s38 {
+    top: 87px;
+    left: 236px; }
+  .redesign-content .image-map .s46 {
+    top: 87px;
+    left: 267px; }
+  .redesign-content .image-map .minnehaha {
+    top: 87px;
+    left: 299px; }
+  .redesign-content .image-map .vamed {
+    top: 87px;
+    left: 330px; }
+  .redesign-content .image-map .ftsnelling {
+    top: 87px;
+    left: 361px; }
+  .redesign-content .image-map .term1 {
+    top: 87px;
+    left: 387px; }
+  .redesign-content .image-map .term2 {
+    top: 87px;
+    left: 423px; }
+  .redesign-content .image-map .americanblvd {
+    top: 87px;
+    left: 453px; }
+  .redesign-content .image-map .bloomington {
+    top: 87px;
+    left: 485px; }
+  .redesign-content .image-map .s28 {
+    top: 87px;
+    left: 516px; }
+  .redesign-content .image-map .moa {
+    top: 87px;
+    left: 547px; }
 
 /***************************************************
 	Miscellaneous Overrides

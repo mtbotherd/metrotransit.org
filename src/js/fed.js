@@ -68,9 +68,15 @@ $(document).ready(function() {
     });
 
     //Public Art - Image Map popover
-    $('.redesign-content [data-toggle="popover"]').popover({
+    $('.greenline [data-toggle="popover"]').popover({
         html: true,
         trigger: 'hover',
-        placement: 'left'
+        placement: 'top'
+    });
+
+    $('.blueline [data-toggle="popover"]').popover({
+        html: true,
+        trigger: 'hover',
+        placement: 'bottom'
     });
 });

@@ -1,191 +1,212 @@
 .image-map {
-    background-image: url("../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
+    background-image: url("../../../../../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
     width: 750px;
-    height: 181px;
+    height: 166px;
     repeat: no-repeat;
     position: relative;
 
     .rectangle {
         position: absolute;
-        width: 15px;
-        height: 100px;
+        width: 20px;
+        height: 90px;
         transform: rotate(45deg);
         color: transparent;
     }
 
+    .dot {
+        position: absolute;
+        width: 25px;
+        height: 20px;
+        transform: rotate(45deg);
+    }
+
+    .greenline .dot {
+        top: 75px;
+        left: 4px;
+    }
+
+    .blueline .dot {
+        top: -5px;
+        left: -8px;
+    }
+
     .warehouse {
-        left: 70px;
+        top: -6px;
+        left: 64px;
     }
 
     .nicollet {
-        left: 102px;
+        top: -6px;
+        left: 95px;
     }
 
     .government {
-        left: 133px;
+        top: -6px;
+        left: 126px;
     }
 
     .usbank {
-        left: 164px;
-    }
-
-    .cedar {
-        top: 103px;
-        left: 138px;
-    }
-
-    .franklin {
-        top: 103px;
-        left: 169px;
-    }
-
-    .lakestreet {
-        top: 103px;
-        left: 200px;
-    }
-
-    .s38 {
-        top: 103px;
-        left: 231px;
-    }
-
-    .s46 {
-        top: 103px;
-        left: 262px;
-    }
-
-    .minnehaha {
-        top: 103px;
-        left: 293px;
-    }
-
-    .vamed {
-        top: 103px;
-        left: 324px;
-    }
-
-    .ftsnelling {
-        top: 103px;
-        left: 355px;
-    }
-
-    .term1 {
-        top: 103px;
-        left: 386px;
-    }
-
-    .term2 {
-        top: 103px;
-        left: 418px;
-    }
-
-    .americanblvd {
-        top: 103px;
-        left: 448px;
-    }
-
-    .bloomington {
-        top: 103px;
-        left: 480px;
-    }
-
-    .s28 {
-        top: 103px;
-        left: 511px;
-    }
-
-    .moa {
-        top: 103px;
-        left: 542px;
+        top: -6px;
+        left: 157px;
     }
 
     .wbank {
-        top: -13px;
-        left: 201px;
+        top: -17px;
+        left: 193px;
     }
 
     .ebank {
-        top: -13px;
-        left: 232px;
+        top: -17px;
+        left: 224px;
     }
 
     .stadiumvlg {
-        top: -13px;
-        left: 263px;
+        top: -17px;
+        left: 255px;
     }
 
     .prospect {
-        top: -13px;
-        left: 294px;
+        top: -17px;
+        left: 286px;
     }
 
     .westgate {
-        top: -13px;
-        left: 325px;
+        top: -17px;
+        left: 317px;
     }
 
     .raymond {
-        top: -13px;
-        left: 356px;
+        top: -17px;
+        left: 348px;
     }
 
     .fairview {
-        top: -13px;
-        left: 387px;
+        top: -17px;
+        left: 379px;
     }
 
     .snelling {
-        top: -13px;
-        left: 418px;
+        top: -17px;
+        left: 410px;
     }
 
     .hamline {
-        top: -13px;
-        left: 449px;
+        top: -17px;
+        left: 441px;
     }
 
     .lexington {
-        top: -13px;
-        left: 480px;
+        top: -17px;
+        left: 472px;
     }
 
     .victoria {
-        top: -13px;
-        left: 511px;
+        top: -17px;
+        left: 503px;
     }
 
     .dale {
-        top: -13px;
-        left: 542px;
+        top: -17px;
+        left: 534px;
     }
 
     .western {
-        top: -13px;
-        left: 573px;
+        top: -17px;
+        left: 565px;
     }
 
     .capitolrice {
-        top: -13px;
-        left: 604px;
+        top: -17px;
+        left: 596px;
     }
 
     .robert {
-        top: -13px;
-        left: 635px;
+        top: -17px;
+        left: 627px;
     }
 
     .s10 {
-        top: -13px;
-        left: 666px;
+        top: -17px;
+        left: 658px;
     }
 
     .central {
-        top: -13px;
-        left: 697px;
+        top: -17px;
+        left: 689px;
     }
 
     .uniondepot {
-        top: -13px;
-        left: 728px;
+        top: -17px;
+        left: 720px;
+    }
+
+    .cedar {
+        top: 87px;
+        left: 143px;
+    }
+
+    .franklin {
+        top: 87px;
+        left: 174px;
+    }
+
+    .lakestreet {
+        top: 87px;
+        left: 205px;
+    }
+
+    .s38 {
+        top: 87px;
+        left: 236px;
+    }
+
+    .s46 {
+        top: 87px;
+        left: 267px;
+    }
+
+    .minnehaha {
+        top: 87px;
+        left: 299px;
+    }
+
+    .vamed {
+        top: 87px;
+        left: 330px;
+    }
+
+    .ftsnelling {
+        top: 87px;
+        left: 361px;
+    }
+
+    .term1 {
+        top: 87px;
+        left: 387px;
+    }
+
+    .term2 {
+        top: 87px;
+        left: 423px;
+    }
+
+    .americanblvd {
+        top: 87px;
+        left: 453px;
+    }
+
+    .bloomington {
+        top: 87px;
+        left: 485px;
+    }
+
+    .s28 {
+        top: 87px;
+        left: 516px;
+    }
+
+    .moa {
+        top: 87px;
+        left: 547px;
     }
 }
