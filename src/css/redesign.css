@@ -215,21 +215,27 @@
     background: rgba(0, 83, 160, 0.69); }
   .redesign-content .tile .tile-overlay-green {
     background-color: rgba(0, 130, 68, 0.69); }
+  .redesign-content .tile .tile-overlay-grey {
+    background-color: rgba(51, 51, 51, 0.69); }
   .redesign-content .tile .tile-overlay-blue:hover,
-  .redesign-content .tile .tile-overlay-green:hover {
+  .redesign-content .tile .tile-overlay-green:hover,
+  .redesign-content .tile .tile-overlay-grey:hover {
     background: none; }
   .redesign-content .tile .tile-overlay-blue a,
-  .redesign-content .tile .tile-overlay-green a {
+  .redesign-content .tile .tile-overlay-green a,
+  .redesign-content .tile .tile-overlay-grey a {
     color: #fff;
     display: block;
     font-weight: 700;
     padding: 74px 10px;
     text-decoration: none; }
     .redesign-content .tile .tile-overlay-blue a:hover,
-    .redesign-content .tile .tile-overlay-green a:hover {
+    .redesign-content .tile .tile-overlay-green a:hover,
+    .redesign-content .tile .tile-overlay-grey a:hover {
       opacity: 0; }
   .redesign-content .tile .tile-overlay-blue .text-plus,
-  .redesign-content .tile .tile-overlay-green .text-plus {
+  .redesign-content .tile .tile-overlay-green .text-plus,
+  .redesign-content .tile .tile-overlay-grey .text-plus {
     padding: 65.5px 10px; }
 
 .redesign-content .blueline .block-1 {
@@ -339,6 +345,27 @@
 
 .redesign-content .greenline .block-18 {
   background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_west-bank-station.jpg"); }
+
+.redesign-content .facilities .block-1 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_central_station_4.jpg"); }
+
+.redesign-content .facilities .block-2 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_target.jpg"); }
+
+.redesign-content .facilities .block-3 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_chicago_lake.jpg"); }
+
+.redesign-content .facilities .block-4 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_o_and_m_industry.jpg"); }
+
+.redesign-content .facilities .block-5 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_smith_2.jpg"); }
+
+.redesign-content .facilities .block-6 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_big_lake_.jpg"); }
+
+.redesign-content .facilities .block-7 {
+  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_lindbergh_dragonfly.jpg"); }
 
 .redesign-content .image-map {
   background-image: url("../../../../../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");

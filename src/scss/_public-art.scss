@@ -44,8 +44,13 @@
             background-color: rgba(0, 130, 68, .69);
         }
 
+        .tile-overlay-grey {
+            background-color: rgba(51, 51, 51, .69);
+        }
+
         .tile-overlay-blue,
-        .tile-overlay-green {
+        .tile-overlay-green,
+        .tile-overlay-grey {
             &:hover {
                 background: none; // Will work on desktop only.
             }
@@ -68,6 +73,5 @@
         }
     }
     @import './public-art-grid.scss';
-    //@import './public-art-grid_local.scss';
     @import './image-map.scss';
 }
