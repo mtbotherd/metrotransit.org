@@ -237,6 +237,10 @@
   .redesign-content .tile .tile-overlay-green .text-plus,
   .redesign-content .tile .tile-overlay-grey .text-plus {
     padding: 65.5px 10px; }
+  .redesign-content .tile .tile-overlay-blue .text-plus-plus,
+  .redesign-content .tile .tile-overlay-green .text-plus-plus,
+  .redesign-content .tile .tile-overlay-grey .text-plus-plus {
+    padding: 57px 10px; }
 
 .redesign-content .blueline .block-1 {
   background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_warehouse_district.jpg"); }
