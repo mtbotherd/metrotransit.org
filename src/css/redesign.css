@@ -396,6 +396,9 @@
   .redesign-content .image-map .blueline .dot {
     top: -5px;
     left: -8px; }
+  .redesign-content .image-map .targetfield {
+    top: -5px;
+    left: 32px; }
   .redesign-content .image-map .warehouse {
     top: -6px;
     left: 64px; }
