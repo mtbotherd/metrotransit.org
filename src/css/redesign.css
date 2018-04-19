@@ -60,6 +60,9 @@
   .form-redesign .form-inline .form-group .checkbox-list td {
     padding-right: 1em; }
 
+.form-redesign input[type="file"] {
+  padding-left: 0 !important; }
+
 .form-redesign .checkbox-group,
 .form-redesign .radio-group {
   margin-bottom: 1em; }

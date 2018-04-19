@@ -84,6 +84,10 @@
         }
     }
 
+    input[type="file"] {
+        padding-left: 0 !important;
+    }
+
     .checkbox-group,
     .radio-group {
         margin-bottom: 1em;
