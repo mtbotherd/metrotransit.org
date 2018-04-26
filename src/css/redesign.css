@@ -100,6 +100,11 @@
     font-weight: 700;
     margin: 0; }
 
+.redesign-content .callout-yellow {
+  margin-bottom: 1em; }
+  .redesign-content .callout-yellow p:last-child {
+    margin: 0; }
+
 .redesign-content .sl {
   min-height: 105px; }
 

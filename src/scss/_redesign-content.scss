@@ -38,6 +38,14 @@
         }
     }
 
+    .callout-yellow {
+        margin-bottom: 1em;
+        
+        p:last-child {
+            margin: 0;
+        }
+    }
+
     .sl {
         min-height: 105px;
     }

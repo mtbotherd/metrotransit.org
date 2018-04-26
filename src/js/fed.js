@@ -101,4 +101,18 @@ $(document).ready(function() {
     $('.panel-body-18').appendTo('#detour18 .panel-body');
     $('.panel-body-19').appendTo('#detour19 .panel-body');
     $('.panel-body-20').appendTo('#detour20 .panel-body');
+
+    // Community Event Request form - Toggle form based on number of days of event selected
+    $(".number-days").change(function(){
+        console.log("Found number-days");
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".event").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".event").hide();
+            }
+        });
+    }).change();
 });

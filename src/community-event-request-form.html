@@ -14,6 +14,7 @@
     <!-- endbuild -->
     <script src="https://www.metrotransit.org/ClientScript/jquery191/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.metrotransit.org/ClientScript/jqueryui1102/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- build:js js/fed.js -->
     <script type="text/javascript" src="js/fed.js"></script>
     <!-- endbuild -->
@@ -217,9 +218,10 @@ continue to improve the accessibility of our website.</a>
             <div id="wrapcenter">
                 <div id='ctl00_Breadcrumbs1_pnlWrapper' class='breadcrumbs'>
                     <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl00_lnkNode" class="unselectedcrumb" href="/home">Home</a> &gt;
-                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl02_lnkCurrent" class="selectedcrumb" href="/riders-almanac-blog">Rider&#39;s Almanac Blog</a>
+                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl02_lnkNode" class="unselectedcrumb" href="/outreach">Outreach</a> &gt;
+                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl02_lnkCurrent" class="selectedcrumb" href="/outreach">Community Event Request Form</a>
                 </div>
-                <div id='ctl00_divCenter' class='art-layout-cell art-content-wide center-nomargins cmszone'>
+                <div id='ctl00_divCenter' class='art-layout-cell art-content-wide center-nomargins cmszone redesign-content'>
                     <span style="position:absolute"><a id="maincontent" name="maincontent">&nbsp;</a></span>
                     <div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-content clearfix'>
                         <div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
@@ -234,303 +236,317 @@ continue to improve the accessibility of our website.</a>
                                                     <!-- START OF FRONT END CONTENT -->
 
                                                     <div class="mt-form form-redesign">
-                                                        <h1>Request for Metro Transit At Your Community Event</h1>
-                                                        <h2>Event Information</h2>
+                                                        <h1>Request Metro Transit At Your Community Event</h1>
+                                                        <p>Please submit your request at least 45 days prior to your event date.</p>
                                                         <p class="required-notice"> = Required</p>
 
-                                                        <div class="form-inline">
-                                                            <div class="form-group">
-                                                                <label for="current_date" class="required">Today's date</label><br />
-                                                                <div class="date-picker input-group">
-                                                                    <input type="text" id="report_date" class="form-control" date-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
-                                                                    <span class="add-on date input-group-addon">
-                                                                        <i class="fa fa-calendar icon-calendar" aria-hidden="true"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="row">
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-6" style="border-right: 1px solid #ccc;">
+                                                                <h2>Event Information</h2>
+                                                                <div class="form-inline">
+                                                                    <div class="form-group">
+                                                                        <label for="current_date" class="required">Today's date</label><br />
+                                                                        <div class="date-picker input-group">
+                                                                            <input type="text" id="report_date" class="form-control" date-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
+                                                                            <span class="add-on date input-group-addon">
+                                                                                <i class="fa fa-calendar icon-calendar" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                                 <div class="form-group">
                                                                     <label for="requested_by" class="required">Requested by</label><br />
                                                                     <input type="text" id="requeted_by" class="form-control" required />
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="contact_phone" class="required">Contact phone</label><br />
                                                                     <input type="text" id="contact_phone" class="form-control" required />
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="contact_email" class="required">Contact email</label><br />
                                                                     <input type="email" id="contact_email" class="form-control" required />
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="event_name" class="required">Event name</label><br />
                                                                     <input type="text" id="report_date" class="form-control" required />
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row form-inline">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="start_date" class="required">Start date</label><br />
-                                                                    <div class="date-picker input-group">
-                                                                        <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
-                                                                        <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="number-days" class="required">How many days is your event?</label>
+                                                                            <select class="number-days form-control">
+                                                                                <option value="">Select number of days</option>
+                                                                                <option value="one-day">1 day</option>
+                                                                                <option value="two-day">2 days</option>
+                                                                            </select>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="end_date">End date</label><br />
-                                                                    <div class="date-picker input-group">
-                                                                        <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" />
-                                                                        <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row form-inline">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="start_time" class="required">Start time</label><br />
-                                                                    <div class="time-picker input-group">
-                                                                        <input type="text" id="start_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
-                                                                        <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                <div class="event one-day">
+                                                                    <div class="row form-inline">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="start_date" class="required">Event date</label><br />
+                                                                                <div class="date-picker input-group">
+                                                                                    <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
+                                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="end_time" class="required">End time</label><br />
-                                                                    <div class="time-picker input-group">
-                                                                        <input type="text" id="end_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
-                                                                        <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
+                                                                    <div class="row form-inline">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="start_time" class="required">Start time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="start_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="end_time" class="required">End time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="end_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="event two-day">
+                                                                    <div class="row form-inline">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="start_date" class="required">Event start date</label><br />
+                                                                                <div class="date-picker input-group">
+                                                                                    <input type="text" id="start_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" required />
+                                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="end_date" class="required">Event end date</label><br />
+                                                                                <div class="date-picker input-group">
+                                                                                    <input type="text" id="end_date" class="form-control" data-format="MM/dd/yyyy" placeholder="mm/dd/yyyy" />
+                                                                                    <span class="add-on date input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row form-inline">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="day1_start_time" class="required">Day 1 start time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="day1_start_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="day1_end_time" class="required">Day 1 end time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="day1_end_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row form-inline">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="day2_start_time" class="required">Day 2 start time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="day2_start_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="day2_end_time" class="required">Day 2 end time</label><br />
+                                                                                <div class="time-picker input-group">
+                                                                                    <input type="text" id="day2_end_time" class="form-control" data-format="HH:mm PP" placeholder="hh:mm" required />
+                                                                                    <span class="add-on time input-group-addon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                                 <div class="form-group">
                                                                     <label for="location" class="required">Event location</label><br />
-                                                                    <input type="text" id="location" class="form-control" required />
+                                                                    <textarea id="location" class="form-control" required></textarea>
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="est_attendance" class="required">Estimated attendance</label><br />
-                                                                    <input type="text" id="est_addendance" class="form-control" required />
+                                                                    <input type="number" id="est_addendance" class="form-control" required />
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="event_purpose" class="required">Purpose of event</label><br />
                                                                     <textarea id="event_purpose" class="form-control" required></textarea>
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="event_cost" class="required">Event cost/fee</label><br />
                                                                     <input type="text" id="event_cost" class="form-control" required />
                                                                 </div>
                                                             </div>
-                                                        </div>
 
-                                                        <h2>Event Type</h2>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label class="required">Type of event</label>
-                                                                    <select class="form-control">
-                                                                        <option value="communityEvent">Community event</option>
-                                                                        <option value="festivalParade">Festival/Parade</option>
-                                                                        <option value="employmentFair">Employment Fair</option>
-                                                                        <option value="commTransFair">Commuter/Transportation Fair</option>
-                                                                        <option value="resrcHlthFair">Resource/Health Fair</option>
-                                                                        <option value="environmentFair">Environment Fair</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
                                                             <div class="col-md-6">
+                                                                <h2>Event Type</h2>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <label class="required">Type of event</label>
+                                                                            <select class="form-control">
+                                                                                <option value="">Select event type</option>
+                                                                                <option value="communityEvent">Community Event/Festival/Celebration</option>
+                                                                                <option value="parade">Parade</option>
+                                                                                <option value="employmentFair">Employment Fair</option>
+                                                                                <option value="commTransFair">Commuter/Transportation Fair</option>
+                                                                                <option value="resrcHlthFair">Resource/Health Fair</option>
+                                                                                <option value="environmentFair">Environment Fair</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                                 <label>Requested participation</label>
                                                                 <table class="checkbox-group">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <input type="checkbox" value="" />
-                                                                            <label>Police</label>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <input type="checkbox" value="" />
-                                                                            <label>Maintenance</label>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <input type="checkbox" value="" />
-                                                                            <label>HR</label>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <input type="checkbox" value="" />
-                                                                            <label>Vehicles</label>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                        </div>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" value="" />
+                                                                                    <label>Police (Police car, K-9/officers)</label>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" value="" />
+                                                                                    <label>Bus</label>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
 
-                                                        <div class="row">
-                                                            <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="event_description">Please include a description of your event</label>
-                                                                    <textarea class="form-control"></textarea>
+                                                                    <label for="event_description">Please describe your event</label>
+                                                                    <textarea id="event_description" class="form-control"></textarea>
                                                                 </div>
-                                                            </div>
-                                                        </div>
 
-                                                        <h2>Accomodations</h2>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="chairTable" class="required">Chair/Table provided</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="canopy" class="required">Canopy provided</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="wifi" class="required">Wi-Fi available</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="parking" class="required">Parking provided</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="locationSetup" class="required">Location/Set Up</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="accessible" class="required">Disability accessibility</label>
-                                                                    <table class="radio-group">
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value="yes" />
-                                                                                <label>Yes</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <input type="radio" value"no" />
-                                                                                <label>No</label>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
+                                                                <div class="well">
+                                                                    <h3>Do you provide?</strong></h3>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="chairTable" class="required">Chair/Table</label>
+                                                                                <table class="radio-group">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value="yes" />
+                                                                                            <label>Yes</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value"no" />
+                                                                                            <label>No</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="canopy" class="required">Canopy</label>
+                                                                                <table class="radio-group">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value="yes" />
+                                                                                            <label>Yes</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value"no" />
+                                                                                            <label>No</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="wifi" class="required">Wi-Fi available</label>
+                                                                                <table class="radio-group">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value="yes" />
+                                                                                            <label>Yes</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value"no" />
+                                                                                            <label>No</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="parking" class="required">Parking</label>
+                                                                                <table class="radio-group">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value="yes" />
+                                                                                            <label>Yes</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value"no" />
+                                                                                            <label>No</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="locationSetup" class="required">Specific dropoff/setup location</label>
+                                                                                <table class="radio-group">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value="yes" />
+                                                                                            <label>Yes</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="radio" value"no" />
+                                                                                            <label>No</label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <p>&nbsp;</p>
+                                                        <input type="submit" class="mt-button btn btn-primary pull-right" value="Submit" />
                                                     </div>
 
                                                     <!-- END OF FRONT END CONTENT -->
