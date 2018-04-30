@@ -51,60 +51,6 @@
         }
     }
 
-    .panel-heading {
-        border-radius: 0;
-
-        a {
-            display: block;
-            padding: 1rem 1.5rem;
-            text-decoration: none;
-        }
-
-        .accordion-toggle:after {
-            font-family: 'FontAwesome';
-            float: right;
-            content: "\f077";
-        }
-
-        .accordion-toggle.collapsed:after {
-            content: "\f078";
-        }
-    }
-
-    #accordion {
-        .panel-heading {
-            padding: 0;
-        }
-    }
-
-    .panel-primary,
-    .panel-success,
-    .panel-info,
-    .panel-warning,
-    .panel-danger {
-        .panel-heading {
-            padding: 10px 15px !important;
-        }
-    }
-
-    .panel-body-1,
-    .panel-body-2,
-    .panel-body-3,
-    .panel-body-4,
-    .panel-body-5 {
-        position: relative;
-        top: -10px;
-    }
-
-    .panel .panel {
-        border-radius: 0;
-        margin-bottom: 1.5rem;
-
-        .panel-heading {
-            padding: 1rem;
-        }
-    }
-
     table.detours {
         width: 100%;
 
@@ -141,5 +87,9 @@
 
     .sl {
         min-height: 105px;
+    }
+
+    .well {
+        border-radius: 0;
     }
 }

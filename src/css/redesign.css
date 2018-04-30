@@ -1,3 +1,12 @@
+/*##############################
+    Color scheme
+##############################*/
+/*##############################
+    Font colors
+##############################*/
+/*##############################
+    Spacing
+##############################*/
 .form-redesign h4 {
   margin: 1em 0; }
 
@@ -109,43 +118,6 @@
   .redesign-content .callout-yellow p:last-child {
     margin: 0; }
 
-.redesign-content .panel-heading {
-  border-radius: 0; }
-  .redesign-content .panel-heading a {
-    display: block;
-    padding: 1rem 1.5rem;
-    text-decoration: none; }
-  .redesign-content .panel-heading .accordion-toggle:after {
-    font-family: 'FontAwesome';
-    float: right;
-    content: "\f077"; }
-  .redesign-content .panel-heading .accordion-toggle.collapsed:after {
-    content: "\f078"; }
-
-.redesign-content #accordion .panel-heading {
-  padding: 0; }
-
-.redesign-content .panel-primary .panel-heading,
-.redesign-content .panel-success .panel-heading,
-.redesign-content .panel-info .panel-heading,
-.redesign-content .panel-warning .panel-heading,
-.redesign-content .panel-danger .panel-heading {
-  padding: 10px 15px !important; }
-
-.redesign-content .panel-body-1,
-.redesign-content .panel-body-2,
-.redesign-content .panel-body-3,
-.redesign-content .panel-body-4,
-.redesign-content .panel-body-5 {
-  position: relative;
-  top: -10px; }
-
-.redesign-content .panel .panel {
-  border-radius: 0;
-  margin-bottom: 1.5rem; }
-  .redesign-content .panel .panel .panel-heading {
-    padding: 1rem; }
-
 .redesign-content table.detours {
   width: 100%; }
   .redesign-content table.detours th {
@@ -171,6 +143,66 @@
 
 .redesign-content .sl {
   min-height: 105px; }
+
+.redesign-content .well {
+  border-radius: 0; }
+
+.redesign-content .panel-group .panel {
+  border-radius: 0; }
+
+.redesign-content .panel-heading {
+  border-radius: 0; }
+  .redesign-content .panel-heading a {
+    display: block;
+    padding: 1em 1.5em;
+    text-decoration: none; }
+  .redesign-content .panel-heading .accordion-toggle:after {
+    font-family: 'FontAwesome';
+    float: right;
+    content: "\f077"; }
+  .redesign-content .panel-heading .accordion-toggle.collapsed:after {
+    content: "\f078"; }
+
+.redesign-content #accordion .panel-heading {
+  padding: 0;
+  position: relative; }
+
+.redesign-content .panel-primary .panel-heading,
+.redesign-content .panel-success .panel-heading,
+.redesign-content .panel-info .panel-heading,
+.redesign-content .panel-warning .panel-heading,
+.redesign-content .panel-danger .panel-heading {
+  padding: 10px 15px !important; }
+
+.redesign-content .panel-body-1,
+.redesign-content .panel-body-2,
+.redesign-content .panel-body-3,
+.redesign-content .panel-body-4,
+.redesign-content .panel-body-5 {
+  position: relative;
+  top: -10px; }
+
+.redesign-content .panel .panel {
+  border-radius: 0;
+  margin-bottom: 1.5em; }
+  .redesign-content .panel .panel .panel-heading {
+    padding: 1em; }
+
+.redesign-content .panel-blue .map-location-inset {
+  background-color: #0489cc;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 6px 0;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 30px;
+  height: 30px;
+  text-align: center; }
+
+.redesign-content .panel-blue a {
+  margin-left: 48px;
+  padding: 15px; }
 
 /*********************************************************
     Rider's Almanac Redesign Styles - June 2017
@@ -669,6 +701,90 @@
   .redesign-content .image-map .moa {
     top: 87px;
     left: 547px; }
+
+.redesign-content .park-ride-map {
+  background-image: url("../../../../../Data/sites/1/media/about/improvements/35w/Construction-pr-map.jpg");
+  background-repeat: no-repeat;
+  width: 940px;
+  height: 954.38px;
+  position: relative; }
+  .redesign-content .park-ride-map .popover {
+    width: auto; }
+    .redesign-content .park-ride-map .popover p {
+      margin-top: 0; }
+      .redesign-content .park-ride-map .popover p i {
+        margin-right: 10px; }
+    .redesign-content .park-ride-map .popover .alert {
+      text-align: center; }
+  .redesign-content .park-ride-map .hotspot {
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    padding: 8px 13px;
+    position: absolute; }
+  .redesign-content .park-ride-map .pnr1 {
+    bottom: 167px;
+    right: 201px; }
+  .redesign-content .park-ride-map .pnr2 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr3 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr4 {
+    top: 429px;
+    left: 457px; }
+  .redesign-content .park-ride-map .pnr5 {
+    top: 429px;
+    left: 494px; }
+  .redesign-content .park-ride-map .pnr6 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr7 {
+    top: 754px;
+    left: 704px; }
+  .redesign-content .park-ride-map .pnr8 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr9 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr10 {
+    top: 754px;
+    left: 704px; }
+  .redesign-content .park-ride-map .pnr11 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr12 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr13 {
+    top: 754px;
+    left: 704px; }
+  .redesign-content .park-ride-map .pnr14 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr15 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr16 {
+    top: 754px;
+    left: 704px; }
+  .redesign-content .park-ride-map .pnr17 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr18 {
+    bottom: 129px;
+    right: 69px; }
+  .redesign-content .park-ride-map .pnr19 {
+    top: 754px;
+    left: 704px; }
+  .redesign-content .park-ride-map .pnr20 {
+    top: 660px;
+    left: 695px; }
+  .redesign-content .park-ride-map .pnr21 {
+    bottom: 129px;
+    right: 69px; }
 
 /***************************************************
 	Miscellaneous Overrides

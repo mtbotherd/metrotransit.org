@@ -80,6 +80,13 @@ $(document).ready(function() {
         placement: 'bottom'
     });
 
+    $('.park-ride-map [data-toggle="popover"]').popover({
+        html: true,
+        trigger: 'hover'
+        //placement: 'top'
+    });
+
+
     // Inject panel body content into corresponding panel
     $('.panel-body-1').appendTo('#detour1 .panel-body');
     $('.panel-body-2').appendTo('#detour2 .panel-body');

@@ -1,5 +1,138 @@
 .redesign-content {
-    .i35w {
-        
+
+    .park-ride-map {
+        background-image: url('../../../../../Data/sites/1/media/about/improvements/35w/Construction-pr-map.jpg');
+        background-repeat: no-repeat;
+        width: 940px;
+        height: 954.38px;
+        position: relative;
+
+        .popover {
+            width: auto;
+
+            p {
+                margin-top: 0;
+                //text-align: center;
+
+                &:first-child {
+                    //font-weight: 700;
+                }
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            .alert {
+                text-align: center;
+            }
+        }
+
+        .hotspot {
+            border-radius: 50%;
+            color: transparent;
+            cursor: pointer;
+            padding: 8px 13px;
+            position: absolute;
+        }
+
+        .pnr1 {
+            bottom: 167px;
+            right: 201px;
+        }
+
+        .pnr2 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr3 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr4 {
+            top: 429px;
+            left: 457px;
+        }
+
+        .pnr5 {
+            top: 429px;
+            left: 494px;
+        }
+
+        .pnr6 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr7 {
+            top: 754px;
+            left: 704px;
+        }
+
+        .pnr8 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr9 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr10 {
+            top: 754px;
+            left: 704px;
+        }
+
+        .pnr11 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr12 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr13 {
+            top: 754px;
+            left: 704px;
+        }
+
+        .pnr14 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr15 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr16 {
+            top: 754px;
+            left: 704px;
+        }
+
+        .pnr17 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr18 {
+            bottom: 129px;
+            right: 69px;
+        }
+        .pnr19 {
+            top: 754px;
+            left: 704px;
+        }
+
+        .pnr20 {
+            top: 660px;
+            left: 695px;
+        }
+
+        .pnr21 {
+            bottom: 129px;
+            right: 69px;
+        }
     }
 }
