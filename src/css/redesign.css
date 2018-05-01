@@ -200,6 +200,9 @@
   height: 30px;
   text-align: center; }
 
+.redesign-content .panel-blue .panel-body i {
+  margin-right: 10px; }
+
 .redesign-content .panel-blue a {
   margin-left: 48px;
   padding: 15px; }
@@ -720,14 +723,14 @@
     border-radius: 50%;
     color: transparent;
     cursor: pointer;
-    padding: 8px 13px;
+    padding: 8px 14px;
     position: absolute; }
   .redesign-content .park-ride-map .pnr1 {
     bottom: 167px;
     right: 201px; }
   .redesign-content .park-ride-map .pnr2 {
-    top: 660px;
-    left: 695px; }
+    bottom: 262px;
+    right: 212px; }
   .redesign-content .park-ride-map .pnr3 {
     bottom: 129px;
     right: 69px; }
@@ -738,53 +741,53 @@
     top: 429px;
     left: 494px; }
   .redesign-content .park-ride-map .pnr6 {
-    bottom: 129px;
-    right: 69px; }
+    top: 300px;
+    right: 237px; }
   .redesign-content .park-ride-map .pnr7 {
-    top: 754px;
-    left: 704px; }
+    bottom: 326px;
+    right: 370px; }
   .redesign-content .park-ride-map .pnr8 {
-    top: 660px;
-    left: 695px; }
+    bottom: 293px;
+    right: 379px; }
   .redesign-content .park-ride-map .pnr9 {
-    bottom: 129px;
-    right: 69px; }
+    top: 477px;
+    right: 203px; }
   .redesign-content .park-ride-map .pnr10 {
-    top: 754px;
-    left: 704px; }
+    top: 324px;
+    right: 34px; }
   .redesign-content .park-ride-map .pnr11 {
-    top: 660px;
-    left: 695px; }
+    bottom: 377px;
+    right: 133px; }
   .redesign-content .park-ride-map .pnr12 {
-    bottom: 129px;
-    right: 69px; }
+    top: 201px;
+    left: 397px; }
   .redesign-content .park-ride-map .pnr13 {
-    top: 754px;
-    left: 704px; }
+    bottom: 16px;
+    right: 400px; }
   .redesign-content .park-ride-map .pnr14 {
-    top: 660px;
-    left: 695px; }
+    bottom: 41px;
+    right: 192px; }
   .redesign-content .park-ride-map .pnr15 {
-    bottom: 129px;
-    right: 69px; }
+    top: 155px;
+    right: 143px; }
   .redesign-content .park-ride-map .pnr16 {
-    top: 754px;
-    left: 704px; }
+    top: 124px;
+    right: 148px; }
   .redesign-content .park-ride-map .pnr17 {
-    top: 660px;
-    left: 695px; }
+    top: 268px;
+    left: 452px; }
   .redesign-content .park-ride-map .pnr18 {
-    bottom: 129px;
-    right: 69px; }
+    bottom: 201px;
+    right: -5px; }
   .redesign-content .park-ride-map .pnr19 {
-    top: 754px;
-    left: 704px; }
+    bottom: 185px;
+    left: 398px; }
   .redesign-content .park-ride-map .pnr20 {
-    top: 660px;
-    left: 695px; }
+    bottom: 265px;
+    left: 60px; }
   .redesign-content .park-ride-map .pnr21 {
-    bottom: 129px;
-    right: 69px; }
+    bottom: 318px;
+    left: 146px; }
 
 /***************************************************
 	Miscellaneous Overrides

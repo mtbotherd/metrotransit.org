@@ -82,7 +82,8 @@ $(document).ready(function() {
 
     $('.park-ride-map [data-toggle="popover"]').popover({
         html: true,
-        trigger: 'hover'
+        trigger: 'hover',
+        constraints: [ { to: 'scrollParent', pin: true } ]
         //placement: 'top'
     });
 
