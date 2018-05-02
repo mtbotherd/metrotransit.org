@@ -1,7 +1,16 @@
+/*********************************************************
+    35W Construction redesign - May 2018
+*********************************************************/
+
 .redesign-content {
 
+    .transit-icon {
+        width: 71px;
+        height: 71px;
+    }
+
     .park-ride-map {
-        background-image: url('../../../../../Data/sites/1/media/about/improvements/35w/Construction-pr-map.jpg');
+        background-image: url('../../../../../Data/sites/1/media/about/improvements/orange-line/Construction-pr-map.jpg');
         background-repeat: no-repeat;
         width: 940px;
         height: 954.38px;
@@ -9,6 +18,21 @@
 
         .popover {
             width: auto;
+            border-radius: 0;
+            padding: 0;
+
+            .map-location-inset {
+                background-color: #0489cc;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                color: $white;
+                padding: 6px 0;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                //margin-right: 10px;
+            }
 
             p {
                 margin-top: 0;
@@ -20,6 +44,28 @@
 
             .alert {
                 text-align: center;
+            }
+
+            .popover-title {
+                background-color: #0489cc;
+                color: #fff;
+                border-radius: 0;
+                min-height: 50px;
+                text-transform: uppercase;
+
+                .prcity {
+                    margin-left: 40px;
+                    line-height: 2;
+                }
+            }
+
+            .popover-content {
+                p:first-child {
+                    margin-bottom: 0;
+                }
+                address {
+                    margin-bottom: 10px;
+                }
             }
         }
 

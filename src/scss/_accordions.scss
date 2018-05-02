@@ -1,3 +1,7 @@
+/*********************************************************
+    Accordions
+*********************************************************/
+
 .redesign-content {
 
     .panel-group .panel {
@@ -59,6 +63,13 @@
         }
     }
 
+    // 35w Construction Accordion (mobile)
+    .accordion-header {
+        background-color: #0053a0;
+        color: #fff;
+        padding: 15px;
+    }
+
     .panel-blue {
         .map-location-inset {
             background-color: #0489cc;
@@ -66,20 +77,29 @@
             color: $white;
             padding: 6px 0;
             position: absolute;
-            top: 0.5em;
-            left: 0.5em;
             width: 30px;
             height: 30px;
             text-align: center;
             //margin-right: 10px;
         }
 
-        .panel-body i {
-            margin-right: 10px;
+        .panel + .panel {
+            margin-top: 0;
+            border-top: none;
+        }
+
+        .panel-body {
+            p.prname {
+                margin-bottom: 0;
+            }
+
+            address {
+                margin-bottom: 10px;
+            }
         }
 
         a {
-            margin-left: 48px;
+            //margin-left: 48px;
             padding: 15px;
         }
     }

@@ -82,6 +82,15 @@
 /*********************************************************
     Redesign Content - December 2017
 *********************************************************/
+.redesign-content .red {
+  color: #ed1b2e; }
+
+.redesign-content .orange {
+  color: orange; }
+
+.redesign-content .green {
+  color: green; }
+
 .redesign-content ul {
   list-style-type: none;
   margin-bottom: 1em;
@@ -95,10 +104,6 @@
   margin-bottom: 1em; }
   .redesign-content ol li {
     margin-bottom: 0; }
-
-.redesign-content img {
-  width: 100%;
-  height: auto; }
 
 .redesign-content .yellow-container {
   padding: 10px 20px;
@@ -147,6 +152,9 @@
 .redesign-content .well {
   border-radius: 0; }
 
+/*********************************************************
+    Accordions
+*********************************************************/
 .redesign-content .panel-group .panel {
   border-radius: 0; }
 
@@ -188,23 +196,32 @@
   .redesign-content .panel .panel .panel-heading {
     padding: 1em; }
 
+.redesign-content .accordion-header {
+  background-color: #0053a0;
+  color: #fff;
+  padding: 15px; }
+
 .redesign-content .panel-blue .map-location-inset {
   background-color: #0489cc;
   border-radius: 50%;
   color: #ffffff;
   padding: 6px 0;
   position: absolute;
-  top: 0.5em;
-  left: 0.5em;
   width: 30px;
   height: 30px;
   text-align: center; }
 
-.redesign-content .panel-blue .panel-body i {
-  margin-right: 10px; }
+.redesign-content .panel-blue .panel + .panel {
+  margin-top: 0;
+  border-top: none; }
+
+.redesign-content .panel-blue .panel-body p.prname {
+  margin-bottom: 0; }
+
+.redesign-content .panel-blue .panel-body address {
+  margin-bottom: 10px; }
 
 .redesign-content .panel-blue a {
-  margin-left: 48px;
   padding: 15px; }
 
 /*********************************************************
@@ -705,20 +722,52 @@
     top: 87px;
     left: 547px; }
 
+/*********************************************************
+    35W Construction redesign - May 2018
+*********************************************************/
+.redesign-content .transit-icon {
+  width: 71px;
+  height: 71px; }
+
 .redesign-content .park-ride-map {
-  background-image: url("../../../../../Data/sites/1/media/about/improvements/35w/Construction-pr-map.jpg");
+  background-image: url("../../../../../Data/sites/1/media/about/improvements/orange-line/Construction-pr-map.jpg");
   background-repeat: no-repeat;
   width: 940px;
   height: 954.38px;
   position: relative; }
   .redesign-content .park-ride-map .popover {
-    width: auto; }
+    width: auto;
+    border-radius: 0;
+    padding: 0; }
+    .redesign-content .park-ride-map .popover .map-location-inset {
+      background-color: #0489cc;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      color: #ffffff;
+      padding: 6px 0;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      text-align: center; }
     .redesign-content .park-ride-map .popover p {
       margin-top: 0; }
       .redesign-content .park-ride-map .popover p i {
         margin-right: 10px; }
     .redesign-content .park-ride-map .popover .alert {
       text-align: center; }
+    .redesign-content .park-ride-map .popover .popover-title {
+      background-color: #0489cc;
+      color: #fff;
+      border-radius: 0;
+      min-height: 50px;
+      text-transform: uppercase; }
+      .redesign-content .park-ride-map .popover .popover-title .prcity {
+        margin-left: 40px;
+        line-height: 2; }
+    .redesign-content .park-ride-map .popover .popover-content p:first-child {
+      margin-bottom: 0; }
+    .redesign-content .park-ride-map .popover .popover-content address {
+      margin-bottom: 10px; }
   .redesign-content .park-ride-map .hotspot {
     border-radius: 50%;
     color: transparent;

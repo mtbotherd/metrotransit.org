@@ -2,6 +2,17 @@
     Redesign Content - December 2017
 *********************************************************/
 .redesign-content {
+    .red {
+        color: $transit-red;
+    }
+
+    .orange {
+        color: $orange;
+    }
+
+    .green {
+        color: $green;
+    }
     ul {
         list-style-type: none;
         margin-bottom: 1em;
@@ -20,11 +31,6 @@
         li {
             margin-bottom: 0;
         }
-    }
-
-    img {
-        width: 100%;
-        height: auto;
     }
 
     .yellow-container {
