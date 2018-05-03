@@ -4,14 +4,23 @@
 
 .redesign-content {
 
-    .transit-icon {
-        width: 71px;
-        height: 71px;
+    .transit-icons {
+        text-align: center;
+        img {
+            width: 54.16px;
+            height: 54.16px;
+
+            @media (max-width: 768px) {
+                width: 71px;
+                height: 71px;
+            }
+        }
     }
 
     .park-ride-map {
         background-image: url('../../../../../Data/sites/1/media/about/improvements/orange-line/Construction-pr-map.jpg');
         background-repeat: no-repeat;
+        background-size: contain;
         width: 940px;
         height: 954.38px;
         position: relative;
@@ -78,102 +87,102 @@
         }
 
         .pnr1 {
-            bottom: 167px;
-            right: 201px;
+            bottom: 201px;
+            right: 249px;
         }
 
         .pnr2 {
-            bottom: 262px;
-            right: 212px;
+            bottom: 290px;
+            right: 258px;
         }
 
         .pnr3 {
-            bottom: 129px;
-            right: 69px;
+            bottom: 165px;
+            right: 122px;
         }
         .pnr4 {
-            top: 429px;
-            left: 457px;
+            top: 410px;
+            left: 421px;
         }
 
         .pnr5 {
-            top: 429px;
-            left: 494px;
+            top: 410px;
+            left: 456px;
         }
 
         .pnr6 {
-            top: 300px;
-            right: 237px;
+            top: 287px;
+            right: 282px;
         }
         .pnr7 {
-            bottom: 326px;
-            right: 370px;
+            bottom: 352px;
+            right: 410px;
         }
 
         .pnr8 {
-            bottom: 293px;
-            right: 379px;
+            bottom: 320px;
+            right: 418px;
         }
 
         .pnr9 {
-            top: 477px;
-            right: 203px;
+            top: 456px;
+            right: 249px;
         }
         .pnr10 {
-            top: 324px;
-            right: 34px;
+            top: 310px;
+            right: 86px;
         }
 
         .pnr11 {
-            bottom: 377px;
-            right: 133px;
+            bottom: 401px;
+            right: 181px;
         }
 
         .pnr12 {
-            top: 201px;
-            left: 397px;
+            top: 192px;
+            left: 363px;
         }
         .pnr13 {
-            bottom: 16px;
-            right: 400px;
+            bottom: 55px;
+            right: 438px;
         }
 
         .pnr14 {
-            bottom: 41px;
-            right: 192px;
+            bottom: 78px;
+            right: 239px;
         }
 
         .pnr15 {
-            top: 155px;
-            right: 143px;
+            top: 150px;
+            right: 192px;
         }
         .pnr16 {
-            top: 124px;
-            right: 148px;
+            top: 118px;
+            right: 197px;
         }
 
         .pnr17 {
-            top: 268px;
-            left: 452px;
+            top: 256px;
+            left: 416px;
         }
 
         .pnr18 {
-            bottom: 201px;
-            right: -5px;
+            bottom: 232px;
+            right: 50px;
         }
         .pnr19 {
-            bottom: 185px;
-            left: 398px;
+            bottom: 216px;
+            left: 364px;
         }
 
         .pnr20 {
-            bottom: 265px;
-            left: 60px;
+            bottom: 294px;
+            left: 40px;
         }
 
         .pnr21 {
-            bottom: 318px;
-            left: 146px;
+            bottom: 344px;
+            left: 123px;
         }
     }
 }

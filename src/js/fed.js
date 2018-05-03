@@ -84,7 +84,6 @@ $(document).ready(function() {
         html: true,
         trigger: 'hover',
         constraints: [ { to: 'scrollParent', pin: true } ]
-        //placement: 'top'
     });
 
 
