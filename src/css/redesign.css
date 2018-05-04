@@ -743,11 +743,12 @@
   position: relative; }
   .redesign-content .park-ride-map .popover {
     width: auto;
+    max-width: 400px;
     border-radius: 0;
     padding: 0; }
     .redesign-content .park-ride-map .popover .map-location-inset {
       background-color: #0489cc;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
       border-radius: 50%;
       color: #ffffff;
       padding: 6px 0;
@@ -770,10 +771,16 @@
       .redesign-content .park-ride-map .popover .popover-title .prcity {
         margin-left: 40px;
         line-height: 2; }
-    .redesign-content .park-ride-map .popover .popover-content p:first-child {
-      margin-bottom: 0; }
-    .redesign-content .park-ride-map .popover .popover-content address {
-      margin-bottom: 10px; }
+    .redesign-content .park-ride-map .popover .popover-content {
+      min-width: 400px;
+      min-height: 417px; }
+      .redesign-content .park-ride-map .popover .popover-content p:first-child {
+        margin-bottom: 0; }
+      .redesign-content .park-ride-map .popover .popover-content address {
+        margin-bottom: 10px; }
+      .redesign-content .park-ride-map .popover .popover-content .pnr-map {
+        max-width: 100%;
+        height: auto; }
   .redesign-content .park-ride-map .hotspot {
     border-radius: 50%;
     color: transparent;
@@ -799,7 +806,7 @@
     top: 287px;
     right: 282px; }
   .redesign-content .park-ride-map .pnr7 {
-    bottom: 352px;
+    bottom: 354px;
     right: 410px; }
   .redesign-content .park-ride-map .pnr8 {
     bottom: 320px;
@@ -823,7 +830,7 @@
     bottom: 78px;
     right: 239px; }
   .redesign-content .park-ride-map .pnr15 {
-    top: 150px;
+    top: 152px;
     right: 192px; }
   .redesign-content .park-ride-map .pnr16 {
     top: 118px;

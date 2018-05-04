@@ -1,15 +1,13 @@
 /*********************************************************
     35W Construction redesign - May 2018
 *********************************************************/
-
 .redesign-content {
-
     .transit-icons {
         text-align: center;
+
         img {
             width: 54.16px;
             height: 54.16px;
-
             @media (max-width: 768px) {
                 width: 71px;
                 height: 71px;
@@ -18,7 +16,7 @@
     }
 
     .park-ride-map {
-        background-image: url('../../../../../Data/sites/1/media/about/improvements/orange-line/Construction-pr-map.jpg');
+        background-image: url("../../../../../Data/sites/1/media/about/improvements/orange-line/Construction-pr-map.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         width: 940px;
@@ -27,12 +25,13 @@
 
         .popover {
             width: auto;
+            max-width: 400px;
             border-radius: 0;
             padding: 0;
 
             .map-location-inset {
                 background-color: #0489cc;
-                border: 1px solid #fff;
+                border: 2px solid #fff;
                 border-radius: 50%;
                 color: $white;
                 padding: 6px 0;
@@ -40,7 +39,6 @@
                 width: 30px;
                 height: 30px;
                 text-align: center;
-                //margin-right: 10px;
             }
 
             p {
@@ -69,11 +67,20 @@
             }
 
             .popover-content {
+                min-width: 400px;
+                min-height: 417px;
+
                 p:first-child {
                     margin-bottom: 0;
                 }
+
                 address {
                     margin-bottom: 10px;
+                }
+
+                .pnr-map {
+                    max-width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -100,6 +107,7 @@
             bottom: 165px;
             right: 122px;
         }
+
         .pnr4 {
             top: 410px;
             left: 421px;
@@ -114,8 +122,9 @@
             top: 287px;
             right: 282px;
         }
+
         .pnr7 {
-            bottom: 352px;
+            bottom: 354px;
             right: 410px;
         }
 
@@ -128,6 +137,7 @@
             top: 456px;
             right: 249px;
         }
+
         .pnr10 {
             top: 310px;
             right: 86px;
@@ -142,6 +152,7 @@
             top: 192px;
             left: 363px;
         }
+
         .pnr13 {
             bottom: 55px;
             right: 438px;
@@ -153,9 +164,10 @@
         }
 
         .pnr15 {
-            top: 150px;
+            top: 152px;
             right: 192px;
         }
+
         .pnr16 {
             top: 118px;
             right: 197px;
@@ -170,6 +182,7 @@
             bottom: 232px;
             right: 50px;
         }
+
         .pnr19 {
             bottom: 216px;
             left: 364px;

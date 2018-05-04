@@ -1,0 +1,24 @@
+/***************************************************
+	Alert Notice Styles
+***************************************************/
+#margin-alert-notice {
+    padding: 0;
+
+    .icon {
+        color: transparent;
+    }
+
+    .i35w-alert-banner {
+        background-image: url("../../../../../Data/sites/1/media/about/improvements/orange-line/homepage-header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        padding: 40px;
+    }
+
+    .i35w-alert-container {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
