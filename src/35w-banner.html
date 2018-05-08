@@ -54,21 +54,21 @@
                 background-position: 50% 292px;
             }
 
-            .alert-topmargin {
-                background-image: url('/Data/Sites/1/media/about/improvements/orange-line/homepage-header.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 0;
-                height: 200px;
-            }
-
             .alert-topmargin .fa {
                 display: none;
             }
 
             /***
-                These styles are not used in cms. 
+                These styles are not used in cms.
             ***/
+
+            .alert-topmargin {
+                background-image: url('/Data/Sites/1/media/about/improvements/orange-line/homepage-header.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 0 !important;
+                height: 200px;
+            }
 
             #headerbackground {
                 top: 200px;
@@ -84,9 +84,19 @@
 
             .banner-content {
                 text-align: center;
-                position: relative;
-                top: 100px;
+            }
+
+            .banner-content a {
                 color: #fff;
+                display: block;
+                padding: 4.3em 0;
+                /*width: 980px;*/
+                margin: 0 auto;
+                text-decoration: none;
+            }
+
+            .banner-content h1 {
+                margin-top: 30px;
             }
 
             /* .banner-content h1 {
@@ -125,8 +135,10 @@
             } */
         </style>
         <div class="banner-content">
-            <h1>Construction has begun!</h1>
-            <p>Find out more about our stress-relieving detours and transit advantages here!</p>
+            <a href="/35w">
+                <h1>Construction has begun!</h1>
+                <p>Find out more about our stress-relieving detours and transit advantages here!</p>
+            </a>
         </div>
     </div>
     <form method="post" action="/" id="aspnetForm">
