@@ -153,6 +153,14 @@
   border-radius: 0; }
 
 /*********************************************************
+    Carousel
+*********************************************************/
+.redesign-content .carousel {
+  margin-bottom: 20px; }
+  .redesign-content .carousel a {
+    color: #fff; }
+
+/*********************************************************
     Accordions
 *********************************************************/
 .redesign-content .panel-group .panel {
