@@ -167,6 +167,33 @@
   .redesign-content .carousel a {
     color: #fff; }
 
+.redesign-content .carousel-control .fa-chevron-left,
+.redesign-content .carousel-control .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px; }
+  @media screen and (min-width: 768px) {
+    .redesign-content .carousel-control .fa-chevron-left,
+    .redesign-content .carousel-control .fa-chevron-right {
+      width: 30px;
+      height: 30px;
+      margin-top: -10px;
+      font-size: 30px; } }
+
+.redesign-content .carousel-control .fa-chevron-left {
+  left: 50%; }
+  @media screen and (min-width: 768px) {
+    .redesign-content .carousel-control .fa-chevron-left {
+      margin-left: -10px; } }
+
+.redesign-content .carousel-control .fa-chevron-right {
+  right: 50%; }
+  @media screen and (min-width: 768px) {
+    .redesign-content .carousel-control .fa-chevron-right {
+      margin-right: -10px; } }
+
 /*********************************************************
     Accordions
 *********************************************************/

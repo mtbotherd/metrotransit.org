@@ -9,4 +9,35 @@
             color: #fff;
         }
     }
+
+    .carousel-control {
+        .fa-chevron-left,
+        .fa-chevron-right {
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            display: inline-block;
+            margin-top: -10px;
+            @media screen and (min-width: 768px) {
+                width: 30px;
+                height: 30px;
+                margin-top: -10px;
+                font-size: 30px;
+            }
+        }
+
+        .fa-chevron-left {
+            left: 50%;
+            @media screen and (min-width: 768px) {
+                margin-left: -10px;
+            }
+        }
+
+        .fa-chevron-right {
+            right: 50%;
+            @media screen and (min-width: 768px) {
+                margin-right: -10px;
+            }
+        }
+    }
 }
