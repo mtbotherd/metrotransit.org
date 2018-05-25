@@ -269,7 +269,7 @@
     Bootstrap Dropdown Overrides - May 2018
 *********************************************************/
 .mobile-dropdown {
-  margin-bottom: 30px; }
+  margin: 15px 0; }
   .mobile-dropdown .btn {
     font-weight: 400; }
   .mobile-dropdown .btn-default {
