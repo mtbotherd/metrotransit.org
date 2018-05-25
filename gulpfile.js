@@ -31,7 +31,8 @@ gulp.task('javascript', function() {
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/bootstrap/js/transition.js',
             'node_modules/bootstrap/js/collapse.js',
-            'node_modules/bootstrap/js/popover.js'
+            'node_modules/bootstrap/js/popover.js',
+            'node_modules/boostrap/js/dropdown.js'
         ])
         .pipe(gulp.dest('src/js'))
 });
