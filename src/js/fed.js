@@ -113,8 +113,12 @@ $(document).ready(function() {
     $('.panel-body-20').appendTo('#detour20 .panel-body');
 
     // Community Event Request form - Toggle form based on number of days of event selected
+    // $(".number-days").change(function() {
+    //     var val = $(this).val();
+    //     if(val === "one-day")
+    // });
     $(".number-days").change(function() {
-        console.log("Found number-days");
+        //console.log("Found number-days");
         $(this).find("option:selected").each(function() {
             var optionValue = $(this).attr("value");
             if (optionValue) {

@@ -916,4 +916,29 @@
   margin-right: 0;
   margin-left: 0; }
 
+/*********************************************************
+    Rider Alerts - June 2018
+*********************************************************/
+.redesign-content .rider-alerts .hero-image {
+  background-image: url("/Data/sites/1/media/rider-alerts/rider_alert_hero_yellow_screen.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 50px; }
+  .redesign-content .rider-alerts .hero-image .fancy-button {
+    padding: 15px; }
+    .redesign-content .rider-alerts .hero-image .fancy-button .heading {
+      display: block;
+      font-size: 24px;
+      color: #ffffff;
+      text-transform: uppercase; }
+    .redesign-content .rider-alerts .hero-image .fancy-button .details {
+      display: block;
+      font-size: 14px;
+      color: #ffd200; }
+  .redesign-content .rider-alerts .hero-image .blue {
+    background-color: #0053a0; }
+  .redesign-content .rider-alerts .hero-image .green {
+    background-color: green; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */

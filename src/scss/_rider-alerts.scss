@@ -1,0 +1,42 @@
+/*********************************************************
+    Rider Alerts - June 2018
+*********************************************************/
+
+.redesign-content {
+
+    .rider-alerts {
+
+        .hero-image {
+            background-image: url('/Data/sites/1/media/rider-alerts/rider_alert_hero_yellow_screen.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+            padding: 50px;
+
+            .fancy-button {
+                padding: 15px;
+
+                .heading {
+                    display: block;
+                    font-size: 24px;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+
+                .details {
+                    display: block;
+                    font-size: 14px;
+                    color: $transit-yellow;
+                }
+            }
+
+            .blue {
+                background-color: $transit-blue;
+            }
+
+            .green {
+                background-color: $green;
+            }
+        }
+    }
+}
