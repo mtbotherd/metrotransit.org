@@ -920,25 +920,51 @@
     Rider Alerts - June 2018
 *********************************************************/
 .redesign-content .rider-alerts .hero-image {
-  background-image: url("/Data/sites/1/media/rider-alerts/rider_alert_hero_yellow_screen.png");
+  background-image: url("../../../../../Data/sites/1/media/rider-alerts/rider_alert_hero_yellow_screen.png");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: auto;
+  height: 407px;
   padding: 50px; }
+  @media (max-width: 768px) {
+    .redesign-content .rider-alerts .hero-image {
+      padding: 15px;
+      height: auto; } }
+  .redesign-content .rider-alerts .hero-image .row div {
+    margin-bottom: 15px; }
+    .redesign-content .rider-alerts .hero-image .row div:last-child {
+      margin-bottom: 0; }
+  .redesign-content .rider-alerts .hero-image p {
+    margin-top: 0; }
   .redesign-content .rider-alerts .hero-image .fancy-button {
-    padding: 15px; }
+    display: block;
+    padding: 15px;
+    margin-top: 75px;
+    opacity: .9;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .redesign-content .rider-alerts .hero-image .fancy-button {
+        margin-top: 0;
+        text-align: center; } }
     .redesign-content .rider-alerts .hero-image .fancy-button .heading {
       display: block;
       font-size: 24px;
       color: #ffffff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      line-height: 1.3; }
     .redesign-content .rider-alerts .hero-image .fancy-button .details {
       display: block;
       font-size: 14px;
-      color: #ffd200; }
-  .redesign-content .rider-alerts .hero-image .blue {
-    background-color: #0053a0; }
-  .redesign-content .rider-alerts .hero-image .green {
+      color: #ffd200;
+      text-transform: none; }
+  .redesign-content .rider-alerts .hero-image .bg-blue {
+    background-color: #0053a0;
+    float: right; }
+    @media (max-width: 768px) {
+      .redesign-content .rider-alerts .hero-image .bg-blue {
+        float: none; } }
+  .redesign-content .rider-alerts .hero-image .bg-green {
     background-color: green; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */
