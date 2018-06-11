@@ -926,6 +926,8 @@
   width: 100%;
   height: 407px;
   padding: 50px; }
+  .redesign-content .rider-alerts .hero-image .redesign-content .alert-info {
+    background-color: #d9edf7 !important; }
   @media (max-width: 768px) {
     .redesign-content .rider-alerts .hero-image {
       padding: 15px;
@@ -942,6 +944,8 @@
     margin-top: 75px;
     opacity: .9;
     text-align: center; }
+    .redesign-content .rider-alerts .hero-image .fancy-button:hover {
+      opacity: 1; }
     @media (max-width: 768px) {
       .redesign-content .rider-alerts .hero-image .fancy-button {
         margin-top: 0;
