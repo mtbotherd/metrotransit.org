@@ -117,13 +117,15 @@ $(document).ready(function() {
     //     var val = $(this).val();
     //     if(val === "one-day")
     // });
-    $(".number-days").change(function() {
+    $("select.number-days").change(function() {
         //console.log("Found number-days");
         $(this).find("option:selected").each(function() {
             var optionValue = $(this).attr("value");
             if (optionValue) {
                 $(".event").not("." + optionValue).hide();
+                $(".event").find("input").removeAttr("required");
                 $("." + optionValue).show();
+                $("." + optionValue).find("input").attr("required", "required");
             } else {
                 $(".event").hide();
             }
