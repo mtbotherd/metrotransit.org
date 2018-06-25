@@ -908,13 +908,9 @@
 /***************************************************
 	Miscellaneous Overrides
 ***************************************************/
-.respect-the-ride .row,
-.gold-line-partners .row {
+.gold-line-partners .row,
+.respect-the-ride .row {
   margin-bottom: 30px; }
-
-.state-fair .row {
-  margin-right: 0;
-  margin-left: 0; }
 
 /*********************************************************
     Rider Alerts - June 2018
