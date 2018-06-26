@@ -1,0 +1,50 @@
+/*********************************************************
+    State Fair - June 2018
+*********************************************************/
+
+.redesign-content {
+    .fa-wheelchair {
+        color: $transit-blue;
+        font-size: 16px;
+    }
+
+    .everyday15 {
+        color: $transit-red;
+    }
+
+    .everyday30 {
+        color: $transit-blue;
+    }
+
+    .weekends15 {
+        color: #00a1e4;
+    }
+
+    .weekends30 {
+        color: #40ae49;
+    }
+
+    .mvta {
+        color: #856eac;
+    }
+
+    .swt {
+        color: #673674;
+    }
+
+    .everyday15,
+    .everyday30,
+    .weekends15,
+    .weekends30,
+    .mvta,
+    .swt {
+        //margin-bottom: 1.5em;
+        .normal {
+            color: #000;
+        }
+
+        .num-list {
+            margin-right: 1em;
+        }
+    }
+}
