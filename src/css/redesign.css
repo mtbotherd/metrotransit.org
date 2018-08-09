@@ -167,6 +167,8 @@
     font-weight: 700; }
   .redesign-content .list-group .list-group-item .event-details span {
     margin-left: 82px; }
+  .redesign-content .list-group .list-group-item p {
+    margin-top: 1em; }
 
 /*********************************************************
     Carousel
