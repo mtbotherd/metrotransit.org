@@ -156,6 +156,18 @@
 .redesign-content .sl {
   min-height: 105px; }
 
+.redesign-content .list-group .list-group-item {
+  background-color: #f7f6f6;
+  border: 2px solid #ddd;
+  border-bottom: 0; }
+  .redesign-content .list-group .list-group-item:last-child {
+    border-bottom: 2px solid #ddd; }
+  .redesign-content .list-group .list-group-item .event-title {
+    font-size: 27px;
+    font-weight: 700; }
+  .redesign-content .list-group .list-group-item .event-details span {
+    margin-left: 82px; }
+
 /*********************************************************
     Carousel
 *********************************************************/

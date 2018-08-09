@@ -108,7 +108,27 @@
         min-height: 105px;
     }
 
-    // .well {
-    //     border-radius: 0;
-    // }
+    //  List group - Bootstrap overriide
+    .list-group {
+
+        .list-group-item {
+            background-color: $lighter-grey;
+            border: 2px solid #ddd;
+            border-bottom: 0;
+            //border-radius: 0;
+
+            &:last-child {
+                border-bottom: 2px solid #ddd;
+            }
+
+            .event-title {
+                font-size: 27px;
+                font-weight: 700;
+            }
+
+            .event-details span {
+                margin-left: 82px;
+            }
+        }
+    }
 }
