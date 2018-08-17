@@ -112,26 +112,35 @@
     .list-group {
 
         .list-group-item {
-            background-color: $lighter-grey;
+            background-color: transparent;
             border: 2px solid #ddd;
             border-bottom: 0;
             //border-radius: 0;
+
+            &:nth-child(odd){
+                background-color: $lighter-grey;
+            }
 
             &:last-child {
                 border-bottom: 2px solid #ddd;
             }
 
+            img {
+                max-height: 120px;
+                margin: 0 auto;
+
+                @media screen and (max-width: 420px) {
+                    max-width: 50%;
+                    max-height: max-content;
+                }
+            }
+
             .event-title {
                 font-size: 27px;
-                font-weight: 700;
             }
 
             .event-details span {
                 margin-left: 82px;
-            }
-
-            p {
-                margin-top: 1em;
             }
         }
     }

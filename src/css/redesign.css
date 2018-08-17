@@ -157,18 +157,26 @@
   min-height: 105px; }
 
 .redesign-content .list-group .list-group-item {
-  background-color: #f7f6f6;
+  background-color: transparent;
   border: 2px solid #ddd;
   border-bottom: 0; }
+  .redesign-content .list-group .list-group-item:nth-child(odd) {
+    background-color: #f7f6f6; }
   .redesign-content .list-group .list-group-item:last-child {
     border-bottom: 2px solid #ddd; }
+  .redesign-content .list-group .list-group-item img {
+    max-height: 120px;
+    margin: 0 auto; }
+    @media screen and (max-width: 420px) {
+      .redesign-content .list-group .list-group-item img {
+        max-width: 50%;
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
+        max-height: max-content; } }
   .redesign-content .list-group .list-group-item .event-title {
-    font-size: 27px;
-    font-weight: 700; }
+    font-size: 27px; }
   .redesign-content .list-group .list-group-item .event-details span {
     margin-left: 82px; }
-  .redesign-content .list-group .list-group-item p {
-    margin-top: 1em; }
 
 /*********************************************************
     Carousel
