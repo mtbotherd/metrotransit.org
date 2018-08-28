@@ -131,4 +131,17 @@ $(document).ready(function() {
             }
         });
     }).change();
+
+    // Check all checkboxes
+    $( '#transitPassPrograms .checkall' ).click( function () {
+        $( '#transitPassPrograms input[type="checkbox"]' ).prop('checked', this.checked)
+    })
+
+    $( '#ridesharing .checkall' ).click( function () {
+        $( '#ridesharing input[type="checkbox"]' ).prop('checked', this.checked)
+    })
+
+    $( '#incentive .checkall' ).click( function () {
+        $( '#incentive input[type="checkbox"]' ).prop('checked', this.checked)
+    })
 });
