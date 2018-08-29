@@ -76,8 +76,11 @@
 .form-redesign .radio-group {
   margin-bottom: 1em; }
 
-.form-redesign .checkbox-listgroup {
-  margin-left: 2em; }
+.form-redesign ul.checkbox-list {
+  list-style-type: none;
+  text-indent: 0; }
+  .form-redesign ul.checkbox-list li:before {
+    content: ""; }
 
 .form-redesign .mt-button {
   margin-bottom: 1em; }

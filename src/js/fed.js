@@ -132,16 +132,14 @@ $(document).ready(function() {
         });
     }).change();
 
-    // Check all checkboxes
-    $( '#transitPassPrograms .checkall' ).click( function () {
-        $( '#transitPassPrograms input[type="checkbox"]' ).prop('checked', this.checked)
-    })
-
-    $( '#ridesharing .checkall' ).click( function () {
-        $( '#ridesharing input[type="checkbox"]' ).prop('checked', this.checked)
-    })
-
-    $( '#incentive .checkall' ).click( function () {
-        $( '#incentive input[type="checkbox"]' ).prop('checked', this.checked)
-    })
+    // Show textarea when "other" checkbox is checked (currently used on 35w Employer Outreach form)
+    $("#other").removeAttr("checked");
+    $(".description").hide();
+    $("#other").change(function() {
+        if (this.checked) {
+            $(".description").show();
+        } else {
+            $(".description").hide();
+        }
+    });
 });

@@ -93,9 +93,13 @@
         margin-bottom: 1em;
     }
 
-    // Add this class to checkbox group <table> when using check/uncheck all feature.
-    .checkbox-listgroup {
-        margin-left: 2em;
+    ul.checkbox-list {
+        list-style-type: none;
+        text-indent: 0;
+
+        li:before {
+            content: "";
+        }
     }
 
     .mt-button {
