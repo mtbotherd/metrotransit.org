@@ -143,7 +143,7 @@ $(document).ready(function() {
         }
     });
 
-    // File upload validation
+    // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
     $('#tap_enrollment_submit').prop("disabled", true);
     var a = 0;
     //binds to onchange event of your input field
