@@ -14,6 +14,8 @@
     <!-- endbuild -->
     <script src="https://www.metrotransit.org/ClientScript/jquery191/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.metrotransit.org/ClientScript/jqueryui1102/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popover.js"></script>
     <!-- build:js js/fed.js -->
     <script type="text/javascript" src="js/fed.js"></script>
     <!-- endbuild -->
@@ -216,8 +218,7 @@ continue to improve the accessibility of our website.</a>
             </div>
             <div id="wrapcenter">
                 <div id='ctl00_Breadcrumbs1_pnlWrapper' class='breadcrumbs'>
-                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl00_lnkNode" class="unselectedcrumb" href="/home">Home</a> &gt;
-                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl02_lnkCurrent" class="selectedcrumb" href="/riders-almanac-blog">Rider&#39;s Almanac Blog</a>
+                    <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl00_lnkNode" class="unselectedcrumb" href="/home">Home</a> &gt; <a id="ctl00_Breadcrumbs1_breadCrumbsControl_ctl02_lnkCurrent" class="selectedcrumb" href="/riders-almanac-blog">Rider&#39;s Almanac Blog</a>
                 </div>
                 <div id='ctl00_divCenter' class='art-layout-cell art-content-wide center-nomargins cmszone'>
                     <span style="position:absolute"><a id="maincontent" name="maincontent">&nbsp;</a></span>
@@ -230,13 +231,10 @@ continue to improve the accessibility of our website.</a>
                                         <div class='art-content-layout-row'>
                                             <div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
                                                 <div id='ctl00_mainContent_ctl00_divContent' class=''>
-
                                                     <!-- START OF FRONT END CONTENT -->
-
                                                     <div class="mt-form form-redesign">
                                                         <h1>Transit Assistance Program (TAP) Application</h1>
                                                         <p class="required-notice"> = Required</p>
-
                                                         <div class="row">
                                                             <!-- <div class="col-md-6" style="border-right: 1px solid #ccc; padding-right: 30px"> -->
                                                             <div class="col-md-6" style="border-right: 1px solid #ccc;">
@@ -255,7 +253,6 @@ continue to improve the accessibility of our website.</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <div class="form-group">
@@ -284,7 +281,6 @@ continue to improve the accessibility of our website.</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                                 <div class="row">
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
@@ -299,7 +295,6 @@ continue to improve the accessibility of our website.</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                                 <div class="row form-inline">
                                                                     <div class="col-md-4">
                                                                         <div class="form-group">
@@ -314,67 +309,77 @@ continue to improve the accessibility of our website.</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                             <div class="col-md-6">
                                                                 <!-- <div class="row">
                                                                     <div class="col-md-11 col-md-offset-1"> -->
-                                                                        <h2>Photo ID and certificate</h2>
-                                                                        <p style="margin-top: 0.3em;">You must provide a copy of your photo ID card and one form of the <a href="https://www.metrotransit.org/tap#acceptedCertifications" target="_blank">accepted certificates</a>.</p>
-                                                                        <div class="row">
-                                                                            <div class="col-md-8">
-                                                                                <div class="form-group">
-                                                                                    <label for="photoID" class="required">Attach photo ID</label><br />
-                                                                                    <input type="file" class="form-control" id="photoID" required />
-                                                                                </div>
-                                                                            </div>
+                                                                <h2>Photo ID and certificate</h2>
+                                                                <p style="margin-top: 0.3em;">You must provide a copy of your photo ID card and one form of the <a href="https://www.metrotransit.org/tap#acceptedCertifications" target="_blank">accepted certificates</a>.</p>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <label for="photoID" class="required">Attach photo ID</label><br />
+                                                                            <input type="file" class="form-control" id="photoID" required />
+                                                                            <p id="error1" style="display:none; color:#FF0000;">
+                                                                                Invalid Image Format! Image Format Must Be JPG, JPEG, PNG or GIF.
+                                                                            </p>
+                                                                            <p id="error2" style="display:none; color:#FF0000;">
+                                                                                Maximum File Size Limit is 1MB.
+                                                                            </p>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-8">
-                                                                                <div class="form-group">
-                                                                                    <label for="certificate" class="required">Attach certificate</label><br />
-                                                                                    <input type="file" class="form-control" id="certificate" required />
-                                                                                </div>
-                                                                            </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <label for="certificate" class="required">Attach certificate</label><br />
+                                                                            <input type="file" class="form-control" id="certificate" required />
                                                                         </div>
-                                                                    <!-- </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- </div>
                                                                 </div> -->
                                                             </div>
                                                         </div>
-
                                                         <p>&nbsp;</p>
-
                                                         <div class="well">
                                                             <h2>Please read this important notice (Tennessen Warning) before you provide information about yourself:</h2>
                                                             <div class="row">
                                                                 <div class="col-md-6">
-                                                                    <p>Information you provide about yourself through Metro Transit’s personalized web services or the regional fare collection system is classified as private data. The private data you provide through this website will permit you to use the electronic web services offered by Metro Transit, including electronic fare card purchases and rider alerts. You can refuse to provide some or all the requested information and you still will be able to obtain and add value to fare cards with the regional fare collection system. If you do not provide this information, you may not be able to register your card – which provides balance protection for lost/stolen cards – or to use some or all of Metro Transit’s personalized web service features.</p>
-
-                                                                    <p>Metro Transit will use your information for internal transit business purposes, including reward programs, rider alerts, and programs to measure and promote transit and fare card use. Metro Transit will share your information with: individuals whose work assignments require access; other transit providers that use the regional fare collection system for their business purposes; 3rd party vendors working with Metro Transit to provide a customer service such as rider alerts; credit card companies, credit card processing entities and banking institutions that need your account information to complete electronic purchases; another government entity to prevent unlawful intrusion into government electronic systems;  Metro Transit Police and other authorized law enforcement agencies for law enforcement purposes, including fare card enforcement; and persons authorized to have access by state or federal law, by court order or pursuant to your written consent.</p>
+                                                                    <p>Information you provide about yourself through Metro Transit’s personalized web services or the regional fare collection system is classified as private data. The private data
+                                                                        you provide through this website will permit you to use the electronic web services offered by Metro Transit, including electronic fare card purchases and rider alerts. You can
+                                                                        refuse to provide some or all the requested information and you still will be able to obtain and add value to fare cards with the regional fare collection system. If you do not
+                                                                        provide this information, you may not be able to register your card – which provides balance protection for lost/stolen cards – or to use some or all of Metro Transit’s
+                                                                        personalized web service features.</p>
+                                                                    <p>Metro Transit will use your information for internal transit business purposes, including reward programs, rider alerts, and programs to measure and promote transit and fare card
+                                                                        use. Metro Transit will share your information with: individuals whose work assignments require access; other transit providers that use the regional fare collection system for
+                                                                        their business purposes; 3rd party vendors working with Metro Transit to provide a customer service such as rider alerts; credit card companies, credit card processing entities
+                                                                        and banking institutions that need your account information to complete electronic purchases; another government entity to prevent unlawful intrusion into government electronic
+                                                                        systems; Metro Transit Police and other authorized law enforcement agencies for law enforcement purposes, including fare card enforcement; and persons authorized to have access
+                                                                        by state or federal law, by court order or pursuant to your written consent.</p>
                                                                 </div>
                                                                 <div class="col-md-6">
-                                                                    <p>The following data may be shared with government entities, organizations, school districts, educational institutions and employers that subsidize or provide you with a fare card: the date and time you used a fare card; your mode of travel; the type of fare product you used; and information about the date, time and type of a fare product you purchased. This customer transaction history and fare card use data may be used by these entities only to measure and promote fare card use and evaluate the cost effectiveness of their fare card programs. If you do not want Metro Transit to disclose your transaction history and fare card use for any purpose to any individual, you can submit a written request to limit disclosure of data. Once a written request form is received, Metro Transit will disclose only the card balance and the date a card was last used IF a fare card’s 16-digit card number is provided, but no personally identifiable information will be released.</p>
-
-                                                                    <p>If you enroll for one of following programs: Reduced Fare, Mobility Fare or Transit Assistance Program your Go-To Card must be registered as part of enrollment and can be used only by you. Reduced and Mobility fares can be requested with proper ID and do not require Go-To Card use. You can only enroll in one of these three programs.</p>
-
-                                                                    <p>Learn more at <a href="/suppress">metrotransit.org/suppress</a>. If you have questions about this notice and want to contact a Metro Transit representative, please contact us at 612-373-3333 or visit <a href="/contact-us">metrotransit.org/contact-us</a>.</p>
+                                                                    <p>The following data may be shared with government entities, organizations, school districts, educational institutions and employers that subsidize or provide you with a fare card:
+                                                                        the date and time you used a fare card; your mode of travel; the type of fare product you used; and information about the date, time and type of a fare product you purchased.
+                                                                        This customer transaction history and fare card use data may be used by these entities only to measure and promote fare card use and evaluate the cost effectiveness of their
+                                                                        fare card programs. If you do not want Metro Transit to disclose your transaction history and fare card use for any purpose to any individual, you can submit a written request
+                                                                        to limit disclosure of data. Once a written request form is received, Metro Transit will disclose only the card balance and the date a card was last used IF a fare card’s
+                                                                        16-digit card number is provided, but no personally identifiable information will be released.</p>
+                                                                    <p>If you enroll for one of following programs: Reduced Fare, Mobility Fare or Transit Assistance Program your Go-To Card must be registered as part of enrollment and can be used
+                                                                        only by you. Reduced and Mobility fares can be requested with proper ID and do not require Go-To Card use. You can only enroll in one of these three programs.</p>
+                                                                    <p>Learn more at <a href="/suppress">metrotransit.org/suppress</a>. If you have questions about this notice and want to contact a Metro Transit representative, please contact us at
+                                                                        612-373-3333 or visit <a href="/contact-us">metrotransit.org/contact-us</a>.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <p>By registering your fare card, you acknowledge that you received and read this notice.</p>
-
                                                         <div class="checkbox">
                                                             <input type="checkbox" value="" />
                                                             <label>Send me an email of the information submitted</label>
                                                         </div>
-
-                                                        <input type="submit" id="facility_usage" class="mt-button" value="Submit" />
+                                                        <input type="submit" id="tap_enrollment_submit" class="mt-button btn btn-primary" value="Submit" />
                                                     </div>
-
                                                     <p class="text-right"><small><em>Revised August 2017</em></small></p>
-
                                                     <!-- END OF FRONT END CONTENT -->
-
                                                 </div>
                                                 <input type="hidden" name="ctl00" id="ctl00_mainContent_ctl00_hdnIsDirty" />
                                             </div>
@@ -399,9 +404,7 @@ continue to improve the accessibility of our website.</a>
             </p>
             <div id="footergreybar">
                 <div style="width:250px;margin-top: 3px;"><a href="/contact-us">CONTACT US</a></div>
-                <div style="width:430px">
-                    FOLLOW US ON: &nbsp;&nbsp;
-                    <a class="social twttr" href="//www.twitter.com/MetroTransitMN" target="_blank" title="Twitter"></a>
+                <div style="width:430px"> FOLLOW US ON: &nbsp;&nbsp; <a class="social twttr" href="//www.twitter.com/MetroTransitMN" target="_blank" title="Twitter"></a>
                     <a class="social fcbk" href="//www.facebook.com/MetroTransitMN" target="_blank" title="Facebook"></a>
                     <a class="social youtube" href="//www.youtube.com/MetroTransitMN" target="_blank" title="YouTube"></a>
                     <a class="social instagram" href="//instagram.com/metrotransitmn" target="_blank" title="Instagram"></a>
@@ -483,9 +486,7 @@ continue to improve the accessibility of our website.</a>
                 <span class="showbar"><a href="#">show bar</a></span>
             </div>
             <div id="toolbar">
-                <div class="toolbarleft">
-                    &nbsp;
-                </div>
+                <div class="toolbarleft"> &nbsp; </div>
                 <div class="toolbarright">
                     <span class="downarr"><a href="#"></a></span>
                     <a id="ctl00_lnkAdminMenu" title="Administration Menu" class="adminlink adminmenulink" href="/Admin/AdminMenu.aspx">Administration</a>
@@ -545,7 +546,6 @@ continue to improve the accessibility of our website.</a>
                     topOffset: 25,
                     leftOffset: 25
                 });
-
                 $('bootstrap-datetimepicker-widget dropdown-menu').datepicker({
                     minViewMode: 2,
                     format: "yyyy"
