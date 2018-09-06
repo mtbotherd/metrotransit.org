@@ -82,6 +82,9 @@
   .form-redesign ul.checkbox-list li:before {
     content: ""; }
 
+.form-redesign .full-width {
+  width: 100%; }
+
 .form-redesign .mt-button {
   margin-bottom: 1em; }
 
