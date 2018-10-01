@@ -914,13 +914,6 @@
     bottom: 344px;
     left: 123px; }
 
-/***************************************************
-	Miscellaneous Overrides
-***************************************************/
-.gold-line-partners .row,
-.respect-the-ride .row {
-  margin-bottom: 30px; }
-
 /*********************************************************
     Rider Alerts - June 2018
 *********************************************************/
@@ -998,5 +991,17 @@
     font-size: 27px; }
   .redesign-content .list-group .list-group-item .event-details span {
     margin-left: 82px; }
+
+/***************************************************
+	Miscellaneous Overrides
+***************************************************/
+.gold-line-partners .row,
+.respect-the-ride .row {
+  margin-bottom: 30px; }
+
+ul.ui-tabs-nav {
+  text-indent: 0 !important; }
+  ul.ui-tabs-nav li:before {
+    content: ""; }
 
 /*# sourceMappingURL=../maps/redesign.css.map */

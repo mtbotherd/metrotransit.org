@@ -5,3 +5,13 @@
 .respect-the-ride .row {
     margin-bottom: 30px;
 }
+
+// Reset ui-tabs
+//.redesign-content ul.ui-tabs-nav {
+ul.ui-tabs-nav {
+    text-indent: 0 !important;
+
+    li:before {
+        content: "";
+    }
+}
