@@ -305,6 +305,10 @@
 .ra-redesign .blogtitle {
   margin-top: 10px; }
 
+.ra-redesign h2.moduletitle.blogtitle {
+  float: right;
+  width: 78%; }
+
 .ra-redesign #ctl00_mainContent_BlogView1_navBottom_pnlCategories {
   margin-top: -95px; }
 
