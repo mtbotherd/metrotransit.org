@@ -1008,4 +1008,16 @@ ul.ui-tabs-nav {
   ul.ui-tabs-nav li:before {
     content: ""; }
 
+.redesign-content .alert {
+  float: left;
+  width: 100%; }
+  .redesign-content .alert .fa {
+    display: inline-block;
+    float: left; }
+  .redesign-content .alert h4 {
+    margin-top: 0; }
+  .redesign-content .alert p {
+    float: left;
+    margin: 0; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */

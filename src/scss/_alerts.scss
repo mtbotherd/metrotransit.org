@@ -1,0 +1,21 @@
+.redesign-content {
+
+    .alert {
+        float: left;
+        width: 100%;
+
+        .fa {
+            display: inline-block;
+            float: left;
+        }
+
+        h4 {
+            margin-top: 0;
+        }
+
+        p {
+            float: left;
+            margin: 0;
+        }
+    }
+}
