@@ -171,4 +171,26 @@ $(document).ready(function() {
             }
         }
     });
+
+    // Commuter Choice Awards Form - Copy Nominator to Nominee.
+    $("#copyContact").change(function() {
+        var is_checked = $(this).is(":checked");
+        if (!is_checked) {
+            $("#nomineeName").val("");
+            $("#nomineePhone").val("");
+            $("#nomineeEmail").val("");
+        } else {
+            $("#nomineeName").val($("#nominatorName").val());
+            $("#nomineePhone").val($("#nominatorPhone").val());
+            $("#nomineeEmail").val($("#nominatorEmail").val());
+        }
+    });
+
+    // Max character count of 500 (used on Commuter Choice Awards Form)
+    var maxLength = 500;
+    $('textarea#projectOverview').keyup(function() {
+        var length = $(this).val().length;
+        var length = maxLength - length;
+        $('#chars').text(length);
+    });
 });

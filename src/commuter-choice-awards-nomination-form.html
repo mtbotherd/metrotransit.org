@@ -240,16 +240,13 @@ continue to improve the accessibility of our website.</a>
                                                     <!-- START OF FRONT END CONTENT -->
                                                     <div class="mt-form form-redesign">
                                                         <h1>Commuter Choice Awards Nominaton Form</h1>
-                                                        <div class="alert alert-warning">
-                                                            <h4><i class="fa fa-exclamation-triangle" aria-hidden="true">&nbsp;</i> Notice</h4>
-                                                            <p>All nomination materials must be submitted by 4 p.m. on Wednesday, March 7, 2018.</p>
+                                                        <div class="alert alert-info">
+                                                            <h4><i class="fa fa-exclamation-circle" aria-hidden="true">&nbsp;</i> Notice</h4>
+                                                            <p>All nomination materials must be submitted by 4 p.m. on Thursday, March 7, 2019.</p>
                                                         </div>
                                                         <h2>Directions</h2>
                                                         <p>The 2018 Commuter Choice Awards nominations will only be accepted through electronic format. If you have any questions about this nomination form, please contact a Transportation Management Organization or Metro Transit. Contact information is on the last page of this form.</p>
-                                                        <div class="alert alert-info">
-                                                            <h4><i class="fa fa-exclamation-circle" aria-hidden="true">&nbsp;</i> Note</h4>
-                                                            <p>Photographs and videos demonstrating the nominee’s efforts are an important part of the awards program.<br /><strong>Please make all efforts to provide visual documentation</strong>.</p>
-                                                        </div>
+                                                        <p>Photographs and videos demonstrating the nominee’s efforts are an important part of the awards program.<br /><strong>Please make all efforts to provide visual documentation</strong>.</p>
 
                                                         <!-- <hr /> -->
 
@@ -277,36 +274,36 @@ continue to improve the accessibility of our website.</a>
                                                         <div class="well">
                                                             <!-- <h3>Category</h3> -->
                                                             <div class="radio-group">
-                                                                <label for="categories" class="sr-only">Categories</label>
+                                                                <label for="categories" class="required">Categories</label>
                                                                 <table class="full-width">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" required />
                                                                                 <label for="">Buildig Owner/Management Company</label>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" />
                                                                                 <label for="">Employer</label>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" />
                                                                                 <label for="">Government Entity</label>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" />
                                                                                 <label for="">Commuter Champion</label>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" />
                                                                                 <label for="">Organization</label>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="categories" />
                                                                                 <label for="">Commuter Benefits Coordinator (CBC)</label>
                                                                             </td>
                                                                         </tr>
@@ -315,46 +312,46 @@ continue to improve the accessibility of our website.</a>
                                                             </div>
 
                                                             <div class="checkbox-group">
-                                                                <label><strong>And you</strong></label>
+                                                                <label class="required">And you</label>
                                                                 <table class="full-width">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td style="width: 50%;">
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="relation" required />
                                                                                 <label for="">the nominee or an agent of the nominee</label>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="relation" />
                                                                                 <label for="">an associate of the nominee</label>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="relation" />
                                                                                 <label for="">a TMO staff member</label>
                                                                             </td>
                                                                             <td>
-                                                                                <input type="radio" />
+                                                                                <input type="radio" name="relation" />
                                                                                 <label for="">other</label>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                                                            <label><strong>Has the nominee been nominated for a Commuter Choice Award in the past?</strong><br /><small>This is for informational purposes only and will have no bearing on the judging of the nomination.</small></label>
+                                                            <label><span class="required">Has the nominee been nominated for a Commuter Choice Award in the past?</span><br /><small>This is for informational purposes only and will have no bearing on the judging of the nomination.</small></label>
                                                             <table>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <input type="radio" />
+                                                                            <input type="radio" name="previousNomination" required />
                                                                             <label>Yes</label>
                                                                         </td>
                                                                         <td>
-                                                                            <input type="radio" />
+                                                                            <input type="radio" name="previousNomination" />
                                                                             <label>No</label>
                                                                         </td>
                                                                         <td>
-                                                                            <input type="radio" />
+                                                                            <input type="radio" name="previousNomination" />
                                                                             <label>I don't know</label>
                                                                         </td>
                                                                     </tr>
@@ -367,42 +364,46 @@ continue to improve the accessibility of our website.</a>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Name</label><br />
-                                                                    <input type="text" class="form-control" placeholder="Nominator name" required />
+                                                                    <input type="text" id="nominatorName" class="form-control" placeholder="Nominator name" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Phone</label><br />
-                                                                    <input type="text" class="form-control" placeholder="Nominator phone number" required />
+                                                                    <input type="text" id="nominatorPhone" class="form-control" placeholder="Nominator phone number" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Email</label>
-                                                                    <input type="email" class="form-control" placeholder="Nominator email address" required />
+                                                                    <input type="email" id="nominatorEmail" class="form-control" placeholder="Nominator email address" required />
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <h3>Nominee contact information</h3>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="copyContact" />
+                                                            <label class="control-label" for="copyContact">Same as nominator</label>
+                                                        </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Name</label><br />
-                                                                    <input type="text" class="form-control" placeholder="Nominee name" required />
-                                                                    <div><small>(Enter the name exactly as it should appear in the program and on your nomination certificate)</small></div>
+                                                                    <input type="text" id="nomineeName" class="form-control" placeholder="Nominee name" required />
+                                                                    <span id="helpBlock" class="help-block">Enter the name exactly as it should appear in the program and on your nomination certificate.</span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Phone</label><br />
-                                                                    <input type="text" class="form-control" placeholder="Nominee phone number" required />
+                                                                    <input type="text" id="nomineePhone" class="form-control" placeholder="Nominee phone number" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Email</label>
-                                                                    <input type="email" class="form-control" placeholder="Nominee email address" required />
+                                                                    <input type="email" id="nomineeEmail" class="form-control" placeholder="Nominee email address" required />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -435,12 +436,13 @@ continue to improve the accessibility of our website.</a>
 
                                                         <h3>Project overview</h3>
                                                         <div class="form-group">
-                                                            <label class="required">Explain what was done and the outcomes.</label>
+                                                            <label for="projectOverview" class="required">Explain what was done and the outcomes.</label>
                                                             <div class="alert alert-info">
-                                                                <h4><i class="fa fa-exclamation-circle" aria-hidden="true">&nbsp;</i> Note</h4>
+                                                                <h4><i class="fa fa-exclamation-circle" aria-hidden="true">&nbsp;</i> Notice</h4>
                                                                 <p>This description will appear in the awards program and on the Metro Transit website. Metro Transit reserves the right to edit for clarity and grammar.</p>
                                                             </div>
-                                                            <textarea class="form-control" placeholder="Enter response here..." required></textarea>
+                                                            <div>Characters remaining: <span id="chars">500</span></div>
+                                                            <textarea id="projectOverview" class="form-control" placeholder="Enter response here..." maxlength="500" required></textarea>
                                                         </div>
 
                                                         <h3>Project mission and objectives</h3>
@@ -468,7 +470,7 @@ continue to improve the accessibility of our website.</a>
                                                         </div>
 
                                                         <h3>Attachments</h3>
-                                                        <p>Attach PDF versions of promotional materials, photographs and/or other supporting documents with this form.</p>
+                                                        <p>Attach PDF versions of promotional materials, photographs and/or other supporting documents with this form. Photographs and videos demonstrating the nominee’s efforts are an important part of the awards program. <strong>Please make all efforts to provide visual documentation</strong>.</p>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
@@ -498,8 +500,10 @@ continue to improve the accessibility of our website.</a>
                                                             </div>
                                                         </div>
 
-                                                        <h3>Conent authorization</h3>
-                                                        <p class="lead">If you are authorized to provide consent for the nominee please do so below. If you are not authorized to provide consent for your nominee, appropriate consent authorizations may be required.</p>
+                                                        <div class="alert alert-warning">
+                                                            <h4><i class="fa fa-exclamation-triangle" aria-hidden="true">&nbsp;</i> Consent authorization</h4>
+                                                            <p>If you are authorized to provide consent for the nominee please do so below. If you are not authorized to provide consent for your nominee, appropriate consent authorizations may be required.</p>
+                                                        </div>
                                                         <p>I hereby authorize the use, in connection with the Commuter Choice Awards program, of my name, my company’s/organization’s name, non-financial information, photographs or video recordings of me from whatever source. I agree that no compensation shall be due me or my company for such usage.</p>
                                                         <p>By typing your name in this box you agree to the above terms.</p>
 
@@ -527,9 +531,11 @@ continue to improve the accessibility of our website.</a>
                                                             </div>
                                                         </div>
 
+                                                        <hr />
 
-                                                        <!-- End of form -->
+                                                        <input type="submit" class="mt-button btn btn-primary pull-right" value="Submit" />
                                                     </div>
+                                                    <!-- End of form -->
 
                                                     <!-- END OF FRONT END CONTENT -->
 
