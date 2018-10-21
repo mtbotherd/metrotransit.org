@@ -105,12 +105,28 @@
         }
     }
 
-    // Checkbox groups with table layout.
+    // Checkbox/Radio button groups with table layout.
     .full-width {
         width: 100%;
     }
 
+    // full width 2-cols {
+    .two-col td {
+        width: 50%;
+    }
+
     .mt-button {
         margin-bottom: 1em;
+    }
+
+    .alert {
+
+        h4 {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }

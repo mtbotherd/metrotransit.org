@@ -79,8 +79,17 @@
 .form-redesign .full-width {
   width: 100%; }
 
+.form-redesign .two-col td {
+  width: 50%; }
+
 .form-redesign .mt-button {
   margin-bottom: 1em; }
+
+.form-redesign .alert h4 {
+  margin-top: 0; }
+
+.form-redesign .alert p {
+  margin: 0; }
 
 /*********************************************************
     Rider's Almanac

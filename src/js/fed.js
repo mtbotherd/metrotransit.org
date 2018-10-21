@@ -132,17 +132,6 @@ $(document).ready(function() {
         });
     }).change();
 
-    // Show textarea when "other" checkbox is checked (currently used on 35w Employer Outreach form)
-    $("#other").removeAttr("checked");
-    $(".description").hide();
-    $("#other").change(function() {
-        if (this.checked) {
-            $(".description").show();
-        } else {
-            $(".description").hide();
-        }
-    });
-
     // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
     $('#tap_enrollment_submit').prop("disabled", true);
     var a = 0;
@@ -173,24 +162,24 @@ $(document).ready(function() {
     });
 
     // Commuter Choice Awards Form - Copy Nominator to Nominee.
-    $("#copyContact").change(function() {
+    $(".copy-contact input").change(function() {
         var is_checked = $(this).is(":checked");
         if (!is_checked) {
-            $("#nomineeName").val("");
-            $("#nomineePhone").val("");
-            $("#nomineeEmail").val("");
+            $(".nominee-name").val("");
+            $(".nominee-phone").val("");
+            $(".nominee-email").val("");
         } else {
-            $("#nomineeName").val($("#nominatorName").val());
-            $("#nomineePhone").val($("#nominatorPhone").val());
-            $("#nomineeEmail").val($("#nominatorEmail").val());
+            $(".nominee-name").val($(".nominator-name").val());
+            $(".nominee-phone").val($(".nominator-phone").val());
+            $(".nominee-email").val($(".nominator-email").val());
         }
     });
 
     // Max character count of 500 (used on Commuter Choice Awards Form)
     var maxLength = 500;
-    $('textarea#projectOverview').keyup(function() {
+    $('textarea.max-chars-500').keyup(function() {
         var length = $(this).val().length;
         var length = maxLength - length;
-        $('#chars').text(length);
+        $('span#chars').text(length);
     });
 });

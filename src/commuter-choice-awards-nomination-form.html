@@ -248,8 +248,6 @@ continue to improve the accessibility of our website.</a>
                                                         <p>The 2018 Commuter Choice Awards nominations will only be accepted through electronic format. If you have any questions about this nomination form, please contact a Transportation Management Organization or Metro Transit. Contact information is on the last page of this form.</p>
                                                         <p>Photographs and videos demonstrating the nominee’s efforts are an important part of the awards program.<br /><strong>Please make all efforts to provide visual documentation</strong>.</p>
 
-                                                        <!-- <hr /> -->
-
                                                         <h2>Eligibility</h2>
                                                         <ul>
                                                             <li>Awards recognize innovative outreach efforts or programs designed to increase the use of sustainable transportation modes such as taking the bus or train, biking, walking, carpooling, vanpooling or teleworking.</li>
@@ -261,15 +259,10 @@ continue to improve the accessibility of our website.</a>
                                                             <li>A Commuter Benefits Coordinator (CBC) is an individual who’s employment responsibilities include managing commuting options for fellow employees.</li>
                                                         </ul>
 
-                                                        <!-- <hr /> -->
-
                                                         <h2>Judging panel and criteria</h2>
                                                         <p>Nominations will be judged by a panel of Twin Cities’ transportation experts, commuter benefits coordinators, community leaders and human resources, wellness and sustainability professionals. Judges will evaluate entries based on the documented efforts and success of promoting transportation options. The goal is to reward and recognize those actively contributing to the reduction of congestion and emissions in the Twin Cities’ area through sustainable transportation initiatives.</p>
 
-                                                        <!-- <hr /> -->
-
                                                         <!-- Begin form -->
-
                                                         <h2>Nomination Category</h2>
                                                         <div class="well">
                                                             <!-- <h3>Category</h3> -->
@@ -364,46 +357,48 @@ continue to improve the accessibility of our website.</a>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Name</label><br />
-                                                                    <input type="text" id="nominatorName" class="form-control" placeholder="Nominator name" required />
+                                                                    <input type="text" id="nominatorName" class="form-control nominator-name" placeholder="Nominator name" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Phone</label><br />
-                                                                    <input type="text" id="nominatorPhone" class="form-control" placeholder="Nominator phone number" required />
+                                                                    <input type="text" id="nominatorPhone" class="form-control nominator-phone" placeholder="Nominator phone number" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Email</label>
-                                                                    <input type="email" id="nominatorEmail" class="form-control" placeholder="Nominator email address" required />
+                                                                    <input type="email" id="nominatorEmail" class="form-control nominator-email" placeholder="Nominator email address" required />
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <h3>Nominee contact information</h3>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" id="copyContact" />
+                                                            <span class="copy-contact">
+                                                                <input type="checkbox" id="copyContact" name="copyContact" />
+                                                            </span>
                                                             <label class="control-label" for="copyContact">Same as nominator</label>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Name</label><br />
-                                                                    <input type="text" id="nomineeName" class="form-control" placeholder="Nominee name" required />
+                                                                    <input type="text" id="nomineeName" class="form-control nominee-name" placeholder="Nominee name" required />
                                                                     <span id="helpBlock" class="help-block">Enter the name exactly as it should appear in the program and on your nomination certificate.</span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Phone</label><br />
-                                                                    <input type="text" id="nomineePhone" class="form-control" placeholder="Nominee phone number" required />
+                                                                    <input type="text" id="nomineePhone" class="form-control nominee-phone" placeholder="Nominee phone number" required />
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label class="required">Email</label>
-                                                                    <input type="email" id="nomineeEmail" class="form-control" placeholder="Nominee email address" required />
+                                                                    <input type="email" id="nomineeEmail" class="form-control nominee-email" placeholder="Nominee email address" required />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -442,7 +437,7 @@ continue to improve the accessibility of our website.</a>
                                                                 <p>This description will appear in the awards program and on the Metro Transit website. Metro Transit reserves the right to edit for clarity and grammar.</p>
                                                             </div>
                                                             <div>Characters remaining: <span id="chars">500</span></div>
-                                                            <textarea id="projectOverview" class="form-control" placeholder="Enter response here..." maxlength="500" required></textarea>
+                                                            <textarea id="projectOverview" class="form-control max-chars-500" placeholder="Enter response here..." maxlength="500" required></textarea>
                                                         </div>
 
                                                         <h3>Project mission and objectives</h3>
