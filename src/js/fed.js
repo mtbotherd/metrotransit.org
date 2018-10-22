@@ -182,4 +182,7 @@ $(document).ready(function() {
         var length = maxLength - length;
         $('span#chars').text(length);
     });
+
+    // Add required attribute to checkbox & radio groups
+    $(".radio-group input:radio").attr("required", "required");
 });

@@ -32,7 +32,8 @@ gulp.task('javascript', function() {
             'node_modules/bootstrap/js/transition.js',
             'node_modules/bootstrap/js/collapse.js',
             'node_modules/bootstrap/js/popover.js',
-            'node_modules/boostrap/js/dropdown.js'
+            'node_modules/boostrap/js/dropdown.js',
+            'node_modules/jquery-validation/dist/jquery.validate.min.js'
         ])
         .pipe(gulp.dest('src/js'))
 });
@@ -75,7 +76,8 @@ gulp.task('useref', function() {
 gulp.task('vendorJS', function() {
     return gulp.src([
             'src/js/collapse.js',
-            'src/js/transition.js'
+            'src/js/transition.js',
+            'src/js/jquery-validate.min.js'
         ])
         .pipe(gulp.dest('dist/js'))
 });
