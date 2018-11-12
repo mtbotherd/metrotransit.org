@@ -478,324 +478,282 @@
 /****************************************
     Public Art Styles
 ****************************************/
-.redesign-content .popover {
-  width: 175px; }
-
-.redesign-content .public-art-grid .row {
-  margin-right: 0;
-  margin-left: 0; }
-  .redesign-content .public-art-grid .row .col-md-3 {
-    padding-right: 5px;
-    padding-left: 5px; }
-    .redesign-content .public-art-grid .row .col-md-3:nth-child(1) {
-      padding-left: 0; }
-    .redesign-content .public-art-grid .row .col-md-3:nth-child(4) {
-      padding-right: 0; }
-
-.redesign-content .tile {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 165px;
-  height: 165px;
-  width: 100%;
-  margin: 0 auto 10px;
-  text-align: center; }
-  .redesign-content .tile .tile-overlay-blue {
-    background: rgba(0, 83, 160, 0.69); }
-  .redesign-content .tile .tile-overlay-green {
-    background-color: rgba(0, 130, 68, 0.69); }
-  .redesign-content .tile .tile-overlay-grey {
-    background-color: rgba(51, 51, 51, 0.69); }
-  .redesign-content .tile .tile-overlay-blue:hover,
-  .redesign-content .tile .tile-overlay-green:hover,
-  .redesign-content .tile .tile-overlay-grey:hover {
-    background: none; }
-  .redesign-content .tile .tile-overlay-blue a,
-  .redesign-content .tile .tile-overlay-green a,
-  .redesign-content .tile .tile-overlay-grey a {
-    color: #fff;
-    display: block;
-    font-weight: 700;
-    padding: 74px 10px;
-    text-decoration: none; }
-    .redesign-content .tile .tile-overlay-blue a:hover,
-    .redesign-content .tile .tile-overlay-green a:hover,
-    .redesign-content .tile .tile-overlay-grey a:hover {
-      opacity: 0; }
-  .redesign-content .tile .tile-overlay-blue .text-plus,
-  .redesign-content .tile .tile-overlay-green .text-plus,
-  .redesign-content .tile .tile-overlay-grey .text-plus {
-    padding: 65.5px 10px; }
-  .redesign-content .tile .tile-overlay-blue .text-plus-plus,
-  .redesign-content .tile .tile-overlay-green .text-plus-plus,
-  .redesign-content .tile .tile-overlay-grey .text-plus-plus {
-    padding: 57px 10px; }
-
-.redesign-content .blueline .block-1 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_warehouse_district.jpg"); }
-
-.redesign-content .blueline .block-2 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_nicollet_mall.jpg"); }
-
-.redesign-content .blueline .block-3 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_government_plaza.jpg"); }
-
-.redesign-content .blueline .block-4 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_usbank_stadium.jpg"); }
-
-.redesign-content .blueline .block-5 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_cedar_riverside.jpg"); }
-
-.redesign-content .blueline .block-6 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_franklin_avenue.jpg"); }
-
-.redesign-content .blueline .block-7 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_lake_street.jpg"); }
-
-.redesign-content .blueline .block-8 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_38th_street.jpg"); }
-
-.redesign-content .blueline .block-9 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_46th_street.jpg"); }
-
-.redesign-content .blueline .block-10 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_minnehaha_park.jpg"); }
-
-.redesign-content .blueline .block-11 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_va_station.jpg"); }
-
-.redesign-content .blueline .block-12 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_fort_snelling.jpg"); }
-
-.redesign-content .blueline .block-13 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_terminal_1_lindberg.jpg"); }
-
-.redesign-content .blueline .block-14 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_terminal_2_humphrey.jpg"); }
-
-.redesign-content .blueline .block-15 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_american_blvd.jpg"); }
-
-.redesign-content .blueline .block-16 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_bloomington_central.jpg"); }
-
-.redesign-content .blueline .block-17 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_28th_avenue.jpg"); }
-
-.redesign-content .blueline .block-18 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_moa.jpg"); }
-
-.redesign-content .greenline .block-1 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_union-depot-station.png"); }
-
-.redesign-content .greenline .block-2 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_central-station.jpg"); }
-
-.redesign-content .greenline .block-3 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_10th-street-station.jpg"); }
-
-.redesign-content .greenline .block-4 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_robert_street_mural.jpg"); }
-
-.redesign-content .greenline .block-5 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_capitol-rice-street-station.jpg"); }
-
-.redesign-content .greenline .block-6 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_western-avenue-station.jpg"); }
-
-.redesign-content .greenline .block-7 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_dale-street-station.jpg"); }
-
-.redesign-content .greenline .block-8 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_victoria_street-station.jpg"); }
-
-.redesign-content .greenline .block-9 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_lexington-parkway-station.jpg"); }
-
-.redesign-content .greenline .block-10 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_hamline-avenue-station.jpg"); }
-
-.redesign-content .greenline .block-11 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_snelling-avenue-station.jpg"); }
-
-.redesign-content .greenline .block-12 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_fairview-avenue-station.jpg"); }
-
-.redesign-content .greenline .block-13 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_raymond-station.jpg"); }
-
-.redesign-content .greenline .block-14 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_westgate-station.jpg"); }
-
-.redesign-content .greenline .block-15 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_prospect-park-station.jpg"); }
-
-.redesign-content .greenline .block-16 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_stadium-village-station.jpg"); }
-
-.redesign-content .greenline .block-17 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_east-bank-station.jpg"); }
-
-.redesign-content .greenline .block-18 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_west-bank-station.jpg"); }
-
-.redesign-content .facilities .block-1 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_central_station_4.jpg"); }
-
-.redesign-content .facilities .block-2 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_target.jpg"); }
-
-.redesign-content .facilities .block-3 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_chicago_lake.jpg"); }
-
-.redesign-content .facilities .block-4 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_o_and_m_industry.jpg"); }
-
-.redesign-content .facilities .block-5 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_smith_2.jpg"); }
-
-.redesign-content .facilities .block-6 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_big_lake_.jpg"); }
-
-.redesign-content .facilities .block-7 {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_lindbergh_dragonfly.jpg"); }
-
-.redesign-content .image-map {
-  background-image: url("../../../../../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
-  width: 750px;
-  height: 166px;
-  repeat: no-repeat;
-  position: relative; }
-  .redesign-content .image-map .rectangle {
-    position: absolute;
-    width: 20px;
-    height: 90px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    color: transparent; }
-  .redesign-content .image-map .dot {
-    position: absolute;
-    width: 25px;
-    height: 20px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
-  .redesign-content .image-map .greenline .dot {
-    top: 75px;
-    left: 4px; }
-  .redesign-content .image-map .blueline .dot {
-    top: -5px;
-    left: -8px; }
-  .redesign-content .image-map .targetfield {
-    top: -5px;
-    left: 32px; }
-  .redesign-content .image-map .warehouse {
-    top: -6px;
-    left: 64px; }
-  .redesign-content .image-map .nicollet {
-    top: -6px;
-    left: 95px; }
-  .redesign-content .image-map .government {
-    top: -6px;
-    left: 126px; }
-  .redesign-content .image-map .usbank {
-    top: -6px;
-    left: 157px; }
-  .redesign-content .image-map .wbank {
-    top: -17px;
-    left: 193px; }
-  .redesign-content .image-map .ebank {
-    top: -17px;
-    left: 224px; }
-  .redesign-content .image-map .stadiumvlg {
-    top: -17px;
-    left: 255px; }
-  .redesign-content .image-map .prospect {
-    top: -17px;
-    left: 286px; }
-  .redesign-content .image-map .westgate {
-    top: -17px;
-    left: 317px; }
-  .redesign-content .image-map .raymond {
-    top: -17px;
-    left: 348px; }
-  .redesign-content .image-map .fairview {
-    top: -17px;
-    left: 379px; }
-  .redesign-content .image-map .snelling {
-    top: -17px;
-    left: 410px; }
-  .redesign-content .image-map .hamline {
-    top: -17px;
-    left: 441px; }
-  .redesign-content .image-map .lexington {
-    top: -17px;
-    left: 472px; }
-  .redesign-content .image-map .victoria {
-    top: -17px;
-    left: 503px; }
-  .redesign-content .image-map .dale {
-    top: -17px;
-    left: 534px; }
-  .redesign-content .image-map .western {
-    top: -17px;
-    left: 565px; }
-  .redesign-content .image-map .capitolrice {
-    top: -17px;
-    left: 596px; }
-  .redesign-content .image-map .robert {
-    top: -17px;
-    left: 627px; }
-  .redesign-content .image-map .s10 {
-    top: -17px;
-    left: 658px; }
-  .redesign-content .image-map .central {
-    top: -17px;
-    left: 689px; }
-  .redesign-content .image-map .uniondepot {
-    top: -17px;
-    left: 720px; }
-  .redesign-content .image-map .cedar {
-    top: 87px;
-    left: 143px; }
-  .redesign-content .image-map .franklin {
-    top: 87px;
-    left: 174px; }
-  .redesign-content .image-map .lakestreet {
-    top: 87px;
-    left: 205px; }
-  .redesign-content .image-map .s38 {
-    top: 87px;
-    left: 236px; }
-  .redesign-content .image-map .s46 {
-    top: 87px;
-    left: 267px; }
-  .redesign-content .image-map .minnehaha {
-    top: 87px;
-    left: 299px; }
-  .redesign-content .image-map .vamed {
-    top: 87px;
-    left: 330px; }
-  .redesign-content .image-map .ftsnelling {
-    top: 87px;
-    left: 361px; }
-  .redesign-content .image-map .term1 {
-    top: 87px;
-    left: 387px; }
-  .redesign-content .image-map .term2 {
-    top: 87px;
-    left: 423px; }
-  .redesign-content .image-map .americanblvd {
-    top: 87px;
-    left: 453px; }
-  .redesign-content .image-map .bloomington {
-    top: 87px;
-    left: 485px; }
-  .redesign-content .image-map .s28 {
-    top: 87px;
-    left: 516px; }
-  .redesign-content .image-map .moa {
-    top: 87px;
-    left: 547px; }
+.redesign-content {
+  /****************************************
+    Public Art Image Map Styles
+****************************************/ }
+  .redesign-content .popover {
+    width: 175px; }
+  .redesign-content .public-art-grid .row {
+    margin-right: 0;
+    margin-left: 0; }
+    .redesign-content .public-art-grid .row .col-md-3 {
+      padding-right: 5px;
+      padding-left: 5px; }
+      .redesign-content .public-art-grid .row .col-md-3:nth-child(1) {
+        padding-left: 0; }
+      .redesign-content .public-art-grid .row .col-md-3:nth-child(4) {
+        padding-right: 0; }
+  .redesign-content .tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 165px;
+    height: 165px;
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: center; }
+    .redesign-content .tile .tile-overlay-blue {
+      background: rgba(0, 83, 160, 0.69); }
+    .redesign-content .tile .tile-overlay-green {
+      background-color: rgba(0, 130, 68, 0.69); }
+    .redesign-content .tile .tile-overlay-grey {
+      background-color: rgba(51, 51, 51, 0.69); }
+    .redesign-content .tile .tile-overlay-blue:hover,
+    .redesign-content .tile .tile-overlay-green:hover,
+    .redesign-content .tile .tile-overlay-grey:hover {
+      background: none; }
+    .redesign-content .tile .tile-overlay-blue a,
+    .redesign-content .tile .tile-overlay-green a,
+    .redesign-content .tile .tile-overlay-grey a {
+      color: #fff;
+      display: block;
+      font-weight: 700;
+      padding: 74px 10px;
+      text-decoration: none; }
+      .redesign-content .tile .tile-overlay-blue a:hover,
+      .redesign-content .tile .tile-overlay-green a:hover,
+      .redesign-content .tile .tile-overlay-grey a:hover {
+        opacity: 0; }
+    .redesign-content .tile .tile-overlay-blue .text-plus,
+    .redesign-content .tile .tile-overlay-green .text-plus,
+    .redesign-content .tile .tile-overlay-grey .text-plus {
+      padding: 65.5px 10px; }
+    .redesign-content .tile .tile-overlay-blue .text-plus-plus,
+    .redesign-content .tile .tile-overlay-green .text-plus-plus,
+    .redesign-content .tile .tile-overlay-grey .text-plus-plus {
+      padding: 57px 10px; }
+  .redesign-content .blueline .block-1 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_warehouse_district.jpg"); }
+  .redesign-content .blueline .block-2 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_nicollet_mall.jpg"); }
+  .redesign-content .blueline .block-3 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_government_plaza.jpg"); }
+  .redesign-content .blueline .block-4 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_usbank_stadium.jpg"); }
+  .redesign-content .blueline .block-5 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_cedar_riverside.jpg"); }
+  .redesign-content .blueline .block-6 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_franklin_avenue.jpg"); }
+  .redesign-content .blueline .block-7 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_lake_street.jpg"); }
+  .redesign-content .blueline .block-8 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_38th_street.jpg"); }
+  .redesign-content .blueline .block-9 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_46th_street.jpg"); }
+  .redesign-content .blueline .block-10 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_minnehaha_park.jpg"); }
+  .redesign-content .blueline .block-11 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_va_station.jpg"); }
+  .redesign-content .blueline .block-12 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_fort_snelling.jpg"); }
+  .redesign-content .blueline .block-13 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_terminal_1_lindberg.jpg"); }
+  .redesign-content .blueline .block-14 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_terminal_2_humphrey.jpg"); }
+  .redesign-content .blueline .block-15 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_american_blvd.jpg"); }
+  .redesign-content .blueline .block-16 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_bloomington_central.jpg"); }
+  .redesign-content .blueline .block-17 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_28th_avenue.jpg"); }
+  .redesign-content .blueline .block-18 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/bluelinestations/public-art/thumbnails/blue_line_public_art_thumb_moa.jpg"); }
+  .redesign-content .greenline .block-1 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_union-depot-station.png"); }
+  .redesign-content .greenline .block-2 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_central-station.jpg"); }
+  .redesign-content .greenline .block-3 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_10th-street-station.jpg"); }
+  .redesign-content .greenline .block-4 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_robert_street_mural.jpg"); }
+  .redesign-content .greenline .block-5 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_capitol-rice-street-station.jpg"); }
+  .redesign-content .greenline .block-6 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_western-avenue-station.jpg"); }
+  .redesign-content .greenline .block-7 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_dale-street-station.jpg"); }
+  .redesign-content .greenline .block-8 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_victoria_street-station.jpg"); }
+  .redesign-content .greenline .block-9 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_lexington-parkway-station.jpg"); }
+  .redesign-content .greenline .block-10 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_hamline-avenue-station.jpg"); }
+  .redesign-content .greenline .block-11 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_snelling-avenue-station.jpg"); }
+  .redesign-content .greenline .block-12 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_fairview-avenue-station.jpg"); }
+  .redesign-content .greenline .block-13 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_raymond-station.jpg"); }
+  .redesign-content .greenline .block-14 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_westgate-station.jpg"); }
+  .redesign-content .greenline .block-15 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_prospect-park-station.jpg"); }
+  .redesign-content .greenline .block-16 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_stadium-village-station.jpg"); }
+  .redesign-content .greenline .block-17 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_east-bank-station.jpg"); }
+  .redesign-content .greenline .block-18 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/greenlinestations/public-art/thumbnails/green_line_public_art_thumb_west-bank-station.jpg"); }
+  .redesign-content .facilities .block-1 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_central_station_4.jpg"); }
+  .redesign-content .facilities .block-2 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_target.jpg"); }
+  .redesign-content .facilities .block-3 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_chicago_lake.jpg"); }
+  .redesign-content .facilities .block-4 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_o_and_m_industry.jpg"); }
+  .redesign-content .facilities .block-5 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_smith_2.jpg"); }
+  .redesign-content .facilities .block-6 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_big_lake_.jpg"); }
+  .redesign-content .facilities .block-7 {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/facilities/public-art/thumbnails/fac_public_art_thumb_lindbergh_dragonfly.jpg"); }
+  .redesign-content .image-map {
+    background-image: url("../../../../../Data/sites/1/media/lightrail/metro_map_horizontalstripmap.png");
+    width: 750px;
+    height: 166px;
+    repeat: no-repeat;
+    position: relative; }
+    .redesign-content .image-map .rectangle {
+      position: absolute;
+      width: 20px;
+      height: 90px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      color: transparent; }
+    .redesign-content .image-map .dot {
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .redesign-content .image-map .greenline .dot {
+      top: 75px;
+      left: 4px; }
+    .redesign-content .image-map .blueline .dot {
+      top: -5px;
+      left: -8px; }
+    .redesign-content .image-map .targetfield {
+      top: -5px;
+      left: 32px; }
+    .redesign-content .image-map .warehouse {
+      top: -6px;
+      left: 64px; }
+    .redesign-content .image-map .nicollet {
+      top: -6px;
+      left: 95px; }
+    .redesign-content .image-map .government {
+      top: -6px;
+      left: 126px; }
+    .redesign-content .image-map .usbank {
+      top: -6px;
+      left: 157px; }
+    .redesign-content .image-map .wbank {
+      top: -17px;
+      left: 193px; }
+    .redesign-content .image-map .ebank {
+      top: -17px;
+      left: 224px; }
+    .redesign-content .image-map .stadiumvlg {
+      top: -17px;
+      left: 255px; }
+    .redesign-content .image-map .prospect {
+      top: -17px;
+      left: 286px; }
+    .redesign-content .image-map .westgate {
+      top: -17px;
+      left: 317px; }
+    .redesign-content .image-map .raymond {
+      top: -17px;
+      left: 348px; }
+    .redesign-content .image-map .fairview {
+      top: -17px;
+      left: 379px; }
+    .redesign-content .image-map .snelling {
+      top: -17px;
+      left: 410px; }
+    .redesign-content .image-map .hamline {
+      top: -17px;
+      left: 441px; }
+    .redesign-content .image-map .lexington {
+      top: -17px;
+      left: 472px; }
+    .redesign-content .image-map .victoria {
+      top: -17px;
+      left: 503px; }
+    .redesign-content .image-map .dale {
+      top: -17px;
+      left: 534px; }
+    .redesign-content .image-map .western {
+      top: -17px;
+      left: 565px; }
+    .redesign-content .image-map .capitolrice {
+      top: -17px;
+      left: 596px; }
+    .redesign-content .image-map .robert {
+      top: -17px;
+      left: 627px; }
+    .redesign-content .image-map .s10 {
+      top: -17px;
+      left: 658px; }
+    .redesign-content .image-map .central {
+      top: -17px;
+      left: 689px; }
+    .redesign-content .image-map .uniondepot {
+      top: -17px;
+      left: 720px; }
+    .redesign-content .image-map .cedar {
+      top: 87px;
+      left: 143px; }
+    .redesign-content .image-map .franklin {
+      top: 87px;
+      left: 174px; }
+    .redesign-content .image-map .lakestreet {
+      top: 87px;
+      left: 205px; }
+    .redesign-content .image-map .s38 {
+      top: 87px;
+      left: 236px; }
+    .redesign-content .image-map .s46 {
+      top: 87px;
+      left: 267px; }
+    .redesign-content .image-map .minnehaha {
+      top: 87px;
+      left: 299px; }
+    .redesign-content .image-map .vamed {
+      top: 87px;
+      left: 330px; }
+    .redesign-content .image-map .ftsnelling {
+      top: 87px;
+      left: 361px; }
+    .redesign-content .image-map .term1 {
+      top: 87px;
+      left: 387px; }
+    .redesign-content .image-map .term2 {
+      top: 87px;
+      left: 423px; }
+    .redesign-content .image-map .americanblvd {
+      top: 87px;
+      left: 453px; }
+    .redesign-content .image-map .bloomington {
+      top: 87px;
+      left: 485px; }
+    .redesign-content .image-map .s28 {
+      top: 87px;
+      left: 516px; }
+    .redesign-content .image-map .moa {
+      top: 87px;
+      left: 547px; }
 
 /*********************************************************
     35W Construction redesign - May 2018
@@ -1028,5 +986,135 @@ ul.ui-tabs-nav {
   .redesign-content .alert p {
     float: left;
     margin: 0; }
+
+/****************************************
+    Metro Blue Line Image Map Styles
+****************************************/
+.image-map-mbl {
+  background-image: url("../../../../../Data/sites/1/media/metro/blueline/BLue-Line-web-map.png");
+  width: 400px;
+  height: 710px;
+  background-repeat: no-repeat;
+  position: relative; }
+  .image-map-mbl .rectangle45 {
+    position: absolute;
+    width: 15px;
+    height: 90px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    color: transparent; }
+  .image-map-mbl .rectangle {
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    color: transparent; }
+  .image-map-mbl .targetfield {
+    position: absolute;
+    top: 79px;
+    left: 37px;
+    width: 31px;
+    height: 37px; }
+  .image-map-mbl .warehouse {
+    top: 14px;
+    left: 110px;
+    height: 134px; }
+  .image-map-mbl .nicollet {
+    top: 63px;
+    left: 107px;
+    width: 15px; }
+  .image-map-mbl .gov-plaza {
+    top: 58px;
+    left: 127px;
+    height: 105px; }
+  .image-map-mbl .us-bank {
+    top: 67px;
+    left: 143px;
+    height: 105px; }
+  .image-map-mbl .cedar-riverside {
+    top: 174px;
+    left: 137px; }
+  .image-map-mbl .franklin {
+    top: 197px;
+    left: 146px; }
+  .image-map-mbl .midtown {
+    top: 251px;
+    left: 166px;
+    width: 102px; }
+  .image-map-mbl .s38 {
+    top: 308px;
+    left: 195px; }
+  .image-map-mbl .s46 {
+    bottom: 328px;
+    right: 84px;
+    height: 16px; }
+  .image-map-mbl .s50 {
+    bottom: 287px;
+    right: 12px;
+    width: 135px; }
+  .image-map-mbl .va-medical-center {
+    bottom: 254px;
+    right: 13px;
+    width: 107px; }
+  .image-map-mbl .fort-snelling {
+    bottom: 219px;
+    right: 25px;
+    width: 79px; }
+  .image-map-mbl .t1-lindbergh {
+    bottom: 172px;
+    right: 113px;
+    width: 59px;
+    height: 33px; }
+  .image-map-mbl .t2-humphrey {
+    bottom: 133px;
+    left: 160px;
+    width: 71px;
+    height: 25px; }
+  .image-map-mbl .american-blvd {
+    bottom: 101px;
+    left: 145px; }
+  .image-map-mbl .american-blvd-dot {
+    position: absolute;
+    bottom: -20px;
+    left: 70px;
+    width: 10px;
+    height: 30px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .image-map-mbl .bloomington-central {
+    bottom: 62px;
+    right: 62px;
+    width: 111px; }
+  .image-map-mbl .bloomington-central-dot {
+    position: absolute;
+    bottom: 2px;
+    right: 113px;
+    width: 10px;
+    height: 25px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .image-map-mbl .s28 {
+    bottom: 44px;
+    right: 136px;
+    width: 54px; }
+  .image-map-mbl .s28-dot {
+    position: absolute;
+    bottom: 3px;
+    right: 54px;
+    width: 10px;
+    height: 35px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .image-map-mbl .moa {
+    bottom: 58px;
+    left: 63px;
+    width: 91px; }
+  .image-map-mbl .moa-dot {
+    position: absolute;
+    bottom: -24px;
+    left: 95px;
+    width: 10px;
+    height: 43px;
+    -webkit-transform: rotate(114deg);
+            transform: rotate(114deg); }
 
 /*# sourceMappingURL=../maps/redesign.css.map */

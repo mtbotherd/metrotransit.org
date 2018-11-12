@@ -1,0 +1,175 @@
+/****************************************
+    Metro Blue Line Image Map Styles
+****************************************/
+.image-map-mbl {
+    background-image: url("../../../../../Data/sites/1/media/metro/blueline/BLue-Line-web-map.png");
+    width: 400px;
+    height: 710px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .rectangle45 {
+        position: absolute;
+        width: 15px;
+        height: 90px;
+        transform: rotate(45deg);
+        color: transparent;
+    }
+
+    .rectangle {
+        position: absolute;
+        width: 90px;
+        height: 15px;
+        color: transparent;
+    }
+
+    .targetfield {
+        position: absolute;
+        top: 79px;
+        left: 37px;
+        width: 31px;
+        height: 37px;
+    }
+
+    .warehouse {
+        top: 14px;
+        left: 110px;
+        height: 134px;
+    }
+
+    .nicollet {
+        top: 63px;
+        left: 107px;
+        width: 15px;
+    }
+
+    .gov-plaza {
+        top: 58px;
+        left: 127px;
+        height: 105px;
+    }
+
+    .us-bank {
+        top: 67px;
+        left: 143px;
+        height: 105px;
+    }
+
+    .cedar-riverside {
+        top: 174px;
+        left: 137px;
+    }
+
+    .franklin {
+        top: 197px;
+        left: 146px;
+    }
+
+    .midtown {
+        top: 251px;
+        left: 166px;
+        width: 102px;
+    }
+
+    .s38 {
+        top: 308px;
+        left: 195px;
+    }
+
+    .s46 {
+        bottom: 328px;
+        right: 84px;
+        height: 16px;
+    }
+
+    .s50 {
+        bottom: 287px;
+        right: 12px;
+        width: 135px;
+    }
+
+    .va-medical-center {
+        bottom: 254px;
+        right: 13px;
+        width: 107px;
+    }
+
+    .fort-snelling {
+        bottom: 219px;
+        right: 25px;
+        width: 79px;
+    }
+
+    .t1-lindbergh {
+        bottom: 172px;
+        right: 113px;
+        width: 59px;
+        height: 33px;
+    }
+
+    .t2-humphrey {
+        bottom: 133px;
+        left: 160px;
+        width: 71px;
+        height: 25px;
+    }
+
+    .american-blvd {
+        bottom: 101px;
+        left: 145px;
+    }
+
+    .american-blvd-dot {
+        position: absolute;
+        bottom: -20px;
+        left: 70px;
+        width: 10px;
+        height: 30px;
+        transform: rotate(135deg);
+    }
+
+    .bloomington-central {
+        bottom: 62px;
+        right: 62px;
+        width: 111px;
+    }
+
+    .bloomington-central-dot {
+        position: absolute;
+        bottom: 2px;
+        right: 113px;
+        width: 10px;
+        height: 25px;
+        transform: rotate(135deg);
+    }
+
+    .s28 {
+        bottom: 44px;
+        right: 136px;
+        width: 54px;
+    }
+
+    .s28-dot {
+        position: absolute;
+        bottom: 3px;
+        right: 54px;
+        width: 10px;
+        height: 35px;
+        transform: rotate(135deg);
+    }
+
+    .moa {
+        bottom: 58px;
+        left: 63px;
+        width: 91px;
+    }
+
+    .moa-dot {
+        position: absolute;
+        bottom: -24px;
+        left: 95px;
+        width: 10px;
+        height: 43px;
+        transform: rotate(114deg);
+    }
+}
