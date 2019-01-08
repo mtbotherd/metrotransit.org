@@ -1118,61 +1118,28 @@ ul.ui-tabs-nav {
             transform: rotate(114deg); }
 
 /***************************************************
-	Final Four - January 2019
+	Calendar
 ***************************************************/
-.redesign-content .panel-heading {
-  border-radius: 0; }
-  .redesign-content .panel-heading a {
-    display: block;
-    padding: 1rem 1.5rem;
-    text-decoration: none; }
-  .redesign-content .panel-heading .accordion-toggle:after {
-    font-family: 'FontAwesome';
-    float: right;
-    content: "\f077"; }
-  .redesign-content .panel-heading .accordion-toggle.collapsed:after {
-    content: "\f078"; }
-
-.redesign-content #accordion .panel-heading {
-  padding: 0; }
-
-.redesign-content .panel-danger .panel-heading {
-  padding: 10px 15px !important; }
-
-.redesign-content .panel-body-1,
-.redesign-content .panel-body-2,
-.redesign-content .panel-body-3,
-.redesign-content .panel-body-4,
-.redesign-content .panel-body-5 {
-  position: relative;
-  top: -10px; }
-
-.redesign-content .panel .panel {
-  border-radius: 0;
-  margin-bottom: 1.5rem; }
-  .redesign-content .panel .panel .panel-heading {
-    padding: 1rem; }
-
-.redesign-content table.detours {
+.redesign-content table.calendar {
   width: 100%; }
-  .redesign-content table.detours th {
+  .redesign-content table.calendar th {
     border-top: 1px solid #c0c0c0;
     padding: 10px 0;
     text-align: center;
     width: 110px; }
-  .redesign-content table.detours td {
+  .redesign-content table.calendar td {
     background-color: #d4e3fc;
     border: 1px solid #c0c0c0;
     font-size: 24px;
     text-align: center;
     width: 110px;
     height: 110px; }
-    .redesign-content table.detours td a {
+    .redesign-content table.calendar td a {
       color: #000;
       padding: 40px; }
-      .redesign-content table.detours td a:hover {
+      .redesign-content table.calendar td a:hover {
         text-decoration: none; }
-  .redesign-content table.detours .disabled {
+  .redesign-content table.calendar .disabled {
     background-color: #f7f6f6;
     color: #929292; }
 
