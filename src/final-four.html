@@ -231,28 +231,7 @@ continue to improve the accessibility of our website.</a>
                             <article id="ctl00_leftContent_ctl00_pnlOuterBody" class="">
                                 <div id="ctl00_leftContent_ctl00_pnlInnerBody" class="modulecontent">
                                     <div id="ctl00_leftContent_ctl00_divContent" class="">
-                                        <div id="ctl01_leftContent_ctl00_pnlNavContainer">
-                                            <div class="LeftNavPageMenuHeader" id="ctl01_leftContent_ctl00_LeftNavPageMenuHeader">
-                                                <div class="AspNet-TreeView" id="ctl01_leftContent_ctl00_PageMenu2_ctl00">
-                                                    <ul id="ctl01_leftContent_ctl00_PageMenu2_ctl00_UL">
-                                                        <li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="/finalfour">Final Four</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="LeftNavPageMenu" id="ctl01_leftContent_ctl00_LeftNavPageMenu">
-                                                <div class="AspNet-TreeView" id="ctl01_leftContent_ctl00_PageMenu1_ctl00">
-                                                    <ul id="ctl01_leftContent_ctl00_PageMenu1_ctl00_UL">
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#app">App</a></li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#riderAlerts">Rider Alerts</li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#triPlanner">Trip Planner</a></li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#detours">Detours</li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#followUs">Follow Us</a></li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#lostAndFound">Lost &amp; Found</a></li>
-                                                    	<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf"><a href="#partnerLink">Partner Link</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         <p>&nbsp;</p>
                                     </div>
                                     <input type="hidden" name="ctl00$leftContent$ctl00$hdnIsDirty" id="ctl00_leftContent_ctl00_hdnIsDirty">
@@ -278,7 +257,7 @@ continue to improve the accessibility of our website.</a>
 
                                                     <h1>All of the fun - none of the Madness</h1>
                                                     <p><img class="img-responsive" src="/Data/sites/1/media/final-four/54087_FinalFour800x300.png" /></p>
-                                                    <h2>Download the Metro Transit app</h2>
+                                                    <h2 id="app">Download the Metro Transit app</h2>
                                                     <div class="row">
                                                         <div class="col-md-5">
                                                             <p style="margin-top:0;">Plan your trip and buy fares right from your smartphone.</p>
@@ -307,47 +286,81 @@ continue to improve the accessibility of our website.</a>
 
                                                     <hr />
 
-                                                    <h2>First step: Sign up now for Rider Alerts</h2>
+                                                    <h2 id="riderAlerts">First step: Sign up now for Rider Alerts</h2>
                                                     <p>Stay in the know about schedule changes, last-minute detours and added service by signing up to receive free Rider Alerts on the routes you ride regularly by text or email.</p>
                                                     <p><a class="btn btn-primary" href="/rideralerts">Sign up now</a></p>
 
                                                     <hr />
 
-                                                    <h2>Getting to The Final Four&reg;</h2>
+                                                    <h2 id="tripPlanner">Getting to The Final Four&reg;</h2>
                                                     <p>Use our <a href="/imap/map.aspx">online tool</a> to plan your trip from the airport, to the big games or around town. Or plan your trip in person by calling a transit expert at 612-373-3333.</p>
 
                                                     <hr />
 
-                                                    <h2>Detours ahead:</h2>
+                                                    <h2 id="detours">Detours ahead:</h2>
                                                     <p>Many downtown routes – especially along Nicollet Mall – will be disrupted April 1-9. Check back in late February for details on detours.</p>
-
+                                                    
                                                     <!-- <p>Many downtown routes – especially along Nicollet Mall – will be disrupted April 1-9. This calendar shows an overview of the changes but other detours may be implemented. Look for signs at bus stops for further details. And remember to sign up for Rider Alerts to have them sent to you by text or email!</p>
                                                     <h3>April 2019 Final Four&reg; detours</h3>
-                                                    <p>Click on day to view</p> -->
+                                                    <p>Click on a day to view detours.</p>
+
+                                                    <table class="detours">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sunday</th>
+                                                                <th>Monday</th>
+                                                                <th>Tuesday</th>
+                                                                <th>Wednesday</th>
+                                                                <th>Thursday</th>
+                                                                <th>Friday</th>
+                                                                <th>Saturday</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="disabled">31</td>
+                                                                <td><a href="">1</a></td>
+                                                                <td><a href="">2</a></td>
+                                                                <td><a href="">3</a></td>
+                                                                <td><a href="">4</a></td>
+                                                                <td><a href="">5</a></td>
+                                                                <td><a href="">6</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="">7</a></td>
+                                                                <td><a href="">8</a></td>
+                                                                <td><a href="">9</a></td>
+                                                                <td class="disabled">10</td>
+                                                                <td class="disabled">11</td>
+                                                                <td class="disabled">12</td>
+                                                                <td class="disabled">13</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
 
                                                     <hr />
 
-                                                    <h2>Follow us / #metrotransitmn</h2>
+                                                    <h2 id="followUs">Follow us / #metrotransitmn</h2>
                                                     <p>For regular updates, follow us on <a href="https://www.facebook.com/MetroTransitMN">Facebook</a> or <a href="https://twitter.com/MetroTransitMN">Twitter</a>.</p>
                                                     <p><a class="btn btn-primary" href="/contact-us">Contact us</a></p>
 
                                                     <hr />
 
-                                                    <h2>Forget something on a Metro Transit bus or train?</h2>
+                                                    <h2 id="lostAndFound">Forget something on a Metro Transit bus or train?</h2>
                                                     <p>Contact us and if it’s been found, we’ll reconnect you with your lost item. Fill out our <a href="/comment-on-metro-transit-service">Comment on Metro Transit service</a> form or for fastest service, call Customer Relations at 612-373-3333 weekdays 7:30 a.m.-5:30 p.m.</p>
 
                                                     <hr />
 
-                                                    <h2>Find out about Final Four events all over town!</h2>
+                                                    <h2 id="partnerLinks">Find out about Final Four events all over town!</h2>
                                                     <div class="row">
                                                         <div class="col-md-4">
-                                                            <p><img class="img-responsive" src="..." /></p>
+                                                            <p><img class="img-responsive" src="/Data/sites/1/media/placeholder-image.png" /></p>
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <p><img class="img-responsive" src="..." /></p>
+                                                            <p><img class="img-responsive" src="/Data/sites/1/media/placeholder-image.png" /></p>
                                                         </div>
                                                         <div class="col-md-4">
-                                                            <p><img class="img-responsive" src="..." /></p>
+                                                            <p><img class="img-responsive" src="/Data/sites/1/media/placeholder-image.png" /></p>
                                                         </div>
                                                     </div>
 
