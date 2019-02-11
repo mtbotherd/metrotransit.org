@@ -120,6 +120,8 @@
   text-indent: -1em; }
   .redesign-content ul li:before {
     content: "\003E \0020"; }
+    .redesign-content ul li:before ul {
+      list-style-type: none; }
 
 .redesign-content ol {
   margin-bottom: 1em; }
