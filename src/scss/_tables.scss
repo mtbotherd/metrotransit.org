@@ -1,0 +1,37 @@
+/***************************************************
+	Table Styles
+***************************************************/
+table.standard {
+    border-collapse: collapse;
+    border: solid 1px #ccc;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+}
+
+table.standard caption {
+    color: #000;
+}
+
+table.standard th {
+    color: #303030;
+    font-size: 1.1em;
+    border: solid 1px #ccc;
+    padding: .3em 1.1em;
+    white-space: nowrap;
+    vertical-align: middle;
+    background: linear-gradient(#fde154, #e0bb04);
+//     background: url('data:image/gif;base64,R0lGODlhAgBQANUAAOTAD+O/DP3gVPzfUfrdTeK+Cv3hVOG9B+O+C+XCEvPTN+bCFOjGG/ncSvTVO+vJIvDQMOnHHerIIPPUOfXWPffZROrHH/rdTOK9CPnbSfzfUuC7BPveT+TADvveTuG8BuXBEfLSNuzLJvbXQfHQMvXXP/zgU+G8BfjaRubDFu7OLO7NKu/PLujFGfHRNOzKJO3MKOfEF/jaR/fYQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAAgBQAAAGa0CDQSAwmTSawYDD8XgIhMul0chkZDIUqlKZzUajUolCcTgmE4UiFHK5SCQIhMVSqVYrGEwker0eDxISFhYREQwMLS0xMSkpCwsJCSAgAAAdHQEBCAgFBRgYBwcfHycnG6ipqqusra6vsKlBADs=')
+//  repeat-x 0 0;
+    /*background: url('/Data/Sites/1/skins/MetroTransitII/images/bkgrnd_yellowstrip.gif')
+ repeat-x 0 0;*/
+}
+
+table.standard tr.alternate td {
+    background-color: #f1f3f3;
+}
+
+table.standard td {
+    border: solid 1px #ccc;
+    padding: .3em 1.1em;
+    line-height: 1.3em;
+}

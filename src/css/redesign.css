@@ -1145,4 +1145,36 @@ ul.ui-tabs-nav {
     background-color: #f7f6f6;
     color: #929292; }
 
+/***************************************************
+	Table Styles
+***************************************************/
+table.standard {
+  border-collapse: collapse;
+  border: solid 1px #ccc;
+  -moz-border-radius: .3em;
+  -webkit-border-radius: .3em; }
+
+table.standard caption {
+  color: #000; }
+
+table.standard th {
+  color: #303030;
+  font-size: 1.1em;
+  border: solid 1px #ccc;
+  padding: .3em 1.1em;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde154), to(#e0bb04));
+  background: linear-gradient(#fde154, #e0bb04);
+  /*background: url('/Data/Sites/1/skins/MetroTransitII/images/bkgrnd_yellowstrip.gif')
+ repeat-x 0 0;*/ }
+
+table.standard tr.alternate td {
+  background-color: #f1f3f3; }
+
+table.standard td {
+  border: solid 1px #ccc;
+  padding: .3em 1.1em;
+  line-height: 1.3em; }
+
 /*# sourceMappingURL=../maps/redesign.css.map */
