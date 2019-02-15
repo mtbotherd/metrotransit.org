@@ -185,4 +185,11 @@ $(document).ready(function() {
 
     // Add required attribute to checkbox & radio groups
     $(".radio-group input:radio").attr("required", "required");
+
+    // Show/hide form response
+    // if($(".comment-form-response" || ".comment-form-error").is(":hidden")) {
+    //     $(".form-redesign .cca-form-instructions").show();
+    // } else {
+    //     $(".form-redesign .cca-form-instructions").show();
+    // }
 });
