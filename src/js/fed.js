@@ -187,9 +187,9 @@ $(document).ready(function() {
     $(".radio-group input:radio").attr("required", "required");
 
     // Show/hide form response
-    // if($(".comment-form-response" || ".comment-form-error").is(":hidden")) {
-    //     $(".form-redesign .cca-form-instructions").show();
-    // } else {
-    //     $(".form-redesign .cca-form-instructions").show();
-    // }
+    if($(".comment-form-response" || ".comment-form-error").css("display") == "none") {
+        $(".form-redesign .cca-form-instructions").show();
+    } else {
+        $(".form-redesign .cca-form-instructions").hide();
+    }
 });
