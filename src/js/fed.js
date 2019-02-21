@@ -188,8 +188,8 @@ $(document).ready(function() {
 
     // Show/hide form response
     if($(".comment-form-response" || ".comment-form-error").css("display") == "none") {
-        $(".form-redesign .cca-form-instructions").show();
+        $("form-content").show();
     } else {
-        $(".form-redesign .cca-form-instructions").hide();
+        $(".form-content").hide();
     }
 });
