@@ -133,33 +133,33 @@ $(document).ready(function() {
     }).change();
 
     // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
-    $('#tap_enrollment_submit').prop("disabled", true);
-    var a = 0;
-    //binds to onchange event of your input field
-    $('#photoID').bind('change', function() {
-        if ($('#tap_enrollment_submit').attr('disabled', false)) {
-            $('#tap_enrollment_submit').attr('disabled', true);
-        }
-        var ext = $('#photoID').val().split('.').pop().toLowerCase();
-        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
-            $('#error1').slideDown("slow");
-            $('#error2').slideUp("slow");
-            a = 0;
-        } else {
-            var picsize = (this.files[0].size);
-            if (picsize > 1000000) {
-                $('#error2').slideDown("slow");
-                a = 0;
-            } else {
-                a = 1;
-                $('#error2').slideUp("slow");
-            }
-            $('#error1').slideUp("slow");
-            if (a == 1) {
-                $('#tap_enrollment_submit').attr('disabled', false);
-            }
-        }
-    });
+    // $('#tap_enrollment_submit').prop("disabled", true);
+    // var a = 0;
+    // //binds to onchange event of your input field
+    // $('#photoID').bind('change', function() {
+    //     if ($('#tap_enrollment_submit').attr('disabled', false)) {
+    //         $('#tap_enrollment_submit').attr('disabled', true);
+    //     }
+    //     var ext = $('#photoID').val().split('.').pop().toLowerCase();
+    //     if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+    //         $('#error1').slideDown("slow");
+    //         $('#error2').slideUp("slow");
+    //         a = 0;
+    //     } else {
+    //         var picsize = (this.files[0].size);
+    //         if (picsize > 1000000) {
+    //             $('#error2').slideDown("slow");
+    //             a = 0;
+    //         } else {
+    //             a = 1;
+    //             $('#error2').slideUp("slow");
+    //         }
+    //         $('#error1').slideUp("slow");
+    //         if (a == 1) {
+    //             $('#tap_enrollment_submit').attr('disabled', false);
+    //         }
+    //     }
+    // });
 
     // Commuter Choice Awards Form - Copy Nominator to Nominee.
     $(".copy-contact input").change(function() {
