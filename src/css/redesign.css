@@ -986,6 +986,8 @@ ul.ui-tabs-nav {
   .redesign-content .alert .fa {
     display: inline-block;
     float: left; }
+  .redesign-content .alert h3 .fa {
+    line-height: 1.3; }
   .redesign-content .alert h4 {
     margin-top: 0; }
   .redesign-content .alert p {

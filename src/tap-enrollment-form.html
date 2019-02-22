@@ -315,20 +315,23 @@ continue to improve the accessibility of our website.</a>
                                                                 <h2>Photo ID and certificate</h2>
                                                                 <p style="margin-top: 0.3em;">You must provide a copy of your photo ID card and one form of the <a href="https://www.metrotransit.org/tap#acceptedCertifications" target="_blank">accepted certificates</a>.</p>
                                                                 <div class="alert alert-info">
-                                                                    <h3><i class="fa fa-exclamation-circle">&nbsp;</i> Image type and size</h3>
-                                                                    <p>Image file type must be .jpg, .jpeg, .png or .gif. The maximum file size limit is 1mb.</p>
+                                                                    <h3><i class="fa fa-exclamation-circle">&nbsp;</i> File type and size</h3>
+                                                                    <ul>
+                                                                        <li>File type can be jpg, jpeg, png, gif or pdf</li>
+                                                                        <li>Maximum file size limit is 1mb</li>
+                                                                    </ul>
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-md-8">
                                                                         <div class="form-group">
                                                                             <label for="photoID" class="required">Attach photo ID</label><br />
-                                                                            <input type="file" class="form-control" id="photoID" required />
-                                                                            <!-- <p id="error1" style="display:none; color:#FF0000;">
-                                                                                Invalid image format! Image format must be .jpg, .jpeg, .png or .gif.
+                                                                            <input type="file" class="form-control photo-id" id="photoID" required />
+                                                                            <p id="error1" style="display:none; color:#FF0000;">
+                                                                                Invalid file type! File type can be jpg, jpeg, png, gif or pdf.
                                                                             </p>
                                                                             <p id="error2" style="display:none; color:#FF0000;">
-                                                                                Maximum file size limit is 1mb.
-                                                                            </p> -->
+                                                                                Invalid file size! Maximum file size limit is 1mb.
+                                                                            </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -336,7 +339,13 @@ continue to improve the accessibility of our website.</a>
                                                                     <div class="col-md-8">
                                                                         <div class="form-group">
                                                                             <label for="certificate" class="required">Attach certificate</label><br />
-                                                                            <input type="file" class="form-control" id="certificate" required />
+                                                                            <input type="file" class="form-control certificate" id="certificate" required />
+                                                                            <p id="error3" style="display:none; color:#FF0000;">
+                                                                                Invalid file type! File type can be jpg, jpeg, png, gif or pdf.
+                                                                            </p>
+                                                                            <p id="error4" style="display:none; color:#FF0000;">
+                                                                                Invalid file size! Maximum file size limit is 1mb.
+                                                                            </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -380,7 +389,7 @@ continue to improve the accessibility of our website.</a>
                                                             <input type="checkbox" value="" />
                                                             <label>Send me an email of the information submitted</label>
                                                         </div>
-                                                        <input type="submit" id="tap_enrollment_submit" class="mt-button btn btn-primary" value="Submit" />
+                                                        <input type="submit" id="tap_enrollment_submit" class="mt-button btn btn-primary tap-enrollment" value="Submit" />
                                                     </div>
                                                     <p class="text-right"><small><em>Revised August 2017</em></small></p>
                                                     <!-- END OF FRONT END CONTENT -->
