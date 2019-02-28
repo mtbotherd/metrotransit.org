@@ -269,13 +269,13 @@
 
                                                     <!-- START OF FRONT END CONTENT -->
                                                     
-                                                    <div class="comment-form-response">
+                                                    <div class="comment-form-response" style="display:none;">
                                                         <h1>Thank you!</h1>
 
                                                         <p>Your request has been submitted.</p>
                                                     </div>
 
-                                                    <div class="comment-form-error">
+                                                    <div class="comment-form-error" style="display:none;">
                                                         <p>Form submission error.</p>
                                                     </div>
 
@@ -348,8 +348,9 @@
 
                                                         <!-- Begin form -->
                                                         <h2>Nomination Form</h2>
-                                                        <div class="well">
-                                                            <!-- <h3>Category</h3> -->
+                                                        <!-- <div class="well"> -->
+                                                            <label for="nomincationCategories" class="required">Nomination Categories</label>
+                                                            <select class="form-control"></select>
                                                             <div class="radio-group">
                                                                 <label for="categories"
                                                                     class="required">Nomination categories</label>
@@ -449,7 +450,7 @@
                                                                     </tbody>
                                                                 </table>
                                                             </div>
-                                                        </div>
+                                                        <!-- </div> -->
 
                                                         <h3>Nominator contact information</h3>
                                                         <div class="row">
