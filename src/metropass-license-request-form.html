@@ -279,7 +279,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label for="companyName"
                                                                         class="required">Company name</label>
@@ -287,7 +287,228 @@
                                                                         class="form-control" required>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label for="taxID" class="required">Tax ID</label>
+                                                                    <input type="text" id="taxID" class="form-control" required>
+                                                                </div>
+                                                            </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="companyAddress" class="required">Company Address</label>
+                                                                    <input type="text" id="companyAddress" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="city" class="required">City</label>
+                                                                    <input type="text" id="city" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-inline">
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label for="state" class="required">State</label>
+                                                                    <input type="text" id="state" class="form-control" max-length="2" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label for="zipCode" class="required">Zip code</label>
+                                                                    <input type="text" id="zipCode" class="form-control" max-length="5" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label for="stateIncorporated" class="required">State of Incorporation</label>
+                                                                    <input type="text" id="stateIncorporated" class="form-control" max-length="2" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr />
+                                                        <h2>Administrator information (day-to-day contact person)</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="adminFullName" class="required">Administrator's full name</label>
+                                                                    <input type="text" id="adminFullName" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="department" class="required">Department</label>
+                                                                    <input type="text" id="department" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="title" class="required">Title</label>
+                                                                    <input type="text" id="title" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="required">Phone</label>
+                                                                    <input type="text" id="phone" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="fax">Fax</label>
+                                                                    <input type="text" id="fax" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="emailAddress" class="required">Email address</label>
+                                                                    <input type="email" id="emailAddress" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <hr />
+                                                        <h2>Billing contact information (if differet from above)</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="billingContact">Billing contact's full name</label>
+                                                                    <input type="text" id="billingContact" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="department2">Department</label>
+                                                                    <input type="text" id="department2" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="title2">Title</label>
+                                                                    <input type="text" id="title2" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="phone2">Phone</label>
+                                                                    <input type="text" id="phone2" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="fax2">Fax</label>
+                                                                    <input type="text" id="fax2" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="emailAddress2">Email address</label>
+                                                                    <input type="email" id="emailAddress2" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <hr />
+                                                        <h2>Contract official information</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="contractSigner" class="required">Contract signer's full name</label>
+                                                                    <input type="text" id="billingContact" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="department3" class="required">Department</label>
+                                                                    <input type="text" id="department3" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="title3" class="required">Title</label>
+                                                                    <input type="text" id="title3" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="phone3" class="required">Phone</label>
+                                                                    <input type="text" id="phone3" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="fax3">Fax</label>
+                                                                    <input type="text" id="fax3" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="emailAddress3" class="required">Email address</label>
+                                                                    <input type="email" id="emailAddress3" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-inline">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="numEligibleEmpls" class="required">Number of eligible employees</label>
+                                                                    <input type="number" id="numEligibleEmpls" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="numInitlMtpssPrtcpnts" class="required">Number of initial Metropass participants</label>
+                                                                    <input type="number" id="numInitlMtpssPrtcpnts" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-inline">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label for="expctdEmplyCount" class="required">Expected employee count</label>
+                                                                    <input type="number" id="expctdEmplyCount" class="form-control" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="antStartDate" class="required">Anticipated Metropass start date</label>
+                                                                    <div class="date-picker input-group">
+                                                                        <input type="text" id="antStartDate"
+                                                                            class="form-control" date-format="MM/dd/yyyy"
+                                                                            placeholder="mm/dd/yyyy" required="">
+                                                                        <span class="add-on date input-group-addon">
+                                                                            <i class="fa fa-calendar icon-calendar"
+                                                                                aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr />
+                                                        <input type="submit" id="btnSend" class="mt-button btn btn-primary" value="Submit" />
                                                     </div>
 
                                                     <!-- END OF FRONT END CONTENT -->
