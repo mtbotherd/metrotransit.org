@@ -39,6 +39,9 @@
     height: 24px;
     padding: 0 6px;
     width: 100%; }
+  .form-redesign .form-group .state,
+  .form-redesign .form-group .age {
+    width: 3em; }
   .form-redesign .form-group textarea.form-control {
     height: 112px; }
 
