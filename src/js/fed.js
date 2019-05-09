@@ -135,14 +135,76 @@ $(document).ready(function() {
     // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
     // Tap Enrollment Form
     // $('.tap-enrollment').prop("disabled", true);
+    var a = 0;
+    //  binds to onchange event of your input field
+    $(".photo-id").bind('change', function() {
+        if ($('.tap-enrollment').attr('disabled', false)) {
+            $('.tap-enrollment').attr('disabled', true);
+        }
+        var ext = $(this).val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
+            $('#error1').slideDown("slow");
+            $('#error2, #error3').slideUp("slow");
+            a = 0;
+        } else {
+			var picsize = (this.files[0].size);
+            if (($.inArray(ext, ['jpg', 'jpeg']) >= 0) && picsize > 10000000) {
+				$('#error2').slideDown("slow");
+				$('#error1, #error3').slideUp("slow");
+				a = 1;
+			} else if (($.inArray(ext, ['gif', 'png', 'pdf']) >= 0) && picsize > 4000000) {
+				$('#error3').slideDown("slow");
+				$('#error1, #error2').slideUp("slow");
+            } else {
+                a = 0;
+                $('#error1, #error2, #error3').slideUp("slow");
+            }
+            //$('#error1').slideUp("slow");
+            if (a == 0) {
+                $('.tap-enrollment').attr('disabled', false);
+            }
+		}
+		
+		a = 0;
+    });
+    $(".certificate").bind('change', function() {
+        if ($('.tap-enrollment').attr('disabled', false)) {
+            $('.tap-enrollment').attr('disabled', true);
+        }
+        var ext = $(this).val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
+            $('#error4').slideDown("slow");
+            $('#error5, #error6').slideUp("slow");
+            a = 1;
+        } else {
+            var picsize = (this.files[0].size);
+			if (($.inArray(ext, ['jpg', 'jpeg']) >= 0) && picsize > 10000000) {
+				$('#error5').slideDown("slow");
+				$('#error4, #error6').slideUp("slow");
+				a = 1;
+			} else if (($.inArray(ext, ['gif', 'png', 'pdf']) >= 0) && picsize > 4000000) {
+				$('#error6').slideDown("slow");
+				$('#error4, #error5').slideUp("slow");
+            } else {
+                a = 0;
+                $('#error4, #error5, #error6').slideUp("slow");
+            }
+            //$('#error4').slideUp("slow");
+            if (a == 0) {
+                $('.tap-enrollment').attr('disabled', false);
+            }
+        }
+    });
+
+    // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
+    // CCA Nomination Form
     // var a = 0;
-    //binds to onchange event of your input field
-    // $(".photo-id").bind('change', function() {
-    //     if ($('.tap-enrollment').attr('disabled', false)) {
-    //         $('.tap-enrollment').attr('disabled', true);
-    //     }
+    // //binds to onchange event of your input field
+    // $(".attachment-1").bind('change', function() {
+    //     console.log("Good!");
     //     var ext = $(this).val().split('.').pop().toLowerCase();
     //     if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
+    //         //console.log("Good!");
     //         $('#error1').slideDown("slow");
     //         $('#error2').slideUp("slow");
     //         a = 0;
@@ -156,15 +218,9 @@ $(document).ready(function() {
     //             $('#error2').slideUp("slow");
     //         }
     //         $('#error1').slideUp("slow");
-    //         if (a == 1) {
-    //             $('.tap-enrollment').attr('disabled', false);
-    //         }
     //     }
     // });
-    // $(".certificate").bind('change', function() {
-    //     if ($('.tap-enrollment').attr('disabled', false)) {
-    //         $('.tap-enrollment').attr('disabled', true);
-    //     }
+    // $(".attachment-2").bind('change', function() {
     //     var ext = $(this).val().split('.').pop().toLowerCase();
     //     if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
     //         $('#error3').slideDown("slow");
@@ -180,90 +236,44 @@ $(document).ready(function() {
     //             $('#error4').slideUp("slow");
     //         }
     //         $('#error3').slideUp("slow");
-    //         if (a == 1) {
-    //             $('.tap-enrollment').attr('disabled', false);
-    //         }
     //     }
     // });
-
-    // File upload validation.  Source: https://www.allphptricks.com/check-file-size-extension-uploading-using-jquery/
-    // CCA Nomination Form
-    var a = 0;
-    //binds to onchange event of your input field
-    $(".attachment-1").bind('change', function() {
-        console.log("Good!");
-        var ext = $(this).val().split('.').pop().toLowerCase();
-        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
-            //console.log("Good!");
-            $('#error1').slideDown("slow");
-            $('#error2').slideUp("slow");
-            a = 0;
-        } else {
-            var picsize = (this.files[0].size);
-            if (picsize > 1000000) {
-                $('#error2').slideDown("slow");
-                a = 0;
-            } else {
-                a = 1;
-                $('#error2').slideUp("slow");
-            }
-            $('#error1').slideUp("slow");
-        }
-    });
-    $(".attachment-2").bind('change', function() {
-        var ext = $(this).val().split('.').pop().toLowerCase();
-        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
-            $('#error3').slideDown("slow");
-            $('#error4').slideUp("slow");
-            a = 0;
-        } else {
-            var picsize = (this.files[0].size);
-            if (picsize > 1000000) {
-                $('#error4').slideDown("slow");
-                a = 0;
-            } else {
-                a = 1;
-                $('#error4').slideUp("slow");
-            }
-            $('#error3').slideUp("slow");
-        }
-    });
-    $(".attachment-3").bind('change', function() {
-        var ext = $(this).val().split('.').pop().toLowerCase();
-        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
-            $('#error5').slideDown("slow");
-            $('#error6').slideUp("slow");
-            a = 0;
-        } else {
-            var picsize = (this.files[0].size);
-            if (picsize > 1000000) {
-                $('#error6').slideDown("slow");
-                a = 0;
-            } else {
-                a = 1;
-                $('#error6').slideUp("slow");
-            }
-            $('#error5').slideUp("slow");
-        }
-    });
-    $(".attachment-4").bind('change', function() {
-        var ext = $(this).val().split('.').pop().toLowerCase();
-        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
-            $('#error7').slideDown("slow");
-            $('#error8').slideUp("slow");
-            a = 0;
-        } else {
-            var picsize = (this.files[0].size);
-            if (picsize > 1000000) {
-                $('#error8').slideDown("slow");
-                a = 0;
-            } else {
-                a = 1;
-                $('#error8').slideUp("slow");
-            }
-            $('#error7').slideUp("slow");
-        }
-    });
+    // $(".attachment-3").bind('change', function() {
+    //     var ext = $(this).val().split('.').pop().toLowerCase();
+    //     if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
+    //         $('#error5').slideDown("slow");
+    //         $('#error6').slideUp("slow");
+    //         a = 0;
+    //     } else {
+    //         var picsize = (this.files[0].size);
+    //         if (picsize > 1000000) {
+    //             $('#error6').slideDown("slow");
+    //             a = 0;
+    //         } else {
+    //             a = 1;
+    //             $('#error6').slideUp("slow");
+    //         }
+    //         $('#error5').slideUp("slow");
+    //     }
+    // });
+    // $(".attachment-4").bind('change', function() {
+    //     var ext = $(this).val().split('.').pop().toLowerCase();
+    //     if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg', 'pdf']) == -1) {
+    //         $('#error7').slideDown("slow");
+    //         $('#error8').slideUp("slow");
+    //         a = 0;
+    //     } else {
+    //         var picsize = (this.files[0].size);
+    //         if (picsize > 1000000) {
+    //             $('#error8').slideDown("slow");
+    //             a = 0;
+    //         } else {
+    //             a = 1;
+    //             $('#error8').slideUp("slow");
+    //         }
+    //         $('#error7').slideUp("slow");
+    //     }
+    // });
 
     // Commuter Choice Awards Form - Copy Nominator to Nominee.
     $(".copy-contact input").change(function() {
