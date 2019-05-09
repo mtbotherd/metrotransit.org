@@ -22,21 +22,32 @@
                 padding: 15px;
                 height: auto;
 			}
-			
-			p:last-child {
-				margin: 0;
+
+			@media (max-width: 767px) {
+
+				.cta {
+					margin-bottom: 10px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
+
+			p { margin-bottom: 0; }
+			p:last-child { margin-top: 0;}
 
             .fancy-button {
 				display: block;
-				height: 146px;
+				height: 165px;
 				margin-top: 75px;
 				padding: 15px;
                 opacity: .9;
                 text-align: center;
 
                 &:hover {
-                    opacity: 1;
+					opacity: 1;
+					text-decoration: none;
                 }
 
                 @media (max-width: 768px) {
@@ -52,6 +63,10 @@
 				text-transform: uppercase;
 				margin-bottom: 20px;
 				line-height: 1.3;
+
+				@media (max-width: 767px) {
+					font-size: 18px;
+				}
 			}
 
 			.details {
