@@ -21,24 +21,17 @@
             @media (max-width: 768px) {
                 padding: 15px;
                 height: auto;
-            }
-
-            .row div {
-                margin-bottom: 15px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            p {
-                margin-top: 0;
-            }
+			}
+			
+			p:last-child {
+				margin: 0;
+			}
 
             .fancy-button {
-                display: block;
-                padding: 15px;
-                margin-top: 75px;
+				display: block;
+				height: 146px;
+				margin-top: 75px;
+				padding: 15px;
                 opacity: .9;
                 text-align: center;
 
@@ -50,23 +43,23 @@
                     margin-top: 0;
                     text-align: center;
                 }
+			}
+			
+			.heading {
+				display: block;
+				font-size: 24px;
+				color: $white;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				line-height: 1.3;
+			}
 
-                .heading {
-                    display: block;
-                    font-size: 24px;
-                    color: $white;
-                    text-transform: uppercase;
-                    margin-bottom: 20px;
-                    line-height: 1.3;
-                }
-
-                .details {
-                    display: block;
-                    font-size: 14px;
-                    color: $transit-yellow;
-                    text-transform: none;
-                }
-            }
+			.details {
+				display: block;
+				font-size: 14px;
+				color: $transit-yellow;
+				text-transform: none;
+			}
 
             .bg-blue {
                 background-color: $transit-blue;

@@ -910,16 +910,13 @@
     .redesign-content .rider-alerts .hero-image {
       padding: 15px;
       height: auto; } }
-  .redesign-content .rider-alerts .hero-image .row div {
-    margin-bottom: 15px; }
-    .redesign-content .rider-alerts .hero-image .row div:last-child {
-      margin-bottom: 0; }
-  .redesign-content .rider-alerts .hero-image p {
-    margin-top: 0; }
+  .redesign-content .rider-alerts .hero-image p:last-child {
+    margin: 0; }
   .redesign-content .rider-alerts .hero-image .fancy-button {
     display: block;
-    padding: 15px;
+    height: 146px;
     margin-top: 75px;
+    padding: 15px;
     opacity: .9;
     text-align: center; }
     .redesign-content .rider-alerts .hero-image .fancy-button:hover {
@@ -928,18 +925,18 @@
       .redesign-content .rider-alerts .hero-image .fancy-button {
         margin-top: 0;
         text-align: center; } }
-    .redesign-content .rider-alerts .hero-image .fancy-button .heading {
-      display: block;
-      font-size: 24px;
-      color: #ffffff;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      line-height: 1.3; }
-    .redesign-content .rider-alerts .hero-image .fancy-button .details {
-      display: block;
-      font-size: 14px;
-      color: #ffd200;
-      text-transform: none; }
+  .redesign-content .rider-alerts .hero-image .heading {
+    display: block;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.3; }
+  .redesign-content .rider-alerts .hero-image .details {
+    display: block;
+    font-size: 14px;
+    color: #ffd200;
+    text-transform: none; }
   .redesign-content .rider-alerts .hero-image .bg-blue {
     background-color: #0053a0;
     float: right; }
