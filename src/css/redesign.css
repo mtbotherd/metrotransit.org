@@ -126,6 +126,8 @@
     content: "\003E \0020"; }
     .redesign-content ul li:before ul {
       list-style-type: none; }
+  .redesign-content ul li ul {
+    margin: 0 !important; }
 
 .redesign-content ol {
   margin-bottom: 1em; }
